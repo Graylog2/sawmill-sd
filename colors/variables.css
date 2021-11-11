@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 11 Nov 2021 13:55:20 GMT
+ * Generated on Thu, 11 Nov 2021 20:39:57 GMT
  */
 
 :root {
@@ -12,9 +12,35 @@
   --sawmill-default-colors-global-link: #00bc8c;
   --sawmill-default-colors-global-link-hover: #008966;
   --sawmill-default-colors-global-navigation-background: #303030;
-  --sawmill-default-colors-global-navigation-box-shadow: rgba(242, 242, 242, 0.5);
   --sawmill-default-colors-global-text-alt: #888;
   --sawmill-default-colors-global-text-default: #fff;
+  --sawmill-default-colors-gray-0: #ffffff;
+  --sawmill-default-colors-gray-10: #dfdfdf;
+  --sawmill-default-colors-gray-20: #bfbfbf;
+  --sawmill-default-colors-gray-30: #9f9f9f;
+  --sawmill-default-colors-gray-70: #1f1f1f;
+  --sawmill-default-colors-input-background: #303030;
+  --sawmill-default-colors-input-background-disabled: #000000;
+  --sawmill-default-colors-input-border: #b1b1b1;
+  --sawmill-default-colors-input-border-focus: #5792db;
+  --sawmill-default-colors-input-color: #fff;
+  --sawmill-default-colors-input-color-disabled: #1f1f1f;
+  --sawmill-default-colors-input-placeholder: #1f1f1f;
+  --sawmill-default-colors-table-background: #dfdfdf;
+  --sawmill-default-colors-table-background-alt: #bfbfbf;
+  --sawmill-default-colors-table-background-hover: #9f9f9f;
+  --sawmill-default-colors-table-variant-danger: #ffd4d4;
+  --sawmill-default-colors-table-variant-active: #f2f2f2;
+  --sawmill-default-colors-table-variant-info: #e1e6f0;
+  --sawmill-default-colors-table-variant-primary: #f2f0f5;
+  --sawmill-default-colors-table-variant-success: #f0f7f1;
+  --sawmill-default-colors-table-variant-warning: #f7f3e9;
+  --sawmill-default-colors-table-variant-hover-danger: #e38888;
+  --sawmill-default-colors-table-variant-hover-active: #d2d2d2;
+  --sawmill-default-colors-table-variant-hover-info: #97b8e9;
+  --sawmill-default-colors-table-variant-hover-primary: #bfa3d4;
+  --sawmill-default-colors-table-variant-hover-success: #91d89f;
+  --sawmill-default-colors-table-variant-hover-warning: #ecd299;
   --sawmill-default-colors-variant-danger-lightest: #ffd4d4;
   --sawmill-default-colors-variant-danger-lighter: #e38888;
   --sawmill-default-colors-variant-danger-light: #c84f4f;
@@ -57,4 +83,6 @@
   --sawmill-default-colors-variant-warning-dark: #c99414;
   --sawmill-default-colors-variant-warning-darker: #be8806;
   --sawmill-default-colors-variant-warning-darkest: #b37e00;
+  --sawmill-default-shadows-input-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4);
+  --sawmill-default-shadows-navigation-box-shadow: rgba(242, 242, 242, 0.5);
 }

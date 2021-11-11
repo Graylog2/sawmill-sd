@@ -12,9 +12,45 @@
         "link": "#00bc8c",
         "linkHover": "#008966",
         "navigationBackground": "#303030",
-        "navigationBoxShadow": "rgba(242, 242, 242, 0.5)",
         "textAlt": "#888",
         "textDefault": "#fff"
+      },
+      "gray": {
+        "0": "#ffffff",
+        "10": "#dfdfdf",
+        "20": "#bfbfbf",
+        "30": "#9f9f9f",
+        "70": "#1f1f1f"
+      },
+      "input": {
+        "background": "#303030",
+        "backgroundDisabled": "#000000",
+        "border": "#b1b1b1",
+        "borderFocus": "#5792db",
+        "color": "#fff",
+        "colorDisabled": "#1f1f1f",
+        "placeholder": "#1f1f1f"
+      },
+      "table": {
+        "background": "#dfdfdf",
+        "backgroundAlt": "#bfbfbf",
+        "backgroundHover": "#9f9f9f",
+        "variant": {
+          "danger": "#ffd4d4",
+          "active": "#f2f2f2",
+          "info": "#e1e6f0",
+          "primary": "#f2f0f5",
+          "success": "#f0f7f1",
+          "warning": "#f7f3e9"
+        },
+        "variantHover": {
+          "danger": "#e38888",
+          "active": "#d2d2d2",
+          "info": "#97b8e9",
+          "primary": "#bfa3d4",
+          "success": "#91d89f",
+          "warning": "#ecd299"
+        }
       },
       "variant": {
         "danger": {
@@ -72,6 +108,10 @@
           "darkest": "#b37e00"
         }
       }
+    },
+    "shadows": {
+      "inputBoxShadow": "inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4)",
+      "navigationBoxShadow": "rgba(242, 242, 242, 0.5)"
     }
   }
 }

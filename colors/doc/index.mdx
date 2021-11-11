@@ -1,21 +1,66 @@
-import { mdx } from '@mdx-js/react';
-import colors from '../theme.json';
-import { SystemUIShowcases } from '@divriots/dockit-react/systemui-showcases';
+import { mdx } from "@mdx-js/react";
+import theme from "../theme.json";
+import { SystemUIShowcases } from "@divriots/dockit-react/systemui-showcases";
+export const square = {
+  width: "8rem",
+  height: "8rem",
+  boxShadow: "0 12px 48px rgba(149, 157, 165, 0.3)",
+  borderRadius: 4,
+  checkeredBackground: true,
+};
 
-# Background Color
+# Brand Colors
 
 <SystemUIShowcases
-  theme={{colors}}
+  theme={{ colors: theme.default.colors.brand }}
   showcaseKey="bg"
-  componentProps={{
-    width: '8rem',
-    height: '8rem',
-    boxShadow: '0 12px 48px rgba(149, 157, 165, 0.3)',
-    borderRadius: 4,
-    checkeredBackground: true,
-  }}
+  componentProps={square}
 />
 
-# Color
+# Global Colors
 
-<SystemUIShowcases theme={{colors}} showcaseKey="color" />
+<SystemUIShowcases
+  theme={{ colors: theme.default.colors.global }}
+  showcaseKey="bg"
+  componentProps={square}
+/>
+
+# Gray Colors
+
+<SystemUIShowcases
+  theme={{ colors: theme.default.colors.gray }}
+  showcaseKey="bg"
+  componentProps={square}
+/>
+
+# Input Colors
+
+<SystemUIShowcases
+  theme={{ colors: theme.default.colors.input }}
+  showcaseKey="bg"
+  componentProps={square}
+/>
+
+# Table Colors
+
+<SystemUIShowcases
+  theme={{ colors: theme.default.colors.table }}
+  showcaseKey="bg"
+  componentProps={square}
+/>
+
+# Variant Colors
+
+<SystemUIShowcases
+  theme={{ colors: theme.default.colors.variant }}
+  showcaseKey="bg"
+  componentProps={square}
+/>
+
+# Box Shadow Colors
+
+<SystemUIShowcases
+  theme={{ shadows: theme.default.shadows }}
+  showcaseKey="boxShadow"
+  componentProps={square}
+/>
