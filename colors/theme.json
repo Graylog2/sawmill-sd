@@ -1,0 +1,18 @@
+{
+  "primary": "#000",
+  "secondary": "#5E97F8",
+  "background": "#EDEDED",
+  "surface": "#f5f5f5",
+  "error": "#F43636",
+  "success": "#6FBA11",
+  "warning": "#ED6600",
+  "on": {
+    "primary": "#ffffff",
+    "secondary": "#ffffff",
+    "surface": "#000000"
+  },
+  "dark": {
+    "primary": "#5E97F8",
+    "secondary": "#000"
+  }
+}

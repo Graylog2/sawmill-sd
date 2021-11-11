@@ -1,0 +1,62 @@
+{
+  "packages": {
+    "menu": [
+      [
+        "tokens",
+        [
+          "colors",
+          "radius",
+          "typography"
+        ]
+      ],
+      [
+        "components",
+        [
+          "base",
+          "button",
+          "checkbox",
+          "circular-progress",
+          "circular-progress-four-color",
+          "dialog",
+          "drawer",
+          "elevation-overlay",
+          "fab",
+          "floating-label",
+          "formfield",
+          "icon",
+          "icon-button",
+          "icon-button-toggle",
+          "line-ripple",
+          "linear-progress",
+          "list",
+          "menu",
+          "notched-outline",
+          "radio",
+          "ripple",
+          "select",
+          "slider",
+          "snackbar",
+          "switch",
+          "tab",
+          "tab-bar",
+          "tab-indicator",
+          "tab-scroller",
+          "textarea",
+          "textfield",
+          "top-app-bar",
+          "top-app-bar-fixed",
+          "tabs"
+        ]
+      ],
+      [
+        "docs",
+        [
+          "shared"
+        ]
+      ]
+    ]
+  },
+  "dependencies": {
+    "autoInstall": true
+  }
+}

@@ -1,0 +1,111 @@
+{
+ "compilerOptions": {
+  "target": "es2019",
+  "emitDecoratorMetadata": true,
+  "experimentalDecorators": true,
+  "importHelpers": true,
+  "module": "esnext",
+  "moduleResolution": "node",
+  "paths": {
+   "@aodocs/base/*": [
+    "./base/*"
+   ],
+   "@aodocs/button/*": [
+    "./button/*"
+   ],
+   "@aodocs/checkbox/*": [
+    "./checkbox/*"
+   ],
+   "@aodocs/circular-progress/*": [
+    "./circular-progress/*"
+   ],
+   "@aodocs/circular-progress-four-color/*": [
+    "./circular-progress-four-color/*"
+   ],
+   "@aodocs/dialog/*": [
+    "./dialog/*"
+   ],
+   "@aodocs/drawer/*": [
+    "./drawer/*"
+   ],
+   "@aodocs/elevation-overlay/*": [
+    "./elevation-overlay/*"
+   ],
+   "@aodocs/fab/*": [
+    "./fab/*"
+   ],
+   "@aodocs/floating-label/*": [
+    "./floating-label/*"
+   ],
+   "@aodocs/formfield/*": [
+    "./formfield/*"
+   ],
+   "@aodocs/icon/*": [
+    "./icon/*"
+   ],
+   "@aodocs/icon-button/*": [
+    "./icon-button/*"
+   ],
+   "@aodocs/icon-button-toggle/*": [
+    "./icon-button-toggle/*"
+   ],
+   "@aodocs/line-ripple/*": [
+    "./line-ripple/*"
+   ],
+   "@aodocs/linear-progress/*": [
+    "./linear-progress/*"
+   ],
+   "@aodocs/list/*": [
+    "./list/*"
+   ],
+   "@aodocs/menu/*": [
+    "./menu/*"
+   ],
+   "@aodocs/notched-outline/*": [
+    "./notched-outline/*"
+   ],
+   "@aodocs/radio/*": [
+    "./radio/*"
+   ],
+   "@aodocs/ripple/*": [
+    "./ripple/*"
+   ],
+   "@aodocs/select/*": [
+    "./select/*"
+   ],
+   "@aodocs/slider/*": [
+    "./slider/*"
+   ],
+   "@aodocs/snackbar/*": [
+    "./snackbar/*"
+   ],
+   "@aodocs/switch/*": [
+    "./switch/*"
+   ],
+   "@aodocs/tab/*": [
+    "./tab/*"
+   ],
+   "@aodocs/tab-bar/*": [
+    "./tab-bar/*"
+   ],
+   "@aodocs/tab-indicator/*": [
+    "./tab-indicator/*"
+   ],
+   "@aodocs/tab-scroller/*": [
+    "./tab-scroller/*"
+   ],
+   "@aodocs/textarea/*": [
+    "./textarea/*"
+   ],
+   "@aodocs/textfield/*": [
+    "./textfield/*"
+   ],
+   "@aodocs/top-app-bar/*": [
+    "./top-app-bar/*"
+   ],
+   "@aodocs/top-app-bar-fixed/*": [
+    "./top-app-bar-fixed/*"
+   ]
+  }
+ }
+}
