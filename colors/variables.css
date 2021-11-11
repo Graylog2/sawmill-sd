@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 11 Nov 2021 13:40:59 GMT
+ * Generated on Thu, 11 Nov 2021 13:44:23 GMT
  */
 
 :root {
@@ -15,4 +15,46 @@
   --sawmill-default-colors-global-navigation-box-shadow: rgba(242, 242, 242, 0.5);
   --sawmill-default-colors-global-text-alt: #888;
   --sawmill-default-colors-global-text-default: #fff;
+  --sawmill-default-colors-variant-danger-lightest: #ffd4d4;
+  --sawmill-default-colors-variant-danger-lighter: #e38888;
+  --sawmill-default-colors-variant-danger-light: #c84f4f;
+  --sawmill-default-colors-variant-danger-base: #9e2020;
+  --sawmill-default-colors-variant-danger-dark: #911717;
+  --sawmill-default-colors-variant-danger-darker: #750c0c;
+  --sawmill-default-colors-variant-danger-darkest: #590707;
+  --sawmill-default-colors-variant-default-lightest: #f2f2f2;
+  --sawmill-default-colors-variant-default-lighter: #d2d2d2;
+  --sawmill-default-colors-variant-default-light: #b1b1b1;
+  --sawmill-default-colors-variant-default-base: #808080;
+  --sawmill-default-colors-variant-default-dark: #6f6f6f;
+  --sawmill-default-colors-variant-default-darker: #4f4f4f;
+  --sawmill-default-colors-variant-default-darkest: #2e2e2e;
+  --sawmill-default-colors-variant-info-lightest: #e1e6f0;
+  --sawmill-default-colors-variant-info-lighter: #97b8e9;
+  --sawmill-default-colors-variant-info-light: #5792db;
+  --sawmill-default-colors-variant-info-base: #1b65b3;
+  --sawmill-default-colors-variant-info-dark: #10579f;
+  --sawmill-default-colors-variant-info-darker: #043b70;
+  --sawmill-default-colors-variant-info-darkest: #002242;
+  --sawmill-default-colors-variant-primary-lightest: #f2f0f5;
+  --sawmill-default-colors-variant-primary-lighter: #bfa3d4;
+  --sawmill-default-colors-variant-primary-light: #9a69b3;
+  --sawmill-default-colors-variant-primary-base: #6d3581;
+  --sawmill-default-colors-variant-primary-dark: #5f2a70;
+  --sawmill-default-colors-variant-primary-darker: #431a4f;
+  --sawmill-default-colors-variant-primary-darkest: #270e2e;
+  --sawmill-default-colors-variant-success-lightest: #f0f7f1;
+  --sawmill-default-colors-variant-success-lighter: #91d89f;
+  --sawmill-default-colors-variant-success-light: #4cb96a;
+  --sawmill-default-colors-variant-success-base: #158b3e;
+  --sawmill-default-colors-variant-success-dark: #0d7b34;
+  --sawmill-default-colors-variant-success-darker: #035c24;
+  --sawmill-default-colors-variant-success-darkest: #003d17;
+  --sawmill-default-colors-variant-warning-lightest: #f7f3e9;
+  --sawmill-default-colors-variant-warning-lighter: #ecd299;
+  --sawmill-default-colors-variant-warning-light: #e0b859;
+  --sawmill-default-colors-variant-warning-base: #cf9b1f;
+  --sawmill-default-colors-variant-warning-dark: #c99414;
+  --sawmill-default-colors-variant-warning-darker: #be8806;
+  --sawmill-default-colors-variant-warning-darkest: #b37e00;
 }

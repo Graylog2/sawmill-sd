@@ -15,6 +15,62 @@
         "navigationBoxShadow": "rgba(242, 242, 242, 0.5)",
         "textAlt": "#888",
         "textDefault": "#fff"
+      },
+      "variant": {
+        "danger": {
+          "lightest": "#ffd4d4",
+          "lighter": "#e38888",
+          "light": "#c84f4f",
+          "base": "#9e2020",
+          "dark": "#911717",
+          "darker": "#750c0c",
+          "darkest": "#590707"
+        },
+        "default": {
+          "lightest": "#f2f2f2",
+          "lighter": "#d2d2d2",
+          "light": "#b1b1b1",
+          "base": "#808080",
+          "dark": "#6f6f6f",
+          "darker": "#4f4f4f",
+          "darkest": "#2e2e2e"
+        },
+        "info": {
+          "lightest": "#e1e6f0",
+          "lighter": "#97b8e9",
+          "light": "#5792db",
+          "base": "#1b65b3",
+          "dark": "#10579f",
+          "darker": "#043b70",
+          "darkest": "#002242"
+        },
+        "primary": {
+          "lightest": "#f2f0f5",
+          "lighter": "#bfa3d4",
+          "light": "#9a69b3",
+          "base": "#6d3581",
+          "dark": "#5f2a70",
+          "darker": "#431a4f",
+          "darkest": "#270e2e"
+        },
+        "success": {
+          "lightest": "#f0f7f1",
+          "lighter": "#91d89f",
+          "light": "#4cb96a",
+          "base": "#158b3e",
+          "dark": "#0d7b34",
+          "darker": "#035c24",
+          "darkest": "#003d17"
+        },
+        "warning": {
+          "lightest": "#f7f3e9",
+          "lighter": "#ecd299",
+          "light": "#e0b859",
+          "base": "#cf9b1f",
+          "dark": "#c99414",
+          "darker": "#be8806",
+          "darkest": "#b37e00"
+        }
       }
     }
   }
