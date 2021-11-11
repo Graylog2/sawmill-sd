@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 11 Nov 2021 13:44:23 GMT
+ * Generated on Thu, 11 Nov 2021 13:52:40 GMT
  */
 
 :root {
@@ -12,7 +12,7 @@
   --sawmill-default-colors-global-link: #00bc8c;
   --sawmill-default-colors-global-link-hover: #008966;
   --sawmill-default-colors-global-navigation-background: #303030;
-  --sawmill-default-colors-global-navigation-box-shadow: rgba(242, 242, 242, 0.5);
+  --sawmill-default-colors-global-navigation-box-shadow: [object Object];
   --sawmill-default-colors-global-text-alt: #888;
   --sawmill-default-colors-global-text-default: #fff;
   --sawmill-default-colors-variant-danger-lightest: #ffd4d4;
