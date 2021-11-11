@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   primary: {
     value: '#ff3633',
   },

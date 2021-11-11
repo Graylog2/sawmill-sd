@@ -1,5 +1,7 @@
-module.exports = {
+import brand from './src/brand'
+
+export default {
   colors: {
-    brand: require('./src/brand'),
-  },
+    brand
+  }
 }
