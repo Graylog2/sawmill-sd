@@ -5,6 +5,16 @@
         "primary": "#ff3633",
         "secondary": "#888",
         "tertiary": "#fff"
+      },
+      "global": {
+        "background": "#222",
+        "contentBackground": "#303030",
+        "link": "#00bc8c",
+        "linkHover": "#008966",
+        "navigationBackground": "#303030",
+        "navigationBoxShadow": "rgba(242, 242, 242, 0.5)",
+        "textAlt": "#888",
+        "textDefault": "#fff"
       }
     }
   }

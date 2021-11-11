@@ -6,6 +6,7 @@
     "prepare": "node build-sd.js"
   },
   "dependencies": {
+    "@k-vyn/coloralgorithm": "^1.0.0",
     "esm": "^3.2.25",
     "style-dictionary": "^3.0.3"
   }

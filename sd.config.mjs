@@ -1,37 +1,35 @@
-import StyleDictionary from 'style-dictionary';
+import StyleDictionary from "style-dictionary";
 
 StyleDictionary.extend({
-  "source": [
-    "colors/tokens.js"
-  ],
-  "platforms": {
-    "css": {
-      "transforms": [
+  source: ["colors/tokens.js"],
+  platforms: {
+    css: {
+      transforms: [
         "attribute/cti",
         "name/cti/kebab",
         "time/seconds",
         "content/icon",
         "size/rem",
-        "color/hsl"
+        "color/hsl",
       ],
-      "prefix": "sawmill",
-      "buildPath": "colors/",
-      "files": [
+      prefix: "sawmill",
+      buildPath: "colors/",
+      files: [
         {
-          "destination": "variables.css",
-          "format": "css/variables"
-        }
-      ]
+          destination: "variables.css",
+          format: "css/variables",
+        },
+      ],
     },
-    "js": {
-      "transformGroup": "web",
-      "buildPath": "colors/",
-      "files": [
+    js: {
+      transformGroup: "web",
+      buildPath: "colors/",
+      files: [
         {
-          "destination": "theme.json",
-          "format": "json/nested"
-        }
-      ]
-    }
-  }
-}).buildAllPlatforms()
+          destination: "theme.json",
+          format: "json/nested",
+        },
+      ],
+    },
+  },
+}).buildAllPlatforms();
