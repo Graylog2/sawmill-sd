@@ -1,19 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Wed, 10 Nov 2021 13:56:09 GMT
+ * Generated on Thu, 11 Nov 2021 13:11:49 GMT
  */
 
 :root {
-  --mdc-theme-primary: #000;
-  --mdc-theme-secondary: #5E97F8;
-  --mdc-theme-background: #EDEDED;
-  --mdc-theme-surface: #f5f5f5;
-  --mdc-theme-error: #F43636;
-  --mdc-theme-success: #6FBA11;
-  --mdc-theme-warning: #ED6600;
-  --mdc-theme-on-primary: #ffffff;
-  --mdc-theme-on-secondary: #ffffff;
-  --mdc-theme-on-surface: #000000;
-  --mdc-theme-dark-primary: #5E97F8;
-  --mdc-theme-dark-secondary: #000;
+  --sawmill-default-colors-brand-primary: #ff3633;
+  --sawmill-default-colors-brand-secondary: #888;
+  --sawmill-default-colors-brand-tertiary: #fff;
 }

@@ -2,7 +2,7 @@ import StyleDictionary from 'style-dictionary';
 
 StyleDictionary.extend({
   "source": [
-    "/colors/tokens.js"
+    "colors/tokens.js"
   ],
   "platforms": {
     "css": {
@@ -15,7 +15,7 @@ StyleDictionary.extend({
         "color/hsl"
       ],
       "prefix": "sawmill",
-      "buildPath": "/colors/",
+      "buildPath": "colors/",
       "files": [
         {
           "destination": "variables.css",
@@ -25,7 +25,7 @@ StyleDictionary.extend({
     },
     "js": {
       "transformGroup": "web",
-      "buildPath": "/colors/",
+      "buildPath": "colors/",
       "files": [
         {
           "destination": "theme.json",
