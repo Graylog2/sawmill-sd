@@ -12,7 +12,7 @@ export default {
   linkHover: { value: tinyColor(linkColor).darken(10).toString() },
   navigationBackground: { value: bgColor },
   navigationBoxShadow: {
-    value: tinyColor(variant.default.lightest.value).setAlpha(0.5),
+    value: tinyColor(variant.default.lightest.value).setAlpha(0.5).toString(),
   },
   textAlt: { value: brand.secondary.value },
   textDefault: { value: brand.tertiary.value },
