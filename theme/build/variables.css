@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 16 Nov 2021 18:41:53 GMT
+ * Generated on Tue, 16 Nov 2021 19:13:50 GMT
  */
 
 :root {
@@ -90,6 +90,36 @@
   --default-colors-variant-warning-dark: #c99414;
   --default-colors-variant-warning-darker: #be8806;
   --default-colors-variant-warning-darkest: #b37e00;
+  --default-elevation-underneath: -100;
+  --default-elevation-base: auto;
+  --default-elevation-overlay: 100;
+  --default-elevation-toast: 200;
+  --default-elevation-popup: 300;
+  --default-fonts-family-sans: "Open Sans", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;; /* required module [`opensans-npm-webfont/open_sans.css`, `opensans-npm-webfont/open_sans_italic.css`, `opensans-npm-webfont/open_sans_bold.css`] */
+  --default-fonts-family-serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;;
+  --default-fonts-family-monospace: "Roboto Mono", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Menlo, Monaco, "Courier New", Courier, monospace; /* required module [`@openfonts/roboto-mono_latin/index.css`] */
+  --default-fonts-leading-compact: 0.8;
+  --default-fonts-leading-tight: 1;
+  --default-fonts-leading-base: normal;
+  --default-fonts-leading-loose: 1.2;
+  --default-fonts-leading-relaxed: 1.5;
+  --default-fonts-size-root: 87.5%; /* 14px */
+  --default-fonts-size-base: 1rem; /* 14px */
+  --default-fonts-size-xxs: 0.79rem; /* 11.06px  */
+  --default-fonts-size-xs: 0.889rem; /* 12.44px */
+  --default-fonts-size-sm: 1.125rem; /* 15.75px */
+  --default-fonts-size-md: 1.266rem; /* 17.72px */
+  --default-fonts-size-lg: 1.424rem; /* 19.93px */
+  --default-fonts-size-xl: 1.602rem; /* 22.43px */
+  --default-fonts-size-xxl: 1.802rem; /* 25.23px */
+  --default-fonts-size-huge: 2.027rem; /* 28.38px */
+  --default-fonts-weight-thin: 100;
+  --default-fonts-weight-light: 300;
+  --default-fonts-weight-regular: 400;
+  --default-fonts-weight-medium: 500;
+  --default-fonts-weight-semibold: 600;
+  --default-fonts-weight-bold: 700;
+  --default-fonts-weight-black: 900;
   --default-opacity-0: 0;
   --default-opacity-35: 0.35;
   --default-opacity-65: 0.65;
