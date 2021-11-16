@@ -1,55 +1,91 @@
 {
   "default": {
     "colors": {
+      "background": {
+        "content": "#fff",
+        "global": "#e8e8e8",
+        "input": {
+          "default": "hsla(240, 0.00%, 100.00%, 1)",
+          "disabled": "hsla(240, 0.00%, 87.43%, 1)",
+          "error": "#e38888",
+          "focus": "hsla(240, 0.00%, 100.00%, 1)"
+        },
+        "navigation": "#e8e8e8",
+        "table": {
+          "alt": "hsla(240, 0.00%, 93.71%, 1)",
+          "default": "hsla(240, 0.00%, 100.00%, 1)",
+          "hover": "hsla(240, 0.00%, 87.43%, 1)",
+          "variant": {
+            "active": {
+              "default": "hsla(240, 0.00%, 93.71%, 1)",
+              "hover": "hsla(240, 0.00%, 87.43%, 1)"
+            },
+            "danger": {
+              "default": "#ffd4d4",
+              "hover": "#e38888"
+            },
+            "info": {
+              "default": "#e1e6f0",
+              "hover": "#97b8e9"
+            },
+            "primary": {
+              "default": "#f2f0f5",
+              "hover": "#bfa3d4"
+            },
+            "success": {
+              "default": "#f0f7f1",
+              "hover": "#91d89f"
+            },
+            "warning": {
+              "default": "#f7f3e9",
+              "hover": "#ecd299"
+            }
+          }
+        }
+      },
+      "border": {
+        "input": {
+          "default": "hsla(240, 0.00%, 81.14%, 1)",
+          "disabled": "hsla(240, 0.00%, 87.43%, 1)",
+          "error": "#c84f4f",
+          "focus": "#97b8e9"
+        },
+        "panel": "hsla(240, 0.00%, 87.43%, 1)"
+      },
       "brand": {
         "primary": "#ff3633",
         "secondary": "#888",
         "tertiary": "#fff"
       },
-      "global": {
-        "background": "#222",
-        "contentBackground": "#303030",
-        "link": "#00bc8c",
-        "linkHover": "#008966",
-        "navigationBackground": "#303030",
-        "textAlt": "#888",
-        "textDefault": "#fff"
-      },
       "gray": {
-        "0": "#ffffff",
-        "10": "#dfdfdf",
-        "20": "#bfbfbf",
-        "30": "#9f9f9f",
-        "70": "#1f1f1f"
+        "0": "hsla(240, 0.00%, 100.00%, 1)",
+        "10": "hsla(240, 0.00%, 93.71%, 1)",
+        "20": "hsla(240, 0.00%, 87.43%, 1)",
+        "30": "hsla(240, 0.00%, 81.14%, 1)",
+        "40": "hsla(240, 0.00%, 74.86%, 1)",
+        "50": "hsla(240, 0.00%, 62.29%, 1)",
+        "60": "hsla(240, 0.00%, 49.71%, 1)",
+        "70": "hsla(240, 0.00%, 37.14%, 1)",
+        "80": "hsla(240, 0.00%, 24.57%, 1)",
+        "90": "hsla(240, 0.00%, 12.00%, 1)"
       },
-      "input": {
-        "background": "#303030",
-        "backgroundDisabled": "#000000",
-        "border": "#b1b1b1",
-        "borderFocus": "#5792db",
-        "color": "#fff",
-        "colorDisabled": "#1f1f1f",
-        "placeholder": "#1f1f1f"
+      "shadows": {
+        "input": "inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4)",
+        "navigation": "hsla(0, 0%, 94%, 0.5)",
+        "panel": "0 2px 6px 0 hsla(0, 0%, 75%, 0.4)"
       },
-      "table": {
-        "background": "#dfdfdf",
-        "backgroundAlt": "#bfbfbf",
-        "backgroundHover": "#9f9f9f",
-        "variant": {
-          "danger": "#ffd4d4",
-          "active": "#f2f2f2",
-          "info": "#e1e6f0",
-          "primary": "#f2f0f5",
-          "success": "#f0f7f1",
-          "warning": "#f7f3e9"
+      "text": {
+        "primary": "#fff",
+        "secondary": "#888",
+        "link": {
+          "default": "#6d3581",
+          "hover": "#9a69b3"
         },
-        "variantHover": {
-          "danger": "#e38888",
-          "active": "#d2d2d2",
-          "info": "#97b8e9",
-          "primary": "#bfa3d4",
-          "success": "#91d89f",
-          "warning": "#ecd299"
+        "input": {
+          "default": "#303030",
+          "disabled": "hsla(240, 0.00%, 49.71%, 1)",
+          "error": "#911717",
+          "placeholder": "hsla(240, 0.00%, 49.71%, 1)"
         }
       },
       "variant": {
@@ -61,15 +97,6 @@
           "dark": "#911717",
           "darker": "#750c0c",
           "darkest": "#590707"
-        },
-        "default": {
-          "lightest": "#f2f2f2",
-          "lighter": "#d2d2d2",
-          "light": "#b1b1b1",
-          "base": "#808080",
-          "dark": "#6f6f6f",
-          "darker": "#4f4f4f",
-          "darkest": "#2e2e2e"
         },
         "info": {
           "lightest": "#e1e6f0",
@@ -108,10 +135,6 @@
           "darkest": "#b37e00"
         }
       }
-    },
-    "shadows": {
-      "inputBoxShadow": "inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4)",
-      "navigationBoxShadow": "rgba(242, 242, 242, 0.5)"
     }
   }
 }

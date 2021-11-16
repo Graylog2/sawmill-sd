@@ -20,26 +20,6 @@ const dangerColors = generate({
   },
 });
 
-const defaultColors = generate({
-  steps: 13,
-  hue: {
-    start: 0,
-    end: 0,
-    curve: "easeOutQuad",
-  },
-  saturation: {
-    start: 0,
-    end: 0,
-    rate: 1,
-    curve: "easeOutQuad",
-  },
-  brightness: {
-    start: 0.95,
-    end: 0.18,
-    curve: "linear",
-  },
-});
-
 const infoColors = generate(
   {
     steps: 13,
@@ -135,25 +115,24 @@ const getDarkest = (generatedColors) => generatedColors[0].colors[12].hex;
 
 const base = {
   danger: dangerColors,
-  default: defaultColors,
   info: infoColors,
   primary: primaryColors,
   success: successColors,
   warning: warningColors,
 };
 
-const variants = {};
+const variant = {};
 
 Object.keys(base).map((type) => {
-  variants[type] = {};
+  variant[type] = {};
 
-  variants[type].lightest = { value: getLightest(base[type]) };
-  variants[type].lighter = { value: getLighter(base[type]) };
-  variants[type].light = { value: getLight(base[type]) };
-  variants[type].base = { value: getBase(base[type]) };
-  variants[type].dark = { value: getDark(base[type]) };
-  variants[type].darker = { value: getDarker(base[type]) };
-  variants[type].darkest = { value: getDarkest(base[type]) };
+  variant[type].lightest = { value: getLightest(base[type]) };
+  variant[type].lighter = { value: getLighter(base[type]) };
+  variant[type].light = { value: getLight(base[type]) };
+  variant[type].base = { value: getBase(base[type]) };
+  variant[type].dark = { value: getDark(base[type]) };
+  variant[type].darker = { value: getDarker(base[type]) };
+  variant[type].darkest = { value: getDarkest(base[type]) };
 });
 
-export default variants;
+export default variant;

@@ -12,7 +12,7 @@ StyleDictionary.extend({
         "size/rem",
         "color/hsl",
       ],
-      prefix: "sawmill",
+      // prefix: "sawmill",
       buildPath: "colors/",
       files: [
         {
