@@ -1,0 +1,7 @@
+export default {
+  none: { value: "0" },
+  sm: { value: "2px" },
+  md: { value: "4px" },
+  lg: { value: "6px" },
+  round: { value: "50%" },
+};

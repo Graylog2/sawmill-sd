@@ -1,19 +1,14 @@
 import StyleDictionary from "style-dictionary";
 
+const buildPath = "theme/build/";
+
 StyleDictionary.extend({
-  source: ["colors/tokens.js"],
+  source: ["theme/tokens.js"],
   platforms: {
     css: {
-      transforms: [
-        "attribute/cti",
-        "name/cti/kebab",
-        "time/seconds",
-        "content/icon",
-        "size/rem",
-        "color/hsl",
-      ],
+      transformGroup: "css",
       // prefix: "sawmill",
-      buildPath: "colors/",
+      buildPath,
       files: [
         {
           destination: "variables.css",
@@ -23,7 +18,7 @@ StyleDictionary.extend({
     },
     js: {
       transformGroup: "web",
-      buildPath: "colors/",
+      buildPath,
       files: [
         {
           destination: "theme.json",

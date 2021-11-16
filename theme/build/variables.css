@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 16 Nov 2021 18:19:03 GMT
+ * Generated on Tue, 16 Nov 2021 18:41:53 GMT
  */
 
 :root {
@@ -90,4 +90,14 @@
   --default-colors-variant-warning-dark: #c99414;
   --default-colors-variant-warning-darker: #be8806;
   --default-colors-variant-warning-darkest: #b37e00;
+  --default-opacity-0: 0;
+  --default-opacity-35: 0.35;
+  --default-opacity-65: 0.65;
+  --default-opacity-80: 0.8;
+  --default-opacity-100: 1;
+  --default-radii-none: 0;
+  --default-radii-sm: 2px;
+  --default-radii-md: 4px;
+  --default-radii-lg: 6px;
+  --default-radii-round: 50%;
 }

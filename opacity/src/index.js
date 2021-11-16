@@ -1,0 +1,7 @@
+export default {
+  0: { value: 0 },
+  35: { value: 0.35 },
+  65: { value: 0.65 },
+  80: { value: 0.8 },
+  100: { value: 1 },
+};
