@@ -5,8 +5,12 @@ import gray from "../colors/src/gray";
 import shadows from "../colors/src/shadows";
 import text from "../colors/src/text";
 import variant from "../colors/src/variant";
-import radii from "../radii/src";
+
+import elevation from "../elevations/src";
+
 import opacity from "../opacity/src";
+
+import radii from "../radii/src";
 
 export default {
   colors: {
@@ -18,6 +22,7 @@ export default {
     text,
     variant,
   },
+  elevation,
   opacity,
   radii,
 };
