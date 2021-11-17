@@ -1,5 +1,14 @@
+import modularScale from "modularscale-js";
+
+const BROWSER_DEFAULT_FONT_SIZE = 16;
+const DEFAULT_FONT_SIZE = 14;
+const FONT_SCALE = 1.125; // major second
+const PERCENTAGE = (DEFAULT_FONT_SIZE / BROWSER_DEFAULT_FONT_SIZE) * 100;
+
+// console.log(DEFAULT_FONT_SIZE * FONT_SCALE ** -0.4);
+
 export default {
-  root: { value: "87.5%", comment: "14px" },
+  root: { value: `${PERCENTAGE}%`, comment: "14px" },
   base: { value: "1rem", comment: "14px" },
 
   xxs: { value: "0.79rem", comment: "11.06px " },

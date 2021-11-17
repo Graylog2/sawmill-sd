@@ -9,5 +9,8 @@
     "@k-vyn/coloralgorithm": "^1.0.0",
     "esm": "^3.2.25",
     "style-dictionary": "^3.0.3"
+  },
+  "devDependencies": {
+    "modularscale-js": "^3.0.1"
   }
 }

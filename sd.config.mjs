@@ -1,6 +1,6 @@
 import StyleDictionary from "style-dictionary";
 
-const buildPath = "theme/build/";
+const buildPath = "theme/src/";
 
 StyleDictionary.extend({
   source: ["theme/tokens.js"],

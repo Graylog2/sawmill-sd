@@ -1,21 +1,6 @@
 {
   "packages": {
-    "menu": [
-      [
-        "tokens",
-        [
-          "colors",
-          "radius",
-          "typography"
-        ]
-      ],
-      [
-        "docs",
-        [
-          "shared"
-        ]
-      ]
-    ]
+    "menu": [["tokens", ["colors", "elevations", "fonts", "opacity", "radii"]]]
   },
   "dependencies": {
     "autoInstall": true
