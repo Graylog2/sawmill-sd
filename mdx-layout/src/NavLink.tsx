@@ -17,6 +17,6 @@ export const NavLink = ({ page }) =>
       {...(location.href.endsWith(page.url) && {
         "aria-current": "location",
       })}>
-      {(page.nav && page.nav.key) || page.url}
+      {page.nav?.key || page.url}
     </a>
   );

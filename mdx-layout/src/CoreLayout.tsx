@@ -2,7 +2,8 @@ import type { Context } from "@divriots/studio-doc-compiler";
 import { PageGraph, buildGraph } from "./PageGraph";
 import "./CoreLayout.scss";
 import { NavBar } from "./NavBar";
-import React, { ReactChildren, ReactChild } from "react";
+import React from "react";
+import { ReactChildren, ReactChild } from "react";
 
 export const CoreLayout = ({
   __context,

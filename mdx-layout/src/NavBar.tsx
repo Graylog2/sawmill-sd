@@ -1,5 +1,6 @@
 import "./NavBar.scss";
-import React, { ReactElement } from "react";
+import React from "react";
+import { ReactElement } from "react";
 import { NavGroup } from "./NavGroup";
 import { PageGraph } from "./PageGraph";
 import { DefaultLogo } from "./DefaultLogo";

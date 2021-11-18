@@ -1,4 +1,5 @@
-import React, { CSSProperties } from "react";
+import { CSSProperties } from "react";
+import React from "react";
 
 export type ColorScheme = "dark" | "light";
 
