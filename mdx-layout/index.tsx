@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { MDXProvider } from "@mdx-js/react";
 
-import { CoreLayout } from "./CoreLayout";
-import { StylesheetSwitch } from "./StylesheetSwitch";
-import type { ColorScheme } from "./StylesheetSwitch";
-import styles from "./common-styles";
+import { CoreLayout } from "./src/CoreLayout";
+import { StylesheetSwitch } from "./src/StylesheetSwitch";
+import type { ColorScheme } from "./src/StylesheetSwitch";
+import styles from "./src/common-styles";
 
 export const getInitialColorScheme = () =>
   localStorage.getItem("colorScheme") ||
