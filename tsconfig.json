@@ -1,10 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es2019",
+    "target": "ESNext",
+    "allowJs": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "module": "esnext",
-    "moduleResolution": "node"
+    "module": "ESNext",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "paths": {
+      "~/*": [
+        "/*"
+      ]
+    }
   }
 }
