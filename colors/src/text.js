@@ -10,7 +10,7 @@ export default {
     hover: { value: variant.primary.light.value },
   },
   input: {
-    default: { value: "#303030" },
+    default: { value: gray[80].value },
     disabled: { value: gray[60].value },
     error: { value: variant.danger.dark.value },
     placeholder: { value: gray[60].value },

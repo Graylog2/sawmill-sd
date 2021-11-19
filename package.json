@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "serve": "npx backlight@latest serve f8bLRusG6EujzpCzDM6X --open",
-    "prepare": "node build-sd.js"
+    "build": "node build-sd.js"
   },
   "dependencies": {
     "@divriots/studio-doc-compiler": "^0.0.28",

@@ -1,23 +1,51 @@
 import { mdx } from "@mdx-js/react";
 import theme from "~/theme/src/theme.json";
 import { SystemUIShowcases } from "@divriots/dockit-react/systemui-showcases";
-import { CssLayout } from '@divriots/dockit-react/mdx-layout-css'
-export default CssLayout
-
-export default CssLayout;
+import { Layout } from "~/layout";
+export default Layout;
 
 export const square = {
-  width: "8rem",
-  height: "8rem",
-  boxShadow: "0 12px 48px rgba(149, 157, 165, 0.3)",
-  borderRadius: 4,
+  width: "4rem",
+  height: "4rem",
+  boxShadow: theme.default.colors.shadows.panel,
+  borderRadius: theme.default.radii.md,
   checkeredBackground: true,
 };
 
-# Brand Colors
+## Brand Colors
+
+These colors come from marketing's branding guideline and should not be altered without consent from their team.
 
 <SystemUIShowcases
   theme={{ colors: theme.default.colors.brand }}
   showcaseKey="bg"
   componentProps={square}
 />
+
+## Gray Colors
+
+There has been [research](https://uxmovement.com/content/why-you-should-never-use-pure-black-for-text-or-backgrounds/) [done](https://uxplanet.org/basicdesign-never-use-pure-black-in-typography-36138a3327a6) showing that pure black can cause eye-strain. This is why we've chosen not to include a `100` value.
+
+<SystemUIShowcases
+  theme={{ colors: theme.default.colors.gray }}
+  showcaseKey="bg"
+  componentProps={square}
+/>
+
+## Variant Colors
+
+Variant colors are generated using [`coloralgorithim`](https://github.com/k-vyn/coloralgorithm) and helps produce much cleaner color pallettes.
+
+<React.Fragment>
+  {Object.keys(theme.default.colors.variant).map((vars)=>{
+    return (<React.Fragment>
+    <h3>{vars}</h3>
+<SystemUIShowcases
+  theme={{ colors: theme.default.colors.variant[vars] }}
+  showcaseKey="bg"
+  componentProps={square}
+/>
+</React.Fragment>)
+  })}
+
+</React.Fragment>

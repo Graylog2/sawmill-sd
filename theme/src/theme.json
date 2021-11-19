@@ -3,43 +3,41 @@
     "colors": {
       "background": {
         "content": "#fff",
-        "global": "#e8e8e8",
+        "global": "hsla(240, 0.00%, 93.71%, 1)",
         "input": {
           "default": "hsla(240, 0.00%, 100.00%, 1)",
           "disabled": "hsla(240, 0.00%, 87.43%, 1)",
           "error": "#e38888",
           "focus": "hsla(240, 0.00%, 100.00%, 1)"
         },
-        "navigation": "#e8e8e8",
+        "navigation": "hsla(240, 0.00%, 93.71%, 1)",
         "table": {
           "alt": "hsla(240, 0.00%, 93.71%, 1)",
           "default": "hsla(240, 0.00%, 100.00%, 1)",
           "hover": "hsla(240, 0.00%, 87.43%, 1)",
-          "variant": {
-            "active": {
-              "default": "hsla(240, 0.00%, 93.71%, 1)",
-              "hover": "hsla(240, 0.00%, 87.43%, 1)"
-            },
-            "danger": {
-              "default": "#ffd4d4",
-              "hover": "#e38888"
-            },
-            "info": {
-              "default": "#e1e6f0",
-              "hover": "#97b8e9"
-            },
-            "primary": {
-              "default": "#f2f0f5",
-              "hover": "#bfa3d4"
-            },
-            "success": {
-              "default": "#f0f7f1",
-              "hover": "#91d89f"
-            },
-            "warning": {
-              "default": "#f7f3e9",
-              "hover": "#ecd299"
-            }
+          "active": {
+            "default": "hsla(240, 0.00%, 93.71%, 1)",
+            "hover": "hsla(240, 0.00%, 87.43%, 1)"
+          },
+          "danger": {
+            "default": "#ffd4d4",
+            "hover": "#e38888"
+          },
+          "info": {
+            "default": "#e1e6f0",
+            "hover": "#97b8e9"
+          },
+          "primary": {
+            "default": "#f2f0f5",
+            "hover": "#bfa3d4"
+          },
+          "success": {
+            "default": "#f0f7f1",
+            "hover": "#91d89f"
+          },
+          "warning": {
+            "default": "#f7f3e9",
+            "hover": "#ecd299"
           }
         }
       },
@@ -82,7 +80,7 @@
           "hover": "#9a69b3"
         },
         "input": {
-          "default": "#303030",
+          "default": "hsla(240, 0.00%, 24.57%, 1)",
           "disabled": "hsla(240, 0.00%, 49.71%, 1)",
           "error": "#911717",
           "placeholder": "hsla(240, 0.00%, 49.71%, 1)"
@@ -143,20 +141,20 @@
       "toast": "200",
       "popup": "300"
     },
-    "fonts": {
-      "family": {
+    "typography": {
+      "fonts": {
         "sans": "\"Open Sans\", Frutiger, \"Frutiger Linotype\", Univers, Calibri, \"Gill Sans\", \"Gill Sans MT\", \"Myriad Pro\", Myriad, \"DejaVu Sans Condensed\", \"Liberation Sans\", \"Nimbus Sans L\", Tahoma, Geneva, \"Helvetica Neue\", Helvetica, Arial, sans-serif;",
         "serif": "Constantia, \"Lucida Bright\", Lucidabright, \"Lucida Serif\", Lucida, \"DejaVu Serif\", \"Bitstream Vera Serif\", \"Liberation Serif\", Georgia, serif;",
         "monospace": "\"Roboto Mono\", \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\", \"Lucida Sans Typewriter\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Liberation Mono\", \"Nimbus Mono L\", Menlo, Monaco, \"Courier New\", Courier, monospace"
       },
-      "leading": {
+      "lineHeights": {
         "compact": "0.8",
         "tight": "1",
         "base": "normal",
         "loose": "1.2",
         "relaxed": "1.5"
       },
-      "size": {
+      "fontSizes": {
         "root": "87.5%",
         "base": "1rem",
         "xxs": "0.79rem",
@@ -168,7 +166,7 @@
         "xxl": "1.802rem",
         "huge": "2.027rem"
       },
-      "weight": {
+      "fontWeights": {
         "thin": "100",
         "light": "300",
         "regular": "400",

@@ -1,6 +1,10 @@
 {
   "packages": {
-    "menu": [["tokens", ["colors", "elevations", "fonts", "opacity", "radii"]]]
+    "menu": [
+      ["tokens", ["colors", "elevations", "typography", "opacity", "radii"]],
+      ["theme", ["theme"]],
+      ["layout", ["layout"]]
+    ]
   },
   "dependencies": {
     "autoInstall": true

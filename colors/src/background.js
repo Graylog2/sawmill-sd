@@ -1,13 +1,14 @@
 import tinyColor from "tinycolor2";
+import brand from "./brand";
 import gray from "./gray";
 import variant from "./variant";
 
 export default {
   content: {
-    value: "#fff",
+    value: brand.tertiary.value,
   },
   global: {
-    value: "#e8e8e8",
+    value: gray[10].value,
   },
   input: {
     default: {
@@ -24,7 +25,7 @@ export default {
     },
   },
   navigation: {
-    value: "#e8e8e8",
+    value: gray[10].value,
   },
   table: {
     alt: {
@@ -36,54 +37,52 @@ export default {
     hover: {
       value: gray[20].value,
     },
-    variant: {
-      active: {
-        default: {
-          value: gray[10].value,
-        },
-        hover: {
-          value: gray[20].value,
-        },
+    active: {
+      default: {
+        value: gray[10].value,
       },
-      danger: {
-        default: {
-          value: variant.danger.lightest.value,
-        },
-        hover: {
-          value: variant.danger.lighter.value,
-        },
+      hover: {
+        value: gray[20].value,
       },
-      info: {
-        default: {
-          value: variant.info.lightest.value,
-        },
-        hover: {
-          value: variant.info.lighter.value,
-        },
+    },
+    danger: {
+      default: {
+        value: variant.danger.lightest.value,
       },
-      primary: {
-        default: {
-          value: variant.primary.lightest.value,
-        },
-        hover: {
-          value: variant.primary.lighter.value,
-        },
+      hover: {
+        value: variant.danger.lighter.value,
       },
-      success: {
-        default: {
-          value: variant.success.lightest.value,
-        },
-        hover: {
-          value: variant.success.lighter.value,
-        },
+    },
+    info: {
+      default: {
+        value: variant.info.lightest.value,
       },
-      warning: {
-        default: {
-          value: variant.warning.lightest.value,
-        },
-        hover: {
-          value: variant.warning.lighter.value,
-        },
+      hover: {
+        value: variant.info.lighter.value,
+      },
+    },
+    primary: {
+      default: {
+        value: variant.primary.lightest.value,
+      },
+      hover: {
+        value: variant.primary.lighter.value,
+      },
+    },
+    success: {
+      default: {
+        value: variant.success.lightest.value,
+      },
+      hover: {
+        value: variant.success.lighter.value,
+      },
+    },
+    warning: {
+      default: {
+        value: variant.warning.lightest.value,
+      },
+      hover: {
+        value: variant.warning.lighter.value,
       },
     },
   },

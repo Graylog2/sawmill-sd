@@ -1,13 +1,13 @@
 import colors from "../colors/src/";
 import elevation from "../elevations/src";
-import fonts from "../fonts/src";
+import typography from "../typography/src";
 import opacity from "../opacity/src";
 import radii from "../radii/src";
 
 export default {
   colors,
   elevation,
-  fonts,
+  typography,
   opacity,
   radii,
 };
