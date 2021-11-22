@@ -1,5 +1,5 @@
 // NOTE: you can modify the `DEFAULT_FONT_SIZE` & `FONT_SCALE` for properly scaling fonts
-const DEFAULT_FONT_SIZE = 14;
+export const DEFAULT_FONT_SIZE = 14;
 const FONT_SCALE = 1.125; // major second - https://type-scale.com/
 
 const BROWSER_DEFAULT_FONT_SIZE = 16;

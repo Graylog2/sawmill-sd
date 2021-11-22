@@ -1,0 +1,13 @@
+import { mdx } from "@mdx-js/react";
+import { Layout } from "~/layout";
+import SpacingsShowcase from "../src/SpacingsShowcase";
+import theme from "~/theme/src/theme.json";
+export default Layout;
+
+## Spacings (rem)
+
+<SpacingsShowcase scale={{ ...theme.default.spacings, px: undefined }} />
+
+## Spacings (px)
+
+<SpacingsShowcase scale={theme.default.spacings.px} />
