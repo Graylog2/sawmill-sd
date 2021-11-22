@@ -1,9 +1,28 @@
 {
   "packages": {
     "menu": [
-      ["tokens", ["colors", "elevations", "typography", "opacity", "radii"]],
-      ["theme", ["theme"]],
-      ["layout", ["layout"]]
+      [
+        "tokens",
+        [
+          "colors",
+          "elevations",
+          "typography",
+          "opacity",
+          "radii"
+        ]
+      ],
+      [
+        "variables",
+        [
+          "theme"
+        ]
+      ],
+      [
+        "mdx",
+        [
+          "layout"
+        ]
+      ]
     ]
   },
   "dependencies": {
