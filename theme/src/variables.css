@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 18 Nov 2021 20:56:03 GMT
+ * Generated on Mon, 22 Nov 2021 17:44:07 GMT
  */
 
 :root {
@@ -103,16 +103,16 @@
   --default-typography-line-heights-base: normal;
   --default-typography-line-heights-loose: 1.2;
   --default-typography-line-heights-relaxed: 1.5;
-  --default-typography-font-sizes-root: 87.5%; /* 14px */
+  --default-typography-font-sizes-root: 87.5%; /* Set as default `html` font-size in your CSS */
   --default-typography-font-sizes-base: 1rem; /* 14px */
-  --default-typography-font-sizes-xxs: 0.79rem; /* 11.06px  */
-  --default-typography-font-sizes-xs: 0.889rem; /* 12.44px */
-  --default-typography-font-sizes-sm: 1.125rem; /* 15.75px */
-  --default-typography-font-sizes-md: 1.266rem; /* 17.72px */
-  --default-typography-font-sizes-lg: 1.424rem; /* 19.93px */
-  --default-typography-font-sizes-xl: 1.602rem; /* 22.43px */
-  --default-typography-font-sizes-xxl: 1.802rem; /* 25.23px */
-  --default-typography-font-sizes-huge: 2.027rem; /* 28.38px */
+  --default-typography-font-sizes-xxs: calc(1rem * 0.79); /* ~11.06px */
+  --default-typography-font-sizes-xs: calc(1rem * 0.89); /* ~12.46px */
+  --default-typography-font-sizes-sm: calc(1rem * 1.13); /* ~15.82px */
+  --default-typography-font-sizes-md: calc(1rem * 1.27); /* ~17.78px */
+  --default-typography-font-sizes-lg: calc(1rem * 1.42); /* ~19.88px */
+  --default-typography-font-sizes-xl: calc(1rem * 1.60); /* ~22.40px */
+  --default-typography-font-sizes-xxl: calc(1rem * 1.80); /* ~25.20px */
+  --default-typography-font-sizes-huge: calc(1rem * 2.57); /* ~35.98px */
   --default-typography-font-weights-thin: 100;
   --default-typography-font-weights-light: 300;
   --default-typography-font-weights-regular: 400;

@@ -157,14 +157,14 @@
       "fontSizes": {
         "root": "87.5%",
         "base": "1rem",
-        "xxs": "0.79rem",
-        "xs": "0.889rem",
-        "sm": "1.125rem",
-        "md": "1.266rem",
-        "lg": "1.424rem",
-        "xl": "1.602rem",
-        "xxl": "1.802rem",
-        "huge": "2.027rem"
+        "xxs": "calc(1rem * 0.79)",
+        "xs": "calc(1rem * 0.89)",
+        "sm": "calc(1rem * 1.13)",
+        "md": "calc(1rem * 1.27)",
+        "lg": "calc(1rem * 1.42)",
+        "xl": "calc(1rem * 1.60)",
+        "xxl": "calc(1rem * 1.80)",
+        "huge": "calc(1rem * 2.57)"
       },
       "fontWeights": {
         "thin": "100",
