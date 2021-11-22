@@ -10,7 +10,7 @@ export default {
     value: gray[10].value,
   },
   input: {
-    default: {
+    "@": {
       value: gray[0].value,
     },
     disabled: {
@@ -30,14 +30,14 @@ export default {
     alt: {
       value: gray[10].value,
     },
-    default: {
+    "@": {
       value: gray[0].value,
     },
     hover: {
       value: gray[20].value,
     },
     active: {
-      default: {
+      "@": {
         value: gray[10].value,
       },
       hover: {
@@ -45,7 +45,7 @@ export default {
       },
     },
     danger: {
-      default: {
+      "@": {
         value: variant.danger.lightest.value,
       },
       hover: {
@@ -53,7 +53,7 @@ export default {
       },
     },
     info: {
-      default: {
+      "@": {
         value: variant.info.lightest.value,
       },
       hover: {
@@ -61,7 +61,7 @@ export default {
       },
     },
     primary: {
-      default: {
+      "@": {
         value: variant.primary.lightest.value,
       },
       hover: {
@@ -69,7 +69,7 @@ export default {
       },
     },
     success: {
-      default: {
+      "@": {
         value: variant.success.lightest.value,
       },
       hover: {
@@ -77,7 +77,7 @@ export default {
       },
     },
     warning: {
-      default: {
+      "@": {
         value: variant.warning.lightest.value,
       },
       hover: {

@@ -1,22 +1,62 @@
-import modularScale from "modularscale-js";
+// NOTE: you can modify the `DEFAULT_FONT_SIZE` & `FONT_SCALE` for properly scaling fonts
+export const DEFAULT_FONT_SIZE = 14;
+const FONT_SCALE = 1.125; // major second - https://type-scale.com/
 
 const BROWSER_DEFAULT_FONT_SIZE = 16;
-const DEFAULT_FONT_SIZE = 14;
-const FONT_SCALE = 1.125; // major second
-const PERCENTAGE = (DEFAULT_FONT_SIZE / BROWSER_DEFAULT_FONT_SIZE) * 100;
+const rootPercentage = (DEFAULT_FONT_SIZE / BROWSER_DEFAULT_FONT_SIZE) * 100;
+const scaleFont = (power) => Math.pow(FONT_SCALE, power).toFixed(2);
+const scaleFontRem = (power) => `calc(1rem * ${scaleFont(power)})`;
+const scaleFontPx = (power) =>
+  `~${(DEFAULT_FONT_SIZE * scaleFont(power)).toFixed(2)}px`;
 
-// console.log(DEFAULT_FONT_SIZE * FONT_SCALE ** -0.4);
+const fontSizes = [
+  {
+    key: "xxs",
+    scale: -2,
+  },
+  {
+    key: "xs",
+    scale: -1,
+  },
+  {
+    key: "sm",
+    scale: 1,
+  },
+  {
+    key: "md",
+    scale: 2,
+  },
+  {
+    key: "lg",
+    scale: 3,
+  },
+  {
+    key: "xl",
+    scale: 4,
+  },
+  {
+    key: "xxl",
+    scale: 5,
+  },
+  {
+    key: "huge",
+    scale: 8,
+  },
+];
 
-export default {
-  root: { value: `${PERCENTAGE}%`, comment: "14px" },
+const sizes = {
+  root: {
+    value: `${rootPercentage}%`,
+    comment: "Set as default `html` font-size in your CSS",
+  },
   base: { value: "1rem", comment: "14px" },
-
-  xxs: { value: "0.79rem", comment: "11.06px " },
-  xs: { value: "0.889rem", comment: "12.44px" },
-  sm: { value: "1.125rem", comment: "15.75px" },
-  md: { value: "1.266rem", comment: "17.72px" },
-  lg: { value: "1.424rem", comment: "19.93px" },
-  xl: { value: "1.602rem", comment: "22.43px" },
-  xxl: { value: "1.802rem", comment: "25.23px" },
-  huge: { value: "2.027rem", comment: "28.38px" },
 };
+
+fontSizes.forEach(({ key, scale }) => {
+  sizes[key] = {
+    value: scaleFontRem(scale),
+    comment: scaleFontPx(scale),
+  };
+});
+
+export default sizes;

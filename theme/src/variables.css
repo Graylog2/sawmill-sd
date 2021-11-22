@@ -1,32 +1,32 @@
 /**
  * Do not edit directly
- * Generated on Thu, 18 Nov 2021 20:56:03 GMT
+ * Generated on Mon, 22 Nov 2021 22:30:24 GMT
  */
 
 :root {
   --default-colors-background-content: #fff;
   --default-colors-background-global: hsla(240, 0.00%, 93.71%, 1);
-  --default-colors-background-input-default: hsla(240, 0.00%, 100.00%, 1);
+  --default-colors-background-input: hsla(240, 0.00%, 100.00%, 1);
   --default-colors-background-input-disabled: hsla(240, 0.00%, 87.43%, 1);
   --default-colors-background-input-error: #e38888;
   --default-colors-background-input-focus: hsla(240, 0.00%, 100.00%, 1);
   --default-colors-background-navigation: hsla(240, 0.00%, 93.71%, 1);
   --default-colors-background-table-alt: hsla(240, 0.00%, 93.71%, 1);
-  --default-colors-background-table-default: hsla(240, 0.00%, 100.00%, 1);
+  --default-colors-background-table: hsla(240, 0.00%, 100.00%, 1);
   --default-colors-background-table-hover: hsla(240, 0.00%, 87.43%, 1);
-  --default-colors-background-table-active-default: hsla(240, 0.00%, 93.71%, 1);
+  --default-colors-background-table-active: hsla(240, 0.00%, 93.71%, 1);
   --default-colors-background-table-active-hover: hsla(240, 0.00%, 87.43%, 1);
-  --default-colors-background-table-danger-default: #ffd4d4;
+  --default-colors-background-table-danger: #ffd4d4;
   --default-colors-background-table-danger-hover: #e38888;
-  --default-colors-background-table-info-default: #e1e6f0;
+  --default-colors-background-table-info: #e1e6f0;
   --default-colors-background-table-info-hover: #97b8e9;
-  --default-colors-background-table-primary-default: #f2f0f5;
+  --default-colors-background-table-primary: #f2f0f5;
   --default-colors-background-table-primary-hover: #bfa3d4;
-  --default-colors-background-table-success-default: #f0f7f1;
+  --default-colors-background-table-success: #f0f7f1;
   --default-colors-background-table-success-hover: #91d89f;
-  --default-colors-background-table-warning-default: #f7f3e9;
+  --default-colors-background-table-warning: #f7f3e9;
   --default-colors-background-table-warning-hover: #ecd299;
-  --default-colors-border-input-default: hsla(240, 0.00%, 81.14%, 1);
+  --default-colors-border-input: hsla(240, 0.00%, 81.14%, 1);
   --default-colors-border-input-disabled: hsla(240, 0.00%, 87.43%, 1);
   --default-colors-border-input-error: #c84f4f;
   --default-colors-border-input-focus: #97b8e9;
@@ -49,9 +49,9 @@
   --default-colors-shadows-panel: 0 2px 6px 0 hsla(0, 0%, 75%, 0.4);
   --default-colors-text-primary: #fff;
   --default-colors-text-secondary: #888;
-  --default-colors-text-link-default: #6d3581;
+  --default-colors-text-link: #6d3581;
   --default-colors-text-link-hover: #9a69b3;
-  --default-colors-text-input-default: hsla(240, 0.00%, 24.57%, 1);
+  --default-colors-text-input: hsla(240, 0.00%, 24.57%, 1);
   --default-colors-text-input-disabled: hsla(240, 0.00%, 49.71%, 1);
   --default-colors-text-input-error: #911717;
   --default-colors-text-input-placeholder: hsla(240, 0.00%, 49.71%, 1);
@@ -103,16 +103,16 @@
   --default-typography-line-heights-base: normal;
   --default-typography-line-heights-loose: 1.2;
   --default-typography-line-heights-relaxed: 1.5;
-  --default-typography-font-sizes-root: 87.5%; /* 14px */
+  --default-typography-font-sizes-root: 87.5%; /* Set as default `html` font-size in your CSS */
   --default-typography-font-sizes-base: 1rem; /* 14px */
-  --default-typography-font-sizes-xxs: 0.79rem; /* 11.06px  */
-  --default-typography-font-sizes-xs: 0.889rem; /* 12.44px */
-  --default-typography-font-sizes-sm: 1.125rem; /* 15.75px */
-  --default-typography-font-sizes-md: 1.266rem; /* 17.72px */
-  --default-typography-font-sizes-lg: 1.424rem; /* 19.93px */
-  --default-typography-font-sizes-xl: 1.602rem; /* 22.43px */
-  --default-typography-font-sizes-xxl: 1.802rem; /* 25.23px */
-  --default-typography-font-sizes-huge: 2.027rem; /* 28.38px */
+  --default-typography-font-sizes-xxs: calc(1rem * 0.79); /* ~11.06px */
+  --default-typography-font-sizes-xs: calc(1rem * 0.89); /* ~12.46px */
+  --default-typography-font-sizes-sm: calc(1rem * 1.13); /* ~15.82px */
+  --default-typography-font-sizes-md: calc(1rem * 1.27); /* ~17.78px */
+  --default-typography-font-sizes-lg: calc(1rem * 1.42); /* ~19.88px */
+  --default-typography-font-sizes-xl: calc(1rem * 1.60); /* ~22.40px */
+  --default-typography-font-sizes-xxl: calc(1rem * 1.80); /* ~25.20px */
+  --default-typography-font-sizes-huge: calc(1rem * 2.57); /* ~35.98px */
   --default-typography-font-weights-thin: 100;
   --default-typography-font-weights-light: 300;
   --default-typography-font-weights-regular: 400;
@@ -130,4 +130,18 @@
   --default-radii-md: 4px;
   --default-radii-lg: 6px;
   --default-radii-round: 50%;
+  --default-spacings-px-xxs: 3;
+  --default-spacings-px-xs: 6;
+  --default-spacings-px-sm: 9;
+  --default-spacings-px-md: 15;
+  --default-spacings-px-lg: 24;
+  --default-spacings-px-xl: 38;
+  --default-spacings-px-xxl: 62;
+  --default-spacings-xxs: 0.24rem;
+  --default-spacings-xs: 0.40rem;
+  --default-spacings-sm: 0.64rem;
+  --default-spacings-md: 1.04rem;
+  --default-spacings-lg: 1.68rem;
+  --default-spacings-xl: 2.72rem;
+  --default-spacings-xxl: 4.40rem;
 }

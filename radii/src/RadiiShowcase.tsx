@@ -18,8 +18,6 @@ const OpacityCard = ({ theme }) => {
           key={radius}
           style={{
             backgroundColor: colors.brand.primary,
-            width: "100%",
-            height: "100%",
             borderRadius: radii[radius],
           }}
         />
