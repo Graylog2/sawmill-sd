@@ -1,4 +1,3 @@
-import tinyColor from "tinycolor2";
 import brand from "./brand";
 import gray from "./gray";
 import variant from "./variant";
