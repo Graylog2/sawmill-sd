@@ -1,1 +1,7 @@
-export default ['0', '2px', '4px', '6px', '50%'];
+export default {
+  none: { value: "0" },
+  sm: { value: "2px" },
+  md: { value: "4px" },
+  lg: { value: "6px" },
+  round: { value: "50%" },
+};
