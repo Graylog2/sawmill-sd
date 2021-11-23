@@ -1,11 +1,12 @@
-import React from "react";
+import * as React from "react";
 
 export const Logo = () => (
   <svg
     contentScriptType="text/ecmascript"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    viewBox="0 0 224.88 60">
+    viewBox="0 0 224.88 60"
+  >
     <defs>
       <clipPath id="prefix__a">
         <path d="M177.68 7.79h42.72v42.73h-42.72zm0 0" />

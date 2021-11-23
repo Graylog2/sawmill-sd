@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { MDXProvider } from "@mdx-js/react";
 import { CssLayout } from "@divriots/dockit-react/mdx-layout-css";
 import { Logo } from "./Logo";
@@ -12,8 +12,8 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const Layout = (props) => (
-  <ThemeProvider theme={theme.default}>
+export const Layout = (props: unknown) => (
+  <ThemeProvider theme={theme}>
     <GlobalStyle />
     <MDXProvider components={{}}>
       <CssLayout
