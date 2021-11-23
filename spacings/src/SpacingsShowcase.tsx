@@ -38,7 +38,7 @@ const SpacingsShowcase = ({ scale }: SpaceProps) => {
       </thead>
       <tbody>
         {scaleValues.map(([name, value]) => (
-          <tr key={name}>
+          <tr key={`${name}-${value}`}>
             <td>
               <pre>{name}</pre>
             </td>
