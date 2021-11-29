@@ -25,9 +25,10 @@
         ]
       ],
       [
-        "mdx",
+        "backlight config",
         [
-          "layout"
+          "layout",
+          "stories"
         ]
       ]
     ]

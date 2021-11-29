@@ -121,25 +121,25 @@ const variants: TColorVariants = {
 
 const Button = styled(BootstrapButton)`
   &.btn-default {
-    background-color: var(--default-colors-gray-0);
-    border-color: var(--default-colors-gray-80);
-    color: var(--default-colors-gray-80);
+    background-color: var(--default-colors-gray-10);
+    border-color: var(--default-colors-gray-70);
+    color: var(--default-colors-gray-70);
     transition: background-color 150ms ease-in-out, border 150ms ease-in-out,
       color 150ms ease-in-out;
 
     :hover {
-      background-color: var(--default-colors-gray-10);
+      background-color: var(--default-colors-gray-20);
       border-color: var(--default-colors-gray-90);
       color: var(--default-colors-gray-90);
     }
 
     &.active {
-      background-color: var(--default-colors-gray-20);
+      background-color: var(--default-colors-gray-30);
       border-color: var(--default-colors-gray-90);
       color: var(--default-colors-gray-90);
 
       :hover {
-        background-color: var(--default-colors-gray-30);
+        background-color: var(--default-colors-gray-40);
         border-color: var(--default-colors-gray-80);
         color: var(--default-colors-gray-80);
       }
