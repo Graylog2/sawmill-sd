@@ -85,4 +85,7 @@ export default {
       },
     },
   },
+  transparent: {
+    value: "hsla(0, 0, 0, 0)",
+  },
 };

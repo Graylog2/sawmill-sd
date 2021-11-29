@@ -3,10 +3,33 @@
     "menu": [
       [
         "tokens",
-        ["colors", "elevations", "typography", "opacity", "radii", "spacings"]
+        [
+          "colors",
+          "elevations",
+          "typography",
+          "opacity",
+          "radii",
+          "spacings"
+        ]
       ],
-      ["variables", ["theme"]],
-      ["mdx", ["layout"]]
+      [
+        "bootstrap",
+        [
+          "button"
+        ]
+      ],
+      [
+        "variables",
+        [
+          "theme"
+        ]
+      ],
+      [
+        "mdx",
+        [
+          "layout"
+        ]
+      ]
     ]
   },
   "dependencies": {
