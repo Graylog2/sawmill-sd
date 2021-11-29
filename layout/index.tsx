@@ -4,6 +4,7 @@ import { CssLayout } from "@divriots/dockit-react/mdx-layout-css";
 import { Logo } from "./Logo";
 import theme from "../theme/src/theme.json";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import "bootstrap/less/bootstrap.less";
 import "../theme/src/variables.css";
 
 const GlobalStyle = createGlobalStyle`
