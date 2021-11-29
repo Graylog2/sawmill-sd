@@ -39,7 +39,8 @@
             "@": "#f7f3e9",
             "hover": "#ecd299"
           }
-        }
+        },
+        "transparent": "hsla(0, 0, 0, 0)"
       },
       "border": {
         "input": {

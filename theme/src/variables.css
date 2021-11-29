@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 23 Nov 2021 17:51:37 GMT
+ * Generated on Mon, 29 Nov 2021 16:48:59 GMT
  */
 
 :root {
@@ -26,6 +26,7 @@
   --default-colors-background-table-success-hover: #91d89f;
   --default-colors-background-table-warning: #f7f3e9;
   --default-colors-background-table-warning-hover: #ecd299;
+  --default-colors-background-transparent: hsla(0, 0, 0, 0);
   --default-colors-border-input: hsla(240, 0.00%, 81.14%, 1);
   --default-colors-border-input-disabled: hsla(240, 0.00%, 87.43%, 1);
   --default-colors-border-input-error: #c84f4f;
