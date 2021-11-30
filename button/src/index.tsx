@@ -1,24 +1,37 @@
-import { ButtonHTMLAttributes, ReactNode } from "react";
+import React, { ButtonHTMLAttributes, Component, ReactNode } from "react";
 import { Button as BootstrapButton } from "react-bootstrap";
 import styled from "styled-components";
+import PropTypes from "prop-types";
+import elementType from "prop-types-extra/lib/elementType";
 
 import { TColorVariantStates } from "./types";
 import generateStyles from "./styles";
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
+  active: boolean;
+  disabled: boolean;
+  block: boolean;
+  onClick: () => void;
+  componentClass: unknown;
+  href: string;
+  /**
+   * Defines HTML button type attribute
+   * @defaultValue 'button'
+   */
+  type: "button" | "reset" | "submit";
 };
 
 const variantColors: TColorVariantStates = {
   base: {
     background: {
-      danger: "--default-colors-gray-10",
-      default: "--default-colors-gray-10",
-      info: "--default-colors-gray-10",
+      danger: "--default-colors-gray-0",
+      default: "--default-colors-gray-0",
+      info: "--default-colors-gray-0",
       link: "--default-colors-background-transparent",
-      primary: "--default-colors-gray-10",
-      success: "--default-colors-gray-10",
-      warning: "--default-colors-gray-10",
+      primary: "--default-colors-gray-0",
+      success: "--default-colors-gray-0",
+      warning: "--default-colors-gray-0",
     },
     border: {
       danger: "--default-colors-variant-danger-base",
@@ -130,8 +143,39 @@ const variantColors: TColorVariantStates = {
 
 const buttonStyles = [...generateStyles(variantColors)];
 
-const Button = styled(BootstrapButton)`
+const StyledButton = styled(BootstrapButton)`
   ${buttonStyles}
 `;
 
+class Button extends Component<Props> {
+  propTypes = {
+    active: PropTypes.bool,
+    disabled: PropTypes.bool,
+    block: PropTypes.bool,
+    onClick: PropTypes.func,
+    componentClass: elementType,
+    href: PropTypes.string,
+    /**
+     * Defines HTML button type attribute
+     * @defaultValue 'button'
+     */
+    type: PropTypes.oneOf(["button", "reset", "submit"]),
+  };
+
+  defaultProps = {
+    active: false,
+    disabled: false,
+    block: false,
+    onClick: () => undefined,
+    componentClass: undefined,
+    href: undefined,
+    type: "button",
+  };
+
+  render() {
+    return <StyledButton {...this.props} />;
+  }
+}
+
 export default Button;
+export { BootstrapButton };
