@@ -134,10 +134,23 @@ const StyledButton = styled(BootstrapButton)`
 	Button component that the user can press to trigger an action.
  */
 export const Button = ({
+  active = false,
+  block = false,
   bsClass = 'btn',
   bsStyle = 'default',
+  disabled = false,
   type = 'button',
   ...props
 }: TButtonProps) => {
-  return <StyledButton {...props} />;
+  return (
+    <StyledButton
+      active={active}
+      block={block}
+      bsClass={bsClass}
+      bsStyle={bsStyle}
+      disabled={disabled}
+      type={type}
+      {...props}
+    />
+  );
 };
