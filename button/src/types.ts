@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, ReactNode } from "react";
+import { ButtonHTMLAttributes, ReactNode, ReactElement } from "react";
 
 export const buttonSizes = [
   "lg",
@@ -55,7 +55,7 @@ export type TButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   /**
    * You can use a custom element type for this component.
    */
-  componentClass?: unknown;
+  componentClass?: ReactElement;
   /**
    * URL if used as link
    */
