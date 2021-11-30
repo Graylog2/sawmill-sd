@@ -1,31 +1,31 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import "~/layout/stories";
-import Button from "../src";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import '~/layout/stories';
+import { Button } from '../src';
 
 const Template = (args) => <Button {...args} />;
 
 // BASE
 export const DefaultButton = Template.bind({});
-DefaultButton.args = { bsStyle: "default", children: "Click Me" };
+DefaultButton.args = { bsStyle: 'default', children: 'Click Me' };
 
 export const DangerButton = Template.bind({});
-DangerButton.args = { ...DefaultButton.args, bsStyle: "danger" };
+DangerButton.args = { ...DefaultButton.args, bsStyle: 'danger' };
 
 export const LinkButton = Template.bind({});
-LinkButton.args = { ...DefaultButton.args, bsStyle: "link" };
+LinkButton.args = { ...DefaultButton.args, bsStyle: 'link' };
 
 export const InfoButton = Template.bind({});
-InfoButton.args = { ...DefaultButton.args, bsStyle: "info" };
+InfoButton.args = { ...DefaultButton.args, bsStyle: 'info' };
 
 export const PrimaryButton = Template.bind({});
-PrimaryButton.args = { ...DefaultButton.args, bsStyle: "primary" };
+PrimaryButton.args = { ...DefaultButton.args, bsStyle: 'primary' };
 
 export const SuccessButton = Template.bind({});
-SuccessButton.args = { ...DefaultButton.args, bsStyle: "success" };
+SuccessButton.args = { ...DefaultButton.args, bsStyle: 'success' };
 
 export const WarningButton = Template.bind({});
-WarningButton.args = { ...DefaultButton.args, bsStyle: "warning" };
+WarningButton.args = { ...DefaultButton.args, bsStyle: 'warning' };
 
 // DISABLED
 export const DisabledDefaultButton = Template.bind({});
@@ -73,10 +73,10 @@ ActiveWarningButton.args = { ...WarningButton.args, active: true };
 
 // SIZES
 export const XSDefaultButton = Template.bind({});
-XSDefaultButton.args = { ...DefaultButton.args, bsSize: "xs" };
+XSDefaultButton.args = { ...DefaultButton.args, bsSize: 'xs' };
 
 export const SMDefaultButton = Template.bind({});
-SMDefaultButton.args = { ...DefaultButton.args, bsSize: "sm" };
+SMDefaultButton.args = { ...DefaultButton.args, bsSize: 'sm' };
 
 export const LGDefaultButton = Template.bind({});
-LGDefaultButton.args = { ...DefaultButton.args, bsSize: "lg" };
+LGDefaultButton.args = { ...DefaultButton.args, bsSize: 'lg' };

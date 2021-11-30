@@ -1,16 +1,16 @@
-import { ButtonHTMLAttributes, ReactNode, ReactElement } from "react";
+import { ReactNode, ReactElement } from 'react';
 
-export const buttonSizes = ["lg", "sm", "xs"] as const;
+export const buttonSizes = ['lg', 'sm', 'xs'] as const;
 export type TButtonSizes = typeof buttonSizes[number];
 
 export type TButtonVariantKeys =
-  | "danger"
-  | "default"
-  | "info"
-  | "link"
-  | "primary"
-  | "success"
-  | "warning";
+  | 'danger'
+  | 'default'
+  | 'info'
+  | 'link'
+  | 'primary'
+  | 'success'
+  | 'warning';
 
 type TButtonVariants = Record<TButtonVariantKeys, string>;
 
@@ -27,7 +27,7 @@ export type TButtonVariantStates = {
   hover: TButtonVariantAttributes;
 };
 
-export type TButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+export type TButtonProps = {
   /**
    * Content to be wrapped by button element
    */
@@ -59,17 +59,17 @@ export type TButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   /**
    * Defines HTML button type attribute
    */
-  type?: "button" | "reset" | "submit";
+  type?: 'button' | 'reset' | 'submit';
   /**
-   * Defines HTML button type attribute
+   * Choose a variant
    */
   bsStyle?: TButtonVariantKeys;
   /**
-   * Defines HTML button type attribute
+   * If you need the button to be smaller or larger
    */
   bsSize?: TButtonSizes;
   /**
-   * Defines HTML button type attribute
+   * Change the default prefix
    */
   bsClass?: string;
 };
