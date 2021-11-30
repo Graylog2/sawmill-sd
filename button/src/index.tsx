@@ -1,163 +1,137 @@
-import React, { ButtonHTMLAttributes, FC, ReactNode } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 import { Button as BootstrapButton } from "react-bootstrap";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
-export type TColorVariantKeys =
-  | "active"
-  | "danger"
-  | "default"
-  | "link"
-  | "info"
-  | "primary"
-  | "success"
-  | "warning";
-
-export type TColorVariantStates = {
-  default: string;
-  active: string;
-  disabled: string;
-  hover: string;
-};
-
-export type TColorVariants = Partial<
-  Record<TColorVariantKeys, TColorVariantStates>
->;
+import { TColorVariantStates } from "./types";
+import generateStyles from "./styles";
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
 };
 
-const variants: TColorVariants = {
-  danger: {
-    default: "--default-colors-variant-danger-base",
-    active: "--default-colors-variant-danger-base",
-    disabled: "--default-colors-variant-danger-base",
-    hover: "--default-colors-variant-danger-base",
+const variantColors: TColorVariantStates = {
+  base: {
+    background: {
+      danger: "--default-colors-gray-10",
+      default: "--default-colors-gray-10",
+      info: "--default-colors-gray-10",
+      link: "--default-colors-background-transparent",
+      primary: "--default-colors-gray-10",
+      success: "--default-colors-gray-10",
+      warning: "--default-colors-gray-10",
+    },
+    border: {
+      danger: "--default-colors-variant-danger-base",
+      default: "--default-colors-gray-80",
+      info: "--default-colors-variant-info-base",
+      link: "--default-colors-background-transparent",
+      primary: "--default-colors-variant-primary-base",
+      success: "--default-colors-variant-success-base",
+      warning: "--default-colors-variant-warning-base",
+    },
+    text: {
+      danger: "--default-colors-variant-danger-darkest",
+      default: "--default-colors-gray-90",
+      info: "--default-colors-variant-info-darkest",
+      link: "--default-colors-variant-info-darkest",
+      primary: "--default-colors-variant-primary-darkest",
+      success: "--default-colors-variant-success-darkest",
+      warning: "--default-colors-variant-warning-darkest",
+    },
   },
-  default: {
-    default: "--default-colors-gray-80",
-    active: "--default-colors-variant-danger-base",
-    disabled: "--default-colors-variant-danger-base",
-    hover: "--default-colors-variant-danger-base",
+  active: {
+    background: {
+      danger: "--default-colors-gray-30",
+      default: "--default-colors-gray-30",
+      info: "--default-colors-gray-30",
+      link: "--default-colors-background-transparent",
+      primary: "--default-colors-gray-30",
+      success: "--default-colors-gray-30",
+      warning: "--default-colors-gray-30",
+    },
+    border: {
+      danger: "--default-colors-variant-danger-base",
+      default: "--default-colors-gray-80",
+      info: "--default-colors-variant-info-base",
+      link: "--default-colors-background-transparent",
+      primary: "--default-colors-variant-primary-base",
+      success: "--default-colors-variant-success-base",
+      warning: "--default-colors-variant-warning-base",
+    },
+    text: {
+      danger: "--default-colors-variant-danger-base",
+      default: "--default-colors-gray-80",
+      info: "--default-colors-variant-info-base",
+      link: "--default-colors-variant-info-base",
+      primary: "--default-colors-variant-primary-base",
+      success: "--default-colors-variant-success-base",
+      warning: "--default-colors-variant-warning-base",
+    },
   },
-  info: {
-    default: "--default-colors-variant-info-base",
-    active: "--default-colors-variant-danger-base",
-    disabled: "--default-colors-variant-danger-base",
-    hover: "--default-colors-variant-danger-base",
+  disabled: {
+    background: {
+      danger: "--default-colors-gray-10",
+      default: "--default-colors-gray-10",
+      info: "--default-colors-gray-10",
+      link: "--default-colors-background-transparent",
+      primary: "--default-colors-gray-10",
+      success: "--default-colors-gray-10",
+      warning: "--default-colors-gray-10",
+    },
+    border: {
+      danger: "--default-colors-variant-danger-base",
+      default: "--default-colors-gray-80",
+      info: "--default-colors-variant-info-base",
+      link: "--default-colors-background-transparent",
+      primary: "--default-colors-variant-primary-base",
+      success: "--default-colors-variant-success-base",
+      warning: "--default-colors-variant-warning-base",
+    },
+    text: {
+      danger: "--default-colors-variant-danger-base",
+      default: "--default-colors-gray-80",
+      info: "--default-colors-variant-info-base",
+      link: "--default-colors-variant-info-base",
+      primary: "--default-colors-variant-primary-base",
+      success: "--default-colors-variant-success-base",
+      warning: "--default-colors-variant-warning-base",
+    },
   },
-  link: {
-    default: "--default-colors-background-transparent",
-    active: "--default-colors-variant-danger-base",
-    disabled: "--default-colors-variant-danger-base",
-    hover: "--default-colors-variant-danger-base",
-  },
-  primary: {
-    default: "--default-colors-variant-primary-base",
-    active: "--default-colors-variant-danger-base",
-    disabled: "--default-colors-variant-danger-base",
-    hover: "--default-colors-variant-danger-base",
-  },
-  success: {
-    default: "--default-colors-variant-success-base",
-    active: "--default-colors-variant-danger-base",
-    disabled: "--default-colors-variant-danger-base",
-    hover: "--default-colors-variant-danger-base",
-  },
-  warning: {
-    default: "--default-colors-variant-warning-base",
-    active: "--default-colors-variant-danger-base",
-    disabled: "--default-colors-variant-danger-base",
-    hover: "--default-colors-variant-danger-base",
+  hover: {
+    background: {
+      danger: "--default-colors-variant-danger-lightest",
+      default: "--default-colors-gray-10",
+      info: "--default-colors-gray-10",
+      link: "--default-colors-background-transparent",
+      primary: "--default-colors-gray-10",
+      success: "--default-colors-gray-10",
+      warning: "--default-colors-gray-10",
+    },
+    border: {
+      danger: "--default-colors-variant-danger-base",
+      default: "--default-colors-gray-80",
+      info: "--default-colors-variant-info-base",
+      link: "--default-colors-background-transparent",
+      primary: "--default-colors-variant-primary-base",
+      success: "--default-colors-variant-success-base",
+      warning: "--default-colors-variant-warning-base",
+    },
+    text: {
+      danger: "--default-colors-variant-danger-darker",
+      default: "--default-colors-gray-80",
+      info: "--default-colors-variant-info-base",
+      link: "--default-colors-variant-info-base",
+      primary: "--default-colors-variant-primary-base",
+      success: "--default-colors-variant-success-base",
+      warning: "--default-colors-variant-warning-base",
+    },
   },
 };
 
-// const buttonStyles = Object.keys(variants).map((variant) => {
-//   const { default, active, disabled, hover } = variants[variant];
-
-//   return css`
-//     &.btn-${variant} {
-//       background-color: ${defaultBackground};
-//       border-color: ${defaultBorder};
-//       color: ${defaultColor};
-//       transition: background-color 150ms ease-in-out, border 150ms ease-in-out,
-//         color 150ms ease-in-out;
-
-//       :hover {
-//         background-color: ${hoverBackground};
-//         border-color: ${hoverBorderColor};
-//         color: ${hoverColor};
-//       }
-
-//       &.active {
-//         background-color: ${activeBackground};
-//         border-color: ${activeBorder};
-//         color: ${activeColor};
-
-//         :hover {
-//           background-color: ${isLink ? transparentLink : activeHoverBackground};
-//           border-color: ${activeHoverBorderColor};
-//           color: ${activeHoverColor};
-//         }
-//       }
-
-//       &[disabled],
-//       &.disabled {
-//         background-color: ${isLink ? transparentLink : disabledBackground};
-//         border-color: ${disabledBorder};
-//         color: ${disabledColor};
-
-//         :hover {
-//           background-color: ${disabledBackground};
-//           border-color: ${disabledBorder};
-//           color: ${disabledColor};
-//         }
-//       }
-//     }
-//   `;
-// });
-
-// const Button = styled(BootstrapButton)`{buttonStyles}`;
+const buttonStyles = [...generateStyles(variantColors)];
 
 const Button = styled(BootstrapButton)`
-  &.btn-default {
-    background-color: var(--default-colors-gray-10);
-    border-color: var(--default-colors-gray-70);
-    color: var(--default-colors-gray-70);
-    transition: background-color 150ms ease-in-out, border 150ms ease-in-out,
-      color 150ms ease-in-out;
-
-    :hover {
-      background-color: var(--default-colors-gray-20);
-      border-color: var(--default-colors-gray-90);
-      color: var(--default-colors-gray-90);
-    }
-
-    &.active {
-      background-color: var(--default-colors-gray-30);
-      border-color: var(--default-colors-gray-90);
-      color: var(--default-colors-gray-90);
-
-      :hover {
-        background-color: var(--default-colors-gray-40);
-        border-color: var(--default-colors-gray-80);
-        color: var(--default-colors-gray-80);
-      }
-    }
-
-    &[disabled],
-    &.disabled {
-      background-color: var(--default-colors-gray-0);
-      border-color: var(--default-colors-gray-50);
-      color: var(--default-colors-gray-50);
-
-      :hover {
-        background-color: var(--default-colors-gray-0);
-        border-color: var(--default-colors-gray-50);
-        color: var(--default-colors-gray-50);
-      }
-    }
-  }
+  ${buttonStyles}
 `;
 
 export default Button;

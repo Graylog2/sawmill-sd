@@ -1,10 +1,11 @@
 import * as React from "react";
 import { MDXProvider } from "@mdx-js/react";
 import { CssLayout } from "@divriots/dockit-react/mdx-layout-css";
-import { Logo } from "./Logo";
-import theme from "../theme/src/theme.json";
+import { Logo } from "../Logo";
+import theme from "~/theme/src/theme.json";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import "../theme/src/variables.css";
+import "~/theme/src/variables.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 const GlobalStyle = createGlobalStyle`
   html {

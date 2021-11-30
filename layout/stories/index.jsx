@@ -1,10 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "../../theme/src/variables.css";
+import "~/theme/src/variables.css";
 
 export const decorators = [
   (Story) => (
-    <div>
+    <div style={{ fontSize: "14px" }}>
       <Story />
     </div>
   ),
