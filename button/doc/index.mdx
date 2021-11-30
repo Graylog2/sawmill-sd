@@ -12,9 +12,9 @@ export default Layout;
 ## Usage
 
 ```jsx
-<Button>Click default</Button>
-// or with variant
-<Button bsStyle="default">Click default</Button>
+import { Button } from "";
+
+<Button>Click default</Button>;
 ```
 
 ## Example
@@ -24,7 +24,16 @@ export default Layout;
   code={`
 <Button bsStyle="primary">Primary</Button>
 <Button disabled>Disabled</Button>
-<Button bsStyle="success" disabled>Success Disabled</Button>
+<Button bsStyle="success" active>Success Active</Button>
+`}
+/>
+
+<Playground
+  scope={{ Button }}
+  code={`
+<Button bsSize="lg">Large</Button>
+<Button bsSize="sm">Small</Button>
+<Button bsSize="xsmall">Extra Small</Button>
 `}
 />
 

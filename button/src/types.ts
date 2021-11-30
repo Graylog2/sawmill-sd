@@ -1,6 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode, ReactElement } from "react";
 
-export type TButtonSizes = "lg" | "large" | "sm" | "small" | "xs" | "xsmall";
+export const buttonSizes = ["lg", "sm", "xs"] as const;
+export type TButtonSizes = typeof buttonSizes[number];
 
 export type TButtonVariantKeys =
   | "danger"

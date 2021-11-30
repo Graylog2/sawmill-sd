@@ -70,3 +70,13 @@ ActiveSuccessButton.args = { ...SuccessButton.args, active: true };
 
 export const ActiveWarningButton = Template.bind({});
 ActiveWarningButton.args = { ...WarningButton.args, active: true };
+
+// SIZES
+export const XSDefaultButton = Template.bind({});
+XSDefaultButton.args = { ...DefaultButton.args, bsSize: "xs" };
+
+export const SMDefaultButton = Template.bind({});
+SMDefaultButton.args = { ...DefaultButton.args, bsSize: "sm" };
+
+export const LGDefaultButton = Template.bind({});
+LGDefaultButton.args = { ...DefaultButton.args, bsSize: "lg" };

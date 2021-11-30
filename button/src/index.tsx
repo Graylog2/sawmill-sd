@@ -3,7 +3,7 @@ import { Button as BootstrapButton } from "react-bootstrap";
 import styled from "styled-components";
 
 import { TButtonProps, TButtonVariantStates } from "./types";
-import generateStyles from "./styles";
+import { generateColors, generateSizes } from "./styles";
 
 const variantColors: TButtonVariantStates = {
   base: {
@@ -124,7 +124,7 @@ const variantColors: TButtonVariantStates = {
   },
 };
 
-const buttonStyles = [...generateStyles(variantColors)];
+const buttonStyles = [...generateColors(variantColors), ...generateSizes()];
 
 const StyledButton = styled(BootstrapButton)`
   ${buttonStyles}
