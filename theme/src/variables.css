@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 29 Nov 2021 16:48:59 GMT
+ * Generated on Tue, 30 Nov 2021 20:57:16 GMT
  */
 
 :root {
@@ -26,7 +26,6 @@
   --default-colors-background-table-success-hover: #91d89f;
   --default-colors-background-table-warning: #f7f3e9;
   --default-colors-background-table-warning-hover: #ecd299;
-  --default-colors-background-transparent: hsla(0, 0, 0, 0);
   --default-colors-border-input: hsla(240, 0.00%, 81.14%, 1);
   --default-colors-border-input-disabled: hsla(240, 0.00%, 87.43%, 1);
   --default-colors-border-input-error: #c84f4f;
@@ -56,6 +55,7 @@
   --default-colors-text-input-disabled: hsla(240, 0.00%, 49.71%, 1);
   --default-colors-text-input-error: #911717;
   --default-colors-text-input-placeholder: hsla(240, 0.00%, 49.71%, 1);
+  --default-colors-transparent: hsla(0, 0%, 0%, 0);
   --default-colors-variant-danger-lightest: #ffd4d4;
   --default-colors-variant-danger-lighter: #e38888;
   --default-colors-variant-danger-light: #c84f4f;

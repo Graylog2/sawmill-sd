@@ -138,4 +138,3 @@ const Button: FC = ({ ...props }: TButtonProps) => {
 };
 
 export default Button;
-export { BootstrapButton };

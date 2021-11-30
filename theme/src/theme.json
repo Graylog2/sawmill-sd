@@ -39,8 +39,7 @@
             "@": "#f7f3e9",
             "hover": "#ecd299"
           }
-        },
-        "transparent": "hsla(0, 0, 0, 0)"
+        }
       },
       "border": {
         "input": {
@@ -87,6 +86,7 @@
           "placeholder": "hsla(240, 0.00%, 49.71%, 1)"
         }
       },
+      "transparent": "hsla(0, 0%, 0%, 0)",
       "variant": {
         "danger": {
           "lightest": "#ffd4d4",
