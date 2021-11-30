@@ -1,14 +1,6 @@
 import { ButtonHTMLAttributes, ReactNode, ReactElement } from "react";
 
-export const buttonSizes = [
-  "lg",
-  "large",
-  "sm",
-  "small",
-  "xs",
-  "xsmall",
-] as const;
-export type TButtonSizes = typeof buttonSizes[number];
+export type TButtonSizes = "lg" | "large" | "sm" | "small" | "xs" | "xsmall";
 
 export type TButtonVariantKeys =
   | "danger"
@@ -35,6 +27,9 @@ export type TButtonVariantStates = {
 };
 
 export type TButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  /**
+   * Content to be wrapped by button element
+   */
   children: ReactNode;
   /**
    * Defines HTML button active attribute
