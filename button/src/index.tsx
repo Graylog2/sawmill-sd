@@ -1,28 +1,11 @@
-import React, { ButtonHTMLAttributes, Component, ReactNode } from "react";
+import React, { FC } from "react";
 import { Button as BootstrapButton } from "react-bootstrap";
 import styled from "styled-components";
-import PropTypes from "prop-types";
-import elementType from "prop-types-extra/lib/elementType";
 
-import { TColorVariantStates } from "./types";
+import { TButtonProps, TButtonVariantStates } from "./types";
 import generateStyles from "./styles";
 
-type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
-  children: ReactNode;
-  active: boolean;
-  disabled: boolean;
-  block: boolean;
-  onClick: () => void;
-  componentClass: unknown;
-  href: string;
-  /**
-   * Defines HTML button type attribute
-   * @defaultValue 'button'
-   */
-  type: "button" | "reset" | "submit";
-};
-
-const variantColors: TColorVariantStates = {
+const variantColors: TButtonVariantStates = {
   base: {
     background: {
       danger: "--default-colors-gray-0",
@@ -147,35 +130,12 @@ const StyledButton = styled(BootstrapButton)`
   ${buttonStyles}
 `;
 
-class Button extends Component<Props> {
-  propTypes = {
-    active: PropTypes.bool,
-    disabled: PropTypes.bool,
-    block: PropTypes.bool,
-    onClick: PropTypes.func,
-    componentClass: elementType,
-    href: PropTypes.string,
-    /**
-     * Defines HTML button type attribute
-     * @defaultValue 'button'
-     */
-    type: PropTypes.oneOf(["button", "reset", "submit"]),
-  };
-
-  defaultProps = {
-    active: false,
-    disabled: false,
-    block: false,
-    onClick: () => undefined,
-    componentClass: undefined,
-    href: undefined,
-    type: "button",
-  };
-
-  render() {
-    return <StyledButton {...this.props} />;
-  }
-}
+/**
+	Button component that the user can press to trigger an action.
+ */
+const Button: FC = ({ ...props }: TButtonProps) => {
+  return <StyledButton {...props} />;
+};
 
 export default Button;
 export { BootstrapButton };

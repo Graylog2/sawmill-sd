@@ -13,5 +13,8 @@ export default {
   gray,
   shadows,
   text,
+  transparent: {
+    value: "hsla(0, 0%, 0%, 0)",
+  },
   variant,
 };
