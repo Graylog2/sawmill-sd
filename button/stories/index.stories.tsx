@@ -49,7 +49,7 @@ DisabledSuccessButton.args = { ...SuccessButton.args, disabled: true };
 export const DisabledWarningButton = Template.bind({});
 DisabledWarningButton.args = { ...WarningButton.args, disabled: true };
 
-// DISABLED
+// ACTIVE
 export const ActiveDefaultButton = Template.bind({});
 ActiveDefaultButton.args = { ...DefaultButton.args, active: true };
 
