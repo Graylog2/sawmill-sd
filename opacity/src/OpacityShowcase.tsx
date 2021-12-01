@@ -15,7 +15,7 @@ const CheckeredBox = styled.div`
 `;
 
 const OpacityShowcase = ({ theme }) => {
-  const { colors, opacity } = theme.default;
+  const { colors, opacity } = theme.sawmill;
 
   return Object.keys(opacity).map((alpha) => {
     return (
@@ -23,7 +23,7 @@ const OpacityShowcase = ({ theme }) => {
         <CheckeredBox>
           <div
             style={{
-              backgroundColor: colors.brand.primary,
+              backgroundColor: colors.teint.brand.primary,
               width: "100px",
               height: "100px",
               position: "relative",
@@ -32,8 +32,8 @@ const OpacityShowcase = ({ theme }) => {
           />
         </CheckeredBox>
 
-        <caption>theme.default.opacity.{alpha}</caption>
-        <caption>--default-opacity-{alpha}</caption>
+        <caption>theme.sawmill.opacity.{alpha}</caption>
+        <caption>--sawmill-opacity-{alpha}</caption>
       </React.Fragment>
     );
   });

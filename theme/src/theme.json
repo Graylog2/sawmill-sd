@@ -1,137 +1,139 @@
 {
-  "default": {
+  "sawmill": {
     "colors": {
-      "background": {
-        "content": "#fff",
-        "global": "hsla(240, 0.00%, 93.71%, 1)",
-        "input": {
-          "@": "hsla(240, 0.00%, 100.00%, 1)",
-          "disabled": "hsla(240, 0.00%, 87.43%, 1)",
-          "error": "#e38888",
-          "focus": "hsla(240, 0.00%, 100.00%, 1)"
-        },
-        "navigation": "hsla(240, 0.00%, 93.71%, 1)",
-        "table": {
-          "alt": "hsla(240, 0.00%, 93.71%, 1)",
-          "@": "hsla(240, 0.00%, 100.00%, 1)",
-          "hover": "hsla(240, 0.00%, 87.43%, 1)",
-          "active": {
-            "@": "hsla(240, 0.00%, 93.71%, 1)",
-            "hover": "hsla(240, 0.00%, 87.43%, 1)"
+      "teint": {
+        "background": {
+          "content": "#fff",
+          "global": "hsla(240, 0.00%, 93.71%, 1)",
+          "input": {
+            "@": "hsla(240, 0.00%, 100.00%, 1)",
+            "disabled": "hsla(240, 0.00%, 87.43%, 1)",
+            "error": "#e38888",
+            "focus": "hsla(240, 0.00%, 100.00%, 1)"
           },
+          "navigation": "hsla(240, 0.00%, 93.71%, 1)",
+          "table": {
+            "alt": "hsla(240, 0.00%, 93.71%, 1)",
+            "@": "hsla(240, 0.00%, 100.00%, 1)",
+            "hover": "hsla(240, 0.00%, 87.43%, 1)",
+            "active": {
+              "@": "hsla(240, 0.00%, 93.71%, 1)",
+              "hover": "hsla(240, 0.00%, 87.43%, 1)"
+            },
+            "danger": {
+              "@": "#ffd4d4",
+              "hover": "#e38888"
+            },
+            "info": {
+              "@": "#e1e6f0",
+              "hover": "#97b8e9"
+            },
+            "primary": {
+              "@": "#f2f0f5",
+              "hover": "#bfa3d4"
+            },
+            "success": {
+              "@": "#f0f7f1",
+              "hover": "#91d89f"
+            },
+            "warning": {
+              "@": "#f7f3e9",
+              "hover": "#ecd299"
+            }
+          }
+        },
+        "border": {
+          "input": {
+            "@": "hsla(240, 0.00%, 81.14%, 1)",
+            "disabled": "hsla(240, 0.00%, 87.43%, 1)",
+            "error": "#c84f4f",
+            "focus": "#97b8e9"
+          },
+          "panel": "hsla(240, 0.00%, 87.43%, 1)"
+        },
+        "brand": {
+          "primary": "#ff3633",
+          "secondary": "#888",
+          "tertiary": "#fff"
+        },
+        "gray": {
+          "0": "hsla(240, 0.00%, 100.00%, 1)",
+          "10": "hsla(240, 0.00%, 93.71%, 1)",
+          "20": "hsla(240, 0.00%, 87.43%, 1)",
+          "30": "hsla(240, 0.00%, 81.14%, 1)",
+          "40": "hsla(240, 0.00%, 74.86%, 1)",
+          "50": "hsla(240, 0.00%, 62.29%, 1)",
+          "60": "hsla(240, 0.00%, 49.71%, 1)",
+          "70": "hsla(240, 0.00%, 37.14%, 1)",
+          "80": "hsla(240, 0.00%, 24.57%, 1)",
+          "90": "hsla(240, 0.00%, 12.00%, 1)"
+        },
+        "shadows": {
+          "input": "inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4)",
+          "navigation": "hsla(0, 0%, 94%, 0.5)",
+          "panel": "0 2px 6px 0 hsla(0, 0%, 75%, 0.4)"
+        },
+        "text": {
+          "primary": "#fff",
+          "secondary": "#888",
+          "link": {
+            "@": "#6d3581",
+            "hover": "#9a69b3"
+          },
+          "input": {
+            "@": "hsla(240, 0.00%, 24.57%, 1)",
+            "disabled": "hsla(240, 0.00%, 49.71%, 1)",
+            "error": "#911717",
+            "placeholder": "hsla(240, 0.00%, 49.71%, 1)"
+          }
+        },
+        "transparent": "hsla(0, 0%, 0%, 0)",
+        "variant": {
           "danger": {
-            "@": "#ffd4d4",
-            "hover": "#e38888"
+            "lightest": "#ffd4d4",
+            "lighter": "#e38888",
+            "light": "#c84f4f",
+            "base": "#9e2020",
+            "dark": "#911717",
+            "darker": "#750c0c",
+            "darkest": "#590707"
           },
           "info": {
-            "@": "#e1e6f0",
-            "hover": "#97b8e9"
+            "lightest": "#e1e6f0",
+            "lighter": "#97b8e9",
+            "light": "#5792db",
+            "base": "#1b65b3",
+            "dark": "#10579f",
+            "darker": "#043b70",
+            "darkest": "#002242"
           },
           "primary": {
-            "@": "#f2f0f5",
-            "hover": "#bfa3d4"
+            "lightest": "#f2f0f5",
+            "lighter": "#bfa3d4",
+            "light": "#9a69b3",
+            "base": "#6d3581",
+            "dark": "#5f2a70",
+            "darker": "#431a4f",
+            "darkest": "#270e2e"
           },
           "success": {
-            "@": "#f0f7f1",
-            "hover": "#91d89f"
+            "lightest": "#f0f7f1",
+            "lighter": "#91d89f",
+            "light": "#4cb96a",
+            "base": "#158b3e",
+            "dark": "#0d7b34",
+            "darker": "#035c24",
+            "darkest": "#003d17"
           },
           "warning": {
-            "@": "#f7f3e9",
-            "hover": "#ecd299"
+            "lightest": "#f7f3e9",
+            "lighter": "#ecd299",
+            "light": "#e0b859",
+            "base": "#cf9b1f",
+            "dark": "#c99414",
+            "darker": "#be8806",
+            "darkest": "#b37e00"
           }
-        }
-      },
-      "border": {
-        "input": {
-          "@": "hsla(240, 0.00%, 81.14%, 1)",
-          "disabled": "hsla(240, 0.00%, 87.43%, 1)",
-          "error": "#c84f4f",
-          "focus": "#97b8e9"
-        },
-        "panel": "hsla(240, 0.00%, 87.43%, 1)"
-      },
-      "brand": {
-        "primary": "#ff3633",
-        "secondary": "#888",
-        "tertiary": "#fff"
-      },
-      "gray": {
-        "0": "hsla(240, 0.00%, 100.00%, 1)",
-        "10": "hsla(240, 0.00%, 93.71%, 1)",
-        "20": "hsla(240, 0.00%, 87.43%, 1)",
-        "30": "hsla(240, 0.00%, 81.14%, 1)",
-        "40": "hsla(240, 0.00%, 74.86%, 1)",
-        "50": "hsla(240, 0.00%, 62.29%, 1)",
-        "60": "hsla(240, 0.00%, 49.71%, 1)",
-        "70": "hsla(240, 0.00%, 37.14%, 1)",
-        "80": "hsla(240, 0.00%, 24.57%, 1)",
-        "90": "hsla(240, 0.00%, 12.00%, 1)"
-      },
-      "shadows": {
-        "input": "inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4)",
-        "navigation": "hsla(0, 0%, 94%, 0.5)",
-        "panel": "0 2px 6px 0 hsla(0, 0%, 75%, 0.4)"
-      },
-      "text": {
-        "primary": "#fff",
-        "secondary": "#888",
-        "link": {
-          "@": "#6d3581",
-          "hover": "#9a69b3"
-        },
-        "input": {
-          "@": "hsla(240, 0.00%, 24.57%, 1)",
-          "disabled": "hsla(240, 0.00%, 49.71%, 1)",
-          "error": "#911717",
-          "placeholder": "hsla(240, 0.00%, 49.71%, 1)"
-        }
-      },
-      "transparent": "hsla(0, 0%, 0%, 0)",
-      "variant": {
-        "danger": {
-          "lightest": "#ffd4d4",
-          "lighter": "#e38888",
-          "light": "#c84f4f",
-          "base": "#9e2020",
-          "dark": "#911717",
-          "darker": "#750c0c",
-          "darkest": "#590707"
-        },
-        "info": {
-          "lightest": "#e1e6f0",
-          "lighter": "#97b8e9",
-          "light": "#5792db",
-          "base": "#1b65b3",
-          "dark": "#10579f",
-          "darker": "#043b70",
-          "darkest": "#002242"
-        },
-        "primary": {
-          "lightest": "#f2f0f5",
-          "lighter": "#bfa3d4",
-          "light": "#9a69b3",
-          "base": "#6d3581",
-          "dark": "#5f2a70",
-          "darker": "#431a4f",
-          "darkest": "#270e2e"
-        },
-        "success": {
-          "lightest": "#f0f7f1",
-          "lighter": "#91d89f",
-          "light": "#4cb96a",
-          "base": "#158b3e",
-          "dark": "#0d7b34",
-          "darker": "#035c24",
-          "darkest": "#003d17"
-        },
-        "warning": {
-          "lightest": "#f7f3e9",
-          "lighter": "#ecd299",
-          "light": "#e0b859",
-          "base": "#cf9b1f",
-          "dark": "#c99414",
-          "darker": "#be8806",
-          "darkest": "#b37e00"
         }
       }
     },

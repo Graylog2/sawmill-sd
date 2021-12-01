@@ -5,7 +5,7 @@ import opacity from "../opacity/src";
 import radii from "../radii/src";
 import spacings from "../spacings/src";
 
-export default {
+export const sawmill = {
   colors,
   elevation,
   typography,

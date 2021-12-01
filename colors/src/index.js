@@ -7,14 +7,16 @@ import text from "./text";
 import variant from "./variant";
 
 export default {
-  background,
-  border,
-  brand,
-  gray,
-  shadows,
-  text,
-  transparent: {
-    value: "hsla(0, 0%, 0%, 0)",
-  },
-  variant,
+  teint: {
+    background,
+    border,
+    brand,
+    gray,
+    shadows,
+    text,
+    transparent: {
+      value: "hsla(0, 0%, 0%, 0)",
+    },
+    variant,
+  }
 };

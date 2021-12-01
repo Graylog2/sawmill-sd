@@ -1,5 +1,4 @@
 import { css } from "styled-components";
-import { buttonSizes } from "./types";
 
 export const generateColors = (variantColors) => {
   return Object.keys(variantColors).map((variantState) => {
@@ -103,18 +102,18 @@ export const generateColors = (variantColors) => {
 export const generateSizes = () => {
   return css`
     &.btn-xs {
-      padding: 1px var(--default-spacings-xxs);
-      font-size: var(--default-typography-font-sizes-xxs);
+      padding: 1px var(--sawmill-spacings-xxs);
+      font-size: var(--sawmill-typography-font-sizes-xxs);
     }
 
     &.btn-sm {
-      padding: var(--default-spacings-xxs) var(--default-spacings-xs);
-      font-size: var(--default-typography-font-sizes-xs);
+      padding: var(--sawmill-spacings-xxs) var(--sawmill-spacings-xs);
+      font-size: var(--sawmill-typography-font-sizes-xs);
     }
 
     &.btn-lg {
-      padding: var(--default-spacings-xs) var(--default-spacings-md);
-      font-size: var(--default-typography-font-sizes-md);
+      padding: var(--sawmill-spacings-xs) var(--sawmill-spacings-md);
+      font-size: var(--sawmill-typography-font-sizes-md);
     }
   `;
 };

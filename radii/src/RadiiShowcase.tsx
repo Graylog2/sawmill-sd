@@ -9,24 +9,22 @@ const Box = styled.div`
 `;
 
 const OpacityCard = ({ theme }) => {
-  const { colors, radii } = theme.default;
+  const { colors, radii } = theme.sawmill;
 
-  const out = Object.keys(radii).map((radius) => {
+  return Object.keys(radii).map((radius) => {
     return (
       <>
         <Box
           key={radius}
           style={{
-            backgroundColor: colors.brand.primary,
+            backgroundColor: colors.teint.brand.primary,
             borderRadius: radii[radius],
           }}
         />
-        <caption>theme.default.radii.{radius}</caption>
+        <caption>theme.sawmill.radii.{radius}</caption>
       </>
     );
   });
-
-  return out;
 };
 
 export default OpacityCard;
