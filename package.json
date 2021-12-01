@@ -6,7 +6,7 @@
     "build": "node theme/build.js"
   },
   "dependencies": {
-    "@divriots/dockit-react": "0.0.77",
+    "@divriots/dockit-react": "0.0.80",
     "@divriots/studio-doc-compiler": "^0.0.28",
     "@k-vyn/coloralgorithm": "^1.0.0",
     "@mdx-js/react": "^1.6.22",
