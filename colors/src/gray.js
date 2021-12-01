@@ -22,21 +22,26 @@ const generatedGrays = generate(
   },
   {
     minorSteps: [0, 1],
+    provideInverted: true,
   }
 );
 
-const gray = {};
+const gray = {noir:{},teint:{}};
 const grayColors = generatedGrays[0].colors;
 
-grayColors.forEach((g, i) => {
-  let h = g.hue;
-  let s = `${(g.saturation * 100).toFixed(2)}%`;
-  let l = `${(g.brightness * 100).toFixed(2)}%`;
-  let a = g.hsl.pop();
+generatedGrays.forEach(({inverted, colors}) => {
+  const themeName = inverted ? 'noir' : 'teint';
 
-  gray[`${Math.round(100 / (grayColors.length / i))}`] = {
-    value: `hsla(${h}, ${s}, ${l}, ${a})`,
-  };
-});
+  colors.forEach((g, i) => {
+    let h = g.hue;
+    let s = `${(g.saturation * 100).toFixed(2)}%`;
+    let l = `${(g.brightness * 100).toFixed(2)}%`;
+    let a = g.hsl.pop();
+
+    gray[themeName][`${Math.round(100 / (grayColors.length / i))}`] = {
+      value: `hsla(${h}, ${s}, ${l}, ${a})`,
+    };
+  });
+})
 
 export default gray;

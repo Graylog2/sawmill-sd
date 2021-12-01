@@ -18,6 +18,8 @@ const dangerColors = generate({
     end: 0.35,
     curve: "linear",
   },
+}, {
+  provideInverted: true
 });
 
 const infoColors = generate(
@@ -41,6 +43,7 @@ const infoColors = generate(
     },
   },
   {
+    provideInverted: true,
     rotation: "counterclockwise",
   }
 );
@@ -63,6 +66,8 @@ const primaryColors = generate({
     end: 0.18,
     curve: "linear",
   },
+}, {
+  provideInverted: true
 });
 
 const successColors = generate({
@@ -83,6 +88,8 @@ const successColors = generate({
     end: 0.24,
     curve: "linear",
   },
+}, {
+  provideInverted: true
 });
 
 const warningColors = generate({
@@ -103,15 +110,19 @@ const warningColors = generate({
     end: 0.7,
     curve: "linear",
   },
+}, {
+  provideInverted: true
 });
 
-const getLightest = (generatedColors) => generatedColors[0].colors[0].hex;
-const getLighter = (generatedColors) => generatedColors[0].colors[2].hex;
-const getLight = (generatedColors) => generatedColors[0].colors[4].hex;
-const getBase = (generatedColors) => generatedColors[0].colors[7].hex;
-const getDark = (generatedColors) => generatedColors[0].colors[8].hex;
-const getDarker = (generatedColors) => generatedColors[0].colors[10].hex;
-const getDarkest = (generatedColors) => generatedColors[0].colors[12].hex;
+const getLightest = (generatedColors) => generatedColors.colors[0].hex;
+const getLighter = (generatedColors) => generatedColors.colors[2].hex;
+const getLight = (generatedColors) => generatedColors.colors[4].hex;
+const getBase = (generatedColors) => generatedColors.colors[7].hex;
+const getDark = (generatedColors) => generatedColors.colors[8].hex;
+const getDarker = (generatedColors) => generatedColors.colors[10].hex;
+const getDarkest = (generatedColors) => generatedColors.colors[12].hex;
+
+console.log({dangerColors});
 
 const base = {
   danger: dangerColors,
@@ -123,16 +134,26 @@ const base = {
 
 const variant = {};
 
-Object.keys(base).map((type) => {
-  variant[type] = {};
+['noir', 'teint'].forEach((themeName) => {
+  variant[themeName] = {}
 
-  variant[type].lightest = { value: getLightest(base[type]) };
-  variant[type].lighter = { value: getLighter(base[type]) };
-  variant[type].light = { value: getLight(base[type]) };
-  variant[type].base = { value: getBase(base[type]) };
-  variant[type].dark = { value: getDark(base[type]) };
-  variant[type].darker = { value: getDarker(base[type]) };
-  variant[type].darkest = { value: getDarkest(base[type]) };
-});
+  Object.keys(base).map((type) => {
+
+    variant[themeName][type] = {};
+
+    const colors = base[type][themeName === 'noir' ? 1 : 0];
+
+    variant[themeName][type].lightest = { value: getLightest(colors) };
+    variant[themeName][type].lighter = { value: getLighter(colors) };
+    variant[themeName][type].light = { value: getLight(colors) };
+    variant[themeName][type].base = { value: getBase(colors) };
+    variant[themeName][type].dark = { value: getDark(colors) };
+    variant[themeName][type].darker = { value: getDarker(colors) };
+    variant[themeName][type].darkest = { value: getDarkest(colors) };
+
+  });
+})
+
+
 
 export default variant;
