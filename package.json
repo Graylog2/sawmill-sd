@@ -1,11 +1,12 @@
 {
   "name": "@backlight-dev/graylog.sawmill-sd",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "serve": "npx backlight@latest serve f8bLRusG6EujzpCzDM6X --open",
-    "build": "node build-sd.js"
+    "build": "node theme/build.js"
   },
   "dependencies": {
+    "@divriots/dockit-react": "0.0.72",
     "@divriots/studio-doc-compiler": "^0.0.28",
     "@k-vyn/coloralgorithm": "^1.0.0",
     "@mdx-js/react": "^1.6.22",
@@ -15,9 +16,13 @@
     "path": "^0.12.7",
     "react": "^17.0.2",
     "style-dictionary": "^3.0.3",
-    "styled-components": "^5.3.1"
+    "styled-components": "^5.3.1",
+    "bootstrap": "3.4.1",
+    "react-bootstrap": "^0.33.1"
   },
   "devDependencies": {
-    "@types/react": "^17.0.35"
+    "@types/mdx-js__react": "^1.5.5",
+    "@types/react": "^17.0.35",
+    "@types/styled-components": "^5.1.15"
   }
 }

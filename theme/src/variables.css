@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 22 Nov 2021 22:30:24 GMT
+ * Generated on Tue, 30 Nov 2021 20:57:16 GMT
  */
 
 :root {
@@ -55,6 +55,7 @@
   --default-colors-text-input-disabled: hsla(240, 0.00%, 49.71%, 1);
   --default-colors-text-input-error: #911717;
   --default-colors-text-input-placeholder: hsla(240, 0.00%, 49.71%, 1);
+  --default-colors-transparent: hsla(0, 0%, 0%, 0);
   --default-colors-variant-danger-lightest: #ffd4d4;
   --default-colors-variant-danger-lighter: #e38888;
   --default-colors-variant-danger-light: #c84f4f;
@@ -130,18 +131,20 @@
   --default-radii-md: 4px;
   --default-radii-lg: 6px;
   --default-radii-round: 50%;
-  --default-spacings-px-xxs: 3;
+  --default-spacings-px-xxs: 4;
   --default-spacings-px-xs: 6;
-  --default-spacings-px-sm: 9;
-  --default-spacings-px-md: 15;
-  --default-spacings-px-lg: 24;
-  --default-spacings-px-xl: 38;
-  --default-spacings-px-xxl: 62;
-  --default-spacings-xxs: 0.24rem;
-  --default-spacings-xs: 0.40rem;
-  --default-spacings-sm: 0.64rem;
-  --default-spacings-md: 1.04rem;
-  --default-spacings-lg: 1.68rem;
-  --default-spacings-xl: 2.72rem;
-  --default-spacings-xxl: 4.40rem;
+  --default-spacings-px-sm: 11;
+  --default-spacings-px-md: 17;
+  --default-spacings-px-lg: 27;
+  --default-spacings-px-xl: 44;
+  --default-spacings-px-xxl: 71;
+  --default-spacings-px-huge: 116;
+  --default-spacings-xxs: 0.30rem;
+  --default-spacings-xs: 0.45rem;
+  --default-spacings-sm: 0.75rem;
+  --default-spacings-md: 1.20rem;
+  --default-spacings-lg: 1.95rem;
+  --default-spacings-xl: 3.15rem;
+  --default-spacings-xxl: 5.10rem;
+  --default-spacings-huge: 8.25rem;
 }
