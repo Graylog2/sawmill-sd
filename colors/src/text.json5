@@ -1,0 +1,38 @@
+{
+  primary: {
+    value: "{brand.tertiary.value}",
+    noirValue: "{brand.tertiary.noirValue}"
+  },
+  secondary: {
+    value: "{brand.secondary.value}",
+    noirValue: "{brand.secondary.noirValue}"
+  },
+  link: {
+    '@': {
+      value: "{variant.primary.base.value}",
+      noirValue: "{variant.primary.base.noirValue}"
+    },
+    hover: {
+      value: "{variant.primary.light.value}",
+      noirValue: "{variant.primary.light.noirValue}"
+    },
+  },
+  input: {
+    '@': {
+      value: "{gray.80.value}",
+      noirValue: "{gray.80.noirValue}"
+    },
+    disabled: {
+      value: "{gray.60.value}",
+      noirValue: "{gray.60.noirValue}"
+    },
+    error: {
+      value: "{variant.danger.dark.value}",
+      noirValue: "{variant.danger.dark.noirValue}"
+    },
+    placeholder: {
+      value: "{gray.60.value}",
+      noirValue: "{gray.60.noirValue}"
+    },
+  },
+}

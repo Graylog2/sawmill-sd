@@ -1,0 +1,106 @@
+{
+  content: {
+    value: "{brand.tertiary.value}",
+    noirValue: "{brand.tertiary.noirValue}",
+  },
+  global: {
+    value: "{gray.10.value}",
+    noirValue: "{gray.10.noirValue}",
+  },
+  input: {
+    '@': {
+      value: "{gray.0.value}",
+      noirValue: "{gray.0.value}",
+    },
+    disabled: {
+      value: "{gray.20.value}",
+      noirValue: "{gray.20.noirValue}",
+    },
+    error: {
+      value: "{variant.danger.lighter.value}",
+      noirValue: "{variant.danger.lighter.noirValue}",
+    },
+    focus: {
+      value: "{gray.0.value}",
+      noirValue: "{gray.0.noirValue}",
+    },
+  },
+  navigation: {
+    value: "{gray.10.value}",
+    noirValue: "{gray.10.noirValue}",
+  },
+  table: {
+    alt: {
+      value: "{gray.10.value}",
+      noirValue: "{gray.10.noirValue}",
+    },
+    '@': {
+      value: "{gray.0.value}",
+      noirValue: "{gray.0.noirValue}",
+    },
+    hover: {
+      value: "{gray.20.value}",
+      noirValue: "{gray.0.noirValue}"
+    },
+    active: {
+      '@': {
+        value: "{gray.10.value}",
+        noirValue: "{gray.0.noirValue}"
+      },
+      hover: {
+        value: "{gray.20.value}",
+        noirValue: "{gray.0.noirValue}"
+      },
+    },
+    danger: {
+      '@': {
+        value: "{variant.danger.lightest.value}",
+        noirValue: "{variant.danger.lightest.noirValue}"
+      },
+      hover: {
+        value: "{variant.danger.lighter.value}",
+        noirValue: "{variant.danger.lighter.noirValue}"
+      },
+    },
+    info: {
+      '@': {
+        value: "{variant.info.lightest.value}",
+        noirValue: "{variant.info.lightest.noirValue}"
+      },
+      hover: {
+        value: "{variant.info.lighter.value}",
+        noirValue: "{variant.info.lighter.noirValue}"
+      },
+    },
+    primary: {
+      '@': {
+        value: "{variant.primary.lightest.value}",
+        noirValue: "{variant.primary.lightest.noirValue}"
+      },
+      hover: {
+        value: "{variant.primary.lighter.value}",
+        noirValue: "{variant.primary.lighter.noirValue}"
+      },
+    },
+    success: {
+      '@': {
+        value: "{variant.success.lightest.value}",
+        noirValue: "{variant.success.lightest.noirValue}"
+      },
+      hover: {
+        value: "{variant.success.lighter.value}",
+        noirValue: "{variant.success.lighter.noirValue}"
+      },
+    },
+    warning: {
+      '@': {
+        value: "{variant.warning.lightest.value}",
+        noirValue: "{variant.warning.lightest.noirValue}"
+      },
+      hover: {
+        value: "{variant.warning.lighter.value}",
+        noirValue: "{variant.warning.lighter.noirValue}"
+      },
+    },
+  }
+}

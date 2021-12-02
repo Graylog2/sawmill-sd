@@ -1,0 +1,25 @@
+{
+  input: {
+    '@': {
+      value: "{gray.30.value}",
+      noirValue: "{gray.30.noirValue}"
+    },
+    disabled: {
+      value: "{gray.20.value}",
+      noirValue: "{gray.20.noirValue}",
+    },
+    error: {
+      value: "{variant.danger.light.value}",
+      noirValue: "{variant.danger.light.noirValue}",
+    },
+    focus: {
+      value: "{variant.info.lighter.value}",
+      noirValue: "{variant.info.lighter.noirValue}",
+    },
+  },
+  panel: {
+    value: '{gray.20.value}',
+    noirValue: '{gray.20.noirValue}'
+  }
+}
+

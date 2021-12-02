@@ -3,7 +3,7 @@ import StyleDictionary from "style-dictionary";
 const buildPath = "theme/src/";
 
 StyleDictionary.extend({
-  source: ["theme/tokens.js"],
+  source: ["**/*.json5"],
   platforms: {
     css: {
       transformGroup: "css",
@@ -12,6 +12,14 @@ StyleDictionary.extend({
         {
           destination: "variables.css",
           format: "css/variables",
+          options: {
+            outputReferences: true
+          }
+        },
+        {
+          destination: "variables-noir.css",
+          format: "css/variables",
+          filter: (token) => token.noirValue && token.attributes.category === `color`,
         },
       ],
     },

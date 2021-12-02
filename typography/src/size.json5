@@ -1,0 +1,38 @@
+{
+  ratio: {
+    value: "1.125",
+    comment: "Typography scale ratio - https://type-scale.com/"
+  },
+  root: {
+    value: "87.5%",
+    comment: '/* Set as default `html` font-size in your CSS */',
+  },
+  base: {
+    value: '1rem',
+    comment: '/* 14px */'
+  },
+  xxs: {
+    value: 'calc(var({size.xs.value}) / var({size.ratio.value}))',
+  },
+  xs: {
+    value: 'calc(var({size.sm.value}) / var({size.ratio.value}))',
+  },
+  sm: {
+    value: 'calc(var({size.base.value}) * var({size.ratio.value}))',
+  },
+  md: {
+    value: 'calc(var({size.sm.value}) * var({size.ratio.value}))',
+  },
+  lg: {
+    value: 'calc(var({size.md.value}) * var({size.ratio.value}))',
+  },
+  xl: {
+    value: 'calc(var({size.lg.value}) * var({size.ratio.value}))',
+  },
+  xxl: {
+    value: 'calc(var({size.xl.value}) * var({size.ratio.value}))',
+  },
+  huge: {
+    value: 'calc(var({size.xxl.value}) * 2 * var({size.ratio.value}))',
+  }
+}
