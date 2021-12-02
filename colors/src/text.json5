@@ -1,38 +1,42 @@
 {
-  primary: {
-    value: "{brand.tertiary.value}",
-    noirValue: "{brand.tertiary.noirValue}"
-  },
-  secondary: {
-    value: "{brand.secondary.value}",
-    noirValue: "{brand.secondary.noirValue}"
-  },
-  link: {
-    '@': {
-      value: "{variant.primary.base.value}",
-      noirValue: "{variant.primary.base.noirValue}"
-    },
-    hover: {
-      value: "{variant.primary.light.value}",
-      noirValue: "{variant.primary.light.noirValue}"
-    },
-  },
-  input: {
-    '@': {
-      value: "{gray.80.value}",
-      noirValue: "{gray.80.noirValue}"
-    },
-    disabled: {
-      value: "{gray.60.value}",
-      noirValue: "{gray.60.noirValue}"
-    },
-    error: {
-      value: "{variant.danger.dark.value}",
-      noirValue: "{variant.danger.dark.noirValue}"
-    },
-    placeholder: {
-      value: "{gray.60.value}",
-      noirValue: "{gray.60.noirValue}"
-    },
-  },
+  color: {
+    text: {
+      primary: {
+        value: "{color.brand.tertiary.value}",
+        noirValue: "{color.brand.tertiary.noirValue}"
+      },
+      secondary: {
+        value: "{color.brand.secondary.value}",
+        noirValue: "{color.brand.secondary.noirValue}"
+      },
+      link: {
+        '@': {
+          value: "{color.variant.primary.base.value}",
+          noirValue: "{color.variant.primary.base.noirValue}"
+        },
+        hover: {
+          value: "{color.variant.primary.light.value}",
+          noirValue: "{color.variant.primary.light.noirValue}"
+        },
+      },
+      input: {
+        '@': {
+          value: "{color.gray.80.value}",
+          noirValue: "{color.gray.80.noirValue}"
+        },
+        disabled: {
+          value: "{color.gray.60.value}",
+          noirValue: "{color.gray.60.noirValue}"
+        },
+        error: {
+          value: "{color.variant.danger.dark.value}",
+          noirValue: "{color.variant.danger.dark.noirValue}"
+        },
+        placeholder: {
+          value: "{color.gray.60.value}",
+          noirValue: "{color.gray.60.noirValue}"
+        },
+      }
+    }
+  }
 }

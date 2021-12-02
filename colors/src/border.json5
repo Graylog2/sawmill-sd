@@ -1,25 +1,29 @@
 {
-  input: {
-    '@': {
-      value: "{gray.30.value}",
-      noirValue: "{gray.30.noirValue}"
-    },
-    disabled: {
-      value: "{gray.20.value}",
-      noirValue: "{gray.20.noirValue}",
-    },
-    error: {
-      value: "{variant.danger.light.value}",
-      noirValue: "{variant.danger.light.noirValue}",
-    },
-    focus: {
-      value: "{variant.info.lighter.value}",
-      noirValue: "{variant.info.lighter.noirValue}",
-    },
-  },
-  panel: {
-    value: '{gray.20.value}',
-    noirValue: '{gray.20.noirValue}'
+  color: {
+    border: {
+      input: {
+        '@': {
+          value: "{color.gray.30.value}",
+          noirValue: "{color.gray.30.noirValue}"
+        },
+        disabled: {
+          value: "{color.gray.20.value}",
+          noirValue: "{color.gray.20.noirValue}",
+        },
+        error: {
+          value: "{color.variant.danger.light.value}",
+          noirValue: "{color.variant.danger.light.noirValue}",
+        },
+        focus: {
+          value: "{color.variant.info.lighter.value}",
+          noirValue: "{color.variant.info.lighter.noirValue}",
+        },
+      },
+      panel: {
+        value: '{color.gray.20.value}',
+        noirValue: '{color.gray.20.noirValue}'
+      }
+    }
   }
 }
 

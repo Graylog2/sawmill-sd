@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "serve": "npx backlight@latest serve f8bLRusG6EujzpCzDM6X --open",
-    "build": "node theme/build.js"
+    "build": "node theme/sd-build.js"
   },
   "dependencies": {
     "@divriots/dockit-react": "0.0.80",

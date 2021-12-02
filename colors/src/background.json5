@@ -1,106 +1,110 @@
 {
-  content: {
-    value: "{brand.tertiary.value}",
-    noirValue: "{brand.tertiary.noirValue}",
+  color: {
+    background: {
+      content: {
+        value: "{color.brand.tertiary.value}",
+        noirValue: "{color.brand.tertiary.noirValue}",
+      },
+      global: {
+        value: "{color.gray.10.value}",
+        noirValue: "{color.gray.10.noirValue}",
+      },
+      input: {
+        '@': {
+          value: "{color.gray.0.value}",
+          noirValue: "{color.gray.0.value}",
+        },
+        disabled: {
+          value: "{color.gray.20.value}",
+          noirValue: "{color.gray.20.noirValue}",
+        },
+        error: {
+          value: "{color.variant.danger.lighter.value}",
+          noirValue: "{color.variant.danger.lighter.noirValue}",
+        },
+        focus: {
+          value: "{color.gray.0.value}",
+          noirValue: "{color.gray.0.noirValue}",
+        },
+      },
+      navigation: {
+        value: "{color.gray.10.value}",
+        noirValue: "{color.gray.10.noirValue}",
+      },
+      table: {
+        alt: {
+          value: "{color.gray.10.value}",
+          noirValue: "{color.gray.10.noirValue}",
+        },
+        '@': {
+          value: "{color.gray.0.value}",
+          noirValue: "{color.gray.0.noirValue}",
+        },
+        hover: {
+          value: "{color.gray.20.value}",
+          noirValue: "{color.gray.0.noirValue}"
+        },
+        active: {
+          '@': {
+            value: "{color.gray.10.value}",
+            noirValue: "{color.gray.0.noirValue}"
+          },
+          hover: {
+            value: "{color.gray.20.value}",
+            noirValue: "{color.gray.0.noirValue}"
+          },
+        },
+        danger: {
+          '@': {
+            value: "{color.variant.danger.lightest.value}",
+            noirValue: "{color.variant.danger.lightest.noirValue}"
+          },
+          hover: {
+            value: "{color.variant.danger.lighter.value}",
+            noirValue: "{color.variant.danger.lighter.noirValue}"
+          },
+        },
+        info: {
+          '@': {
+            value: "{color.variant.info.lightest.value}",
+            noirValue: "{color.variant.info.lightest.noirValue}"
+          },
+          hover: {
+            value: "{color.variant.info.lighter.value}",
+            noirValue: "{color.variant.info.lighter.noirValue}"
+          },
+        },
+        primary: {
+          '@': {
+            value: "{color.variant.primary.lightest.value}",
+            noirValue: "{color.variant.primary.lightest.noirValue}"
+          },
+          hover: {
+            value: "{color.variant.primary.lighter.value}",
+            noirValue: "{color.variant.primary.lighter.noirValue}"
+          },
+        },
+        success: {
+          '@': {
+            value: "{color.variant.success.lightest.value}",
+            noirValue: "{color.variant.success.lightest.noirValue}"
+          },
+          hover: {
+            value: "{color.variant.success.lighter.value}",
+            noirValue: "{color.variant.success.lighter.noirValue}"
+          },
+        },
+        warning: {
+          '@': {
+            value: "{color.variant.warning.lightest.value}",
+            noirValue: "{color.variant.warning.lightest.noirValue}"
+          },
+          hover: {
+            value: "{color.variant.warning.lighter.value}",
+            noirValue: "{color.variant.warning.lighter.noirValue}"
+          },
+        },
+      }
+    }
   },
-  global: {
-    value: "{gray.10.value}",
-    noirValue: "{gray.10.noirValue}",
-  },
-  input: {
-    '@': {
-      value: "{gray.0.value}",
-      noirValue: "{gray.0.value}",
-    },
-    disabled: {
-      value: "{gray.20.value}",
-      noirValue: "{gray.20.noirValue}",
-    },
-    error: {
-      value: "{variant.danger.lighter.value}",
-      noirValue: "{variant.danger.lighter.noirValue}",
-    },
-    focus: {
-      value: "{gray.0.value}",
-      noirValue: "{gray.0.noirValue}",
-    },
-  },
-  navigation: {
-    value: "{gray.10.value}",
-    noirValue: "{gray.10.noirValue}",
-  },
-  table: {
-    alt: {
-      value: "{gray.10.value}",
-      noirValue: "{gray.10.noirValue}",
-    },
-    '@': {
-      value: "{gray.0.value}",
-      noirValue: "{gray.0.noirValue}",
-    },
-    hover: {
-      value: "{gray.20.value}",
-      noirValue: "{gray.0.noirValue}"
-    },
-    active: {
-      '@': {
-        value: "{gray.10.value}",
-        noirValue: "{gray.0.noirValue}"
-      },
-      hover: {
-        value: "{gray.20.value}",
-        noirValue: "{gray.0.noirValue}"
-      },
-    },
-    danger: {
-      '@': {
-        value: "{variant.danger.lightest.value}",
-        noirValue: "{variant.danger.lightest.noirValue}"
-      },
-      hover: {
-        value: "{variant.danger.lighter.value}",
-        noirValue: "{variant.danger.lighter.noirValue}"
-      },
-    },
-    info: {
-      '@': {
-        value: "{variant.info.lightest.value}",
-        noirValue: "{variant.info.lightest.noirValue}"
-      },
-      hover: {
-        value: "{variant.info.lighter.value}",
-        noirValue: "{variant.info.lighter.noirValue}"
-      },
-    },
-    primary: {
-      '@': {
-        value: "{variant.primary.lightest.value}",
-        noirValue: "{variant.primary.lightest.noirValue}"
-      },
-      hover: {
-        value: "{variant.primary.lighter.value}",
-        noirValue: "{variant.primary.lighter.noirValue}"
-      },
-    },
-    success: {
-      '@': {
-        value: "{variant.success.lightest.value}",
-        noirValue: "{variant.success.lightest.noirValue}"
-      },
-      hover: {
-        value: "{variant.success.lighter.value}",
-        noirValue: "{variant.success.lighter.noirValue}"
-      },
-    },
-    warning: {
-      '@': {
-        value: "{variant.warning.lightest.value}",
-        noirValue: "{variant.warning.lightest.noirValue}"
-      },
-      hover: {
-        value: "{variant.warning.lighter.value}",
-        noirValue: "{variant.warning.lighter.noirValue}"
-      },
-    },
-  }
 }

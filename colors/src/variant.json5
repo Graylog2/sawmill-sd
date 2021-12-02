@@ -1,155 +1,159 @@
 {
-  transparent: {
-    value: 'rgba(0, 0, 0, 0)',
-  },
-  "danger": {
-    "darkest": {
-      value: '#590707',
-      noirValue: '#ffd4d4',
-    },
-    "darker": {
-      value: '#750c0c',
-      noirValue:  '#e39292',
-    },
-    "dark": {
-      value: '#911717',
-      noirValue:  '#c84e4e',
-    },
-    "base": {
-      value: '#9e2020',
-      noirValue:  '#ba3b3b',
-    },
-    "light": {
-      value: '#c84f4f',
-      noirValue:  '#911d1d',
-    },
-    "lighter": {
-      value: '#e38888',
-      noirValue:  '#751010',
-    },
-    "lightest": {
-      value: '#ffd4d4',
-      noirValue:  '#590707',
-    }
-  },
-  "info": {
-    "darkest": {
-      value: '#002242',
-      noirValue:  '#e1e6f0',
-    },
-    "darker": {
-      value: '#043b70',
-      noirValue:  '#9eb9e1',
-    },
-    "dark": {
-      value: '#10579f',
-      noirValue:  '#528bd2',
-    },
-    "base": {
-      value: '#1b65b3',
-      noirValue:  '#3b7eca',
-    },
-    "light": {
-      value: '#5792db',
-      noirValue:  '#195ca1',
-    },
-    "lighter": {
-      value: '#97b8e9',
-      noirValue:  '#083a6b',
-    },
-    "lightest": {
-      value: '#e1e6f0',
-      noirValue:  '#002242',
-    }
-  },
-  "primary": {
-    "darkest": {
-      value: '#270e2e',
-      noirValue:  '#f2f0f5',
-    },
-    "darker": {
-      value: '#431a4f',
-      noirValue:  '#c2abd4',
-    },
-    "dark": {
-      value: '#5f2a70',
-      noirValue:  '#9a68b3',
-    },
-    "base": {
-      value: '#6d3581',
-      noirValue:  '#8a53a2',
-    },
-    "light": {
-      value: '#9a69b3',
-      noirValue:  '#5f2e70',
-    },
-    "lighter": {
-      value: '#bfa3d4',
-      noirValue:  '#431c4f',
-    },
-    "lightest": {
-      value: '#f2f0f5',
-      noirValue:  '#270e2e',
-    }
-  },
-  "success": {
-    "darkest": {
-      value: '#003d17',
-      noirValue:  '#f0f7f1',
-    },
-    "darker": {
-      value: '#035c24',
-      noirValue:  '#9dd8a8',
-    },
-    "dark": {
-      value: '#0d7b34',
-      noirValue:  '#4bb969',
-    },
-    "base": {
-      value: '#158b3e',
-      noirValue:  '#34aa57',
-    },
-    "light": {
-      value: '#4cb96a',
-      noirValue:  '#137b37',
-    },
-    "lighter": {
-      value: '#91d89f',
-      noirValue:  '#075c26',
-    },
-    "lightest": {
-      value: '#f0f7f1',
-      noirValue:  '#003d17',
-    }
-  },
-  "warning": {
-    "darkest": {
-      value: '#b37e00',
-      noirValue:  '#f7f3e9',
-    },
-    "darker": {
-      value: '#be8806',
-      noirValue:  '#ecd6a6',
-    },
-    "dark": {
-      value: '#c99414',
-      noirValue:  '#e0b758',
-    },
-    "base": {
-      value: '#cf9b1f',
-      noirValue:  '#dbad40',
-    },
-    "light": {
-      value: '#e0b859',
-      noirValue:  '#c9971f',
-    },
-    "lighter": {
-      value: '#ecd299',
-      noirValue:  '#be8a0e',
-    },
-    "lightest": {
-      value: '#f7f3e9',
-      noirValue:  '#b37e00',
+  color: {
+    variant: {
+      transparent: {
+        value: 'rgba(0, 0, 0, 0)',
+      },
+      "danger": {
+        "darkest": {
+          value: '#590707',
+          noirValue: '#ffd4d4',
+        },
+        "darker": {
+          value: '#750c0c',
+          noirValue:  '#e39292',
+        },
+        "dark": {
+          value: '#911717',
+          noirValue:  '#c84e4e',
+        },
+        "base": {
+          value: '#9e2020',
+          noirValue:  '#ba3b3b',
+        },
+        "light": {
+          value: '#c84f4f',
+          noirValue:  '#911d1d',
+        },
+        "lighter": {
+          value: '#e38888',
+          noirValue:  '#751010',
+        },
+        "lightest": {
+          value: '#ffd4d4',
+          noirValue:  '#590707',
+        }
+      },
+      "info": {
+        "darkest": {
+          value: '#002242',
+          noirValue:  '#e1e6f0',
+        },
+        "darker": {
+          value: '#043b70',
+          noirValue:  '#9eb9e1',
+        },
+        "dark": {
+          value: '#10579f',
+          noirValue:  '#528bd2',
+        },
+        "base": {
+          value: '#1b65b3',
+          noirValue:  '#3b7eca',
+        },
+        "light": {
+          value: '#5792db',
+          noirValue:  '#195ca1',
+        },
+        "lighter": {
+          value: '#97b8e9',
+          noirValue:  '#083a6b',
+        },
+        "lightest": {
+          value: '#e1e6f0',
+          noirValue:  '#002242',
+        }
+      },
+      "primary": {
+        "darkest": {
+          value: '#270e2e',
+          noirValue:  '#f2f0f5',
+        },
+        "darker": {
+          value: '#431a4f',
+          noirValue:  '#c2abd4',
+        },
+        "dark": {
+          value: '#5f2a70',
+          noirValue:  '#9a68b3',
+        },
+        "base": {
+          value: '#6d3581',
+          noirValue:  '#8a53a2',
+        },
+        "light": {
+          value: '#9a69b3',
+          noirValue:  '#5f2e70',
+        },
+        "lighter": {
+          value: '#bfa3d4',
+          noirValue:  '#431c4f',
+        },
+        "lightest": {
+          value: '#f2f0f5',
+          noirValue:  '#270e2e',
+        }
+      },
+      "success": {
+        "darkest": {
+          value: '#003d17',
+          noirValue:  '#f0f7f1',
+        },
+        "darker": {
+          value: '#035c24',
+          noirValue:  '#9dd8a8',
+        },
+        "dark": {
+          value: '#0d7b34',
+          noirValue:  '#4bb969',
+        },
+        "base": {
+          value: '#158b3e',
+          noirValue:  '#34aa57',
+        },
+        "light": {
+          value: '#4cb96a',
+          noirValue:  '#137b37',
+        },
+        "lighter": {
+          value: '#91d89f',
+          noirValue:  '#075c26',
+        },
+        "lightest": {
+          value: '#f0f7f1',
+          noirValue:  '#003d17',
+        }
+      },
+      "warning": {
+        "darkest": {
+          value: '#b37e00',
+          noirValue:  '#f7f3e9',
+        },
+        "darker": {
+          value: '#be8806',
+          noirValue:  '#ecd6a6',
+        },
+        "dark": {
+          value: '#c99414',
+          noirValue:  '#e0b758',
+        },
+        "base": {
+          value: '#cf9b1f',
+          noirValue:  '#dbad40',
+        },
+        "light": {
+          value: '#e0b859',
+          noirValue:  '#c9971f',
+        },
+        "lighter": {
+          value: '#ecd299',
+          noirValue:  '#be8a0e',
+        },
+        "lightest": {
+          value: '#f7f3e9',
+          noirValue:  '#b37e00',
+        }
+      }
     }
   }
 }
