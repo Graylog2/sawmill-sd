@@ -2,10 +2,11 @@ import tinyColor from "tinycolor2";
 
 import gray from "./gray";
 import variant from "./variant";
+import { THEME_NAMES } from './_constants';
 
 const shadows = {};
 
-['noir','teint'].forEach((themeName) => {
+THEME_NAMES.forEach((themeName) => {
   shadows[themeName] = {
     input: {
       value: `inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px ${tinyColor(

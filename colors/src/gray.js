@@ -1,4 +1,5 @@
-import { generate } from "@k-vyn/coloralgorithm";
+import { generate } from '@k-vyn/coloralgorithm';
+import { THEME_NAMES } from './_constants';
 
 const generatedGrays = generate(
   {
@@ -6,18 +7,18 @@ const generatedGrays = generate(
     hue: {
       start: 240,
       end: 240,
-      curve: "easeInQuad",
+      curve: 'easeInQuad',
     },
     saturation: {
       start: 0,
       end: 0,
       rate: 0,
-      curve: "easeOutQuad",
+      curve: 'easeOutQuad',
     },
     brightness: {
       start: 1,
       end: 0.12,
-      curve: "linear",
+      curve: 'linear',
     },
   },
   {
@@ -26,22 +27,22 @@ const generatedGrays = generate(
   }
 );
 
-const gray = {noir:{},teint:{}};
-const grayColors = generatedGrays[0].colors;
+const gray = {};
 
-generatedGrays.forEach(({inverted, colors}) => {
-  const themeName = inverted ? 'noir' : 'teint';
+THEME_NAMES.forEach((themeName) => {
+  gray[themeName] = {};
 
-  colors.forEach((g, i) => {
-    let h = g.hue;
-    let s = `${(g.saturation * 100).toFixed(2)}%`;
-    let l = `${(g.brightness * 100).toFixed(2)}%`;
-    let a = g.hsl.pop();
+  generatedGrays.forEach(({ colors }) => {
+    colors.forEach((g, i) => {
+      let h = g.hue;
+      let s = `${(g.saturation * 100).toFixed(2)}%`;
+      let l = `${(g.brightness * 100).toFixed(2)}%`;
 
-    gray[themeName][`${Math.round(100 / (grayColors.length / i))}`] = {
-      value: `hsla(${h}, ${s}, ${l}, ${a})`,
-    };
+      gray[themeName][`${Math.round(100 / (colors.length / i))}`] = {
+        value: `hsla(${h}, ${s}, ${l}, 1)`,
+      };
+    });
   });
-})
+});
 
 export default gray;

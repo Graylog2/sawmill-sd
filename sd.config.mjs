@@ -7,7 +7,6 @@ StyleDictionary.extend({
   platforms: {
     css: {
       transformGroup: "css",
-      // prefix: "sawmill",
       buildPath,
       files: [
         {

@@ -1,4 +1,5 @@
 const { generate } = require("@k-vyn/coloralgorithm");
+import { THEME_NAMES } from './_constants';
 
 const dangerColors = generate({
   steps: 13,
@@ -114,16 +115,6 @@ const warningColors = generate({
   provideInverted: true
 });
 
-const getLightest = (generatedColors) => generatedColors.colors[0].hex;
-const getLighter = (generatedColors) => generatedColors.colors[2].hex;
-const getLight = (generatedColors) => generatedColors.colors[4].hex;
-const getBase = (generatedColors) => generatedColors.colors[7].hex;
-const getDark = (generatedColors) => generatedColors.colors[8].hex;
-const getDarker = (generatedColors) => generatedColors.colors[10].hex;
-const getDarkest = (generatedColors) => generatedColors.colors[12].hex;
-
-console.log({dangerColors});
-
 const base = {
   danger: dangerColors,
   info: infoColors,
@@ -134,26 +125,24 @@ const base = {
 
 const variant = {};
 
-['noir', 'teint'].forEach((themeName) => {
+THEME_NAMES.forEach((themeName) => {
   variant[themeName] = {}
 
   Object.keys(base).map((type) => {
 
     variant[themeName][type] = {};
 
-    const colors = base[type][themeName === 'noir' ? 1 : 0];
+    const { colors } = base[type][themeName === 'noir' ? 1 : 0];
 
-    variant[themeName][type].lightest = { value: getLightest(colors) };
-    variant[themeName][type].lighter = { value: getLighter(colors) };
-    variant[themeName][type].light = { value: getLight(colors) };
-    variant[themeName][type].base = { value: getBase(colors) };
-    variant[themeName][type].dark = { value: getDark(colors) };
-    variant[themeName][type].darker = { value: getDarker(colors) };
-    variant[themeName][type].darkest = { value: getDarkest(colors) };
+    variant[themeName][type].lightest = { value: colors[0].hex };
+    variant[themeName][type].lighter = { value: colors[2].hex };
+    variant[themeName][type].light = { value: colors[4].hex };
+    variant[themeName][type].base = { value: colors[7].hex };
+    variant[themeName][type].dark = { value: colors[8].hex };
+    variant[themeName][type].darker = { value: colors[10].hex };
+    variant[themeName][type].darkest = { value: colors[12].hex };
 
   });
 })
-
-
 
 export default variant;

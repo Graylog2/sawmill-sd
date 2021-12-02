@@ -1,10 +1,11 @@
 import brand from "./brand";
 import gray from "./gray";
 import variant from "./variant";
+import {THEME_NAMES} from './_constants';
 
 const background = {};
 
-['noir','teint'].forEach((themeName) => {
+THEME_NAMES.forEach((themeName) => {
   background[themeName] = {
     content: {
       value: brand[themeName].tertiary.value,

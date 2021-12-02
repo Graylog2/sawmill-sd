@@ -1,9 +1,10 @@
 import gray from "./gray";
 import variant from "./variant";
+import {THEME_NAMES} from './_constants';
 
 const border = {};
 
-['noir','teint'].forEach((themeName) => {
+THEME_NAMES.forEach((themeName) => {
   border[themeName] = {
     input: {
       "@": { value: gray[themeName][30].value },
