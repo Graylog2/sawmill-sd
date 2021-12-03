@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 02 Dec 2021 16:54:54 GMT
+ * Generated on Fri, 03 Dec 2021 12:39:12 GMT
  */
 
 :root {
@@ -20,8 +20,8 @@
   --sawmill-typography-leading-tight: 1;
   --sawmill-typography-leading-compact: 0.8;
   --sawmill-typography-family-monospace: "Roboto Mono", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Menlo, Monaco, "Courier New", Courier, monospace; /* required module [`@openfonts/roboto-mono_latin/index.css`] */
-  --sawmill-typography-family-serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;;
-  --sawmill-typography-family-sans: "Open Sans", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;; /* required module [`opensans-npm-webfont/open_sans.css`, `opensans-npm-webfont/open_sans_italic.css`, `opensans-npm-webfont/open_sans_bold.css`] */
+  --sawmill-typography-family-serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  --sawmill-typography-family-sans: "Open Sans", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; /* required module [`opensans-npm-webfont/open_sans.css`, `opensans-npm-webfont/open_sans_italic.css`, `opensans-npm-webfont/open_sans_bold.css`] */
   --sawmill-spacing-px-xxs: 4;
   --sawmill-spacing-px-xs: 6;
   --sawmill-spacing-px-sm: 11;
@@ -92,7 +92,7 @@
   --sawmill-color-variant-danger-dark: #911717;
   --sawmill-color-variant-danger-darker: #750c0c;
   --sawmill-color-variant-danger-darkest: #590707;
-  --sawmill-color-variant-transparent: rgba(0, 0, 0, 0);
+  --sawmill-color-variant-transparent: #000000;
   --sawmill-color-shadows-panel: rgba(95, 95, 95, 0.4);
   --sawmill-color-shadows-navigation: rgba(47, 47, 47, 0.5);
   --sawmill-color-shadows-input: rgba(0, 0, 0, 0.08);
