@@ -1,5 +1,5 @@
-import * as React from "react";
-import styled from "styled-components";
+import * as React from 'react';
+import styled from 'styled-components';
 
 const CheckeredBox = styled.div`
   background-color: #000000;
@@ -15,7 +15,7 @@ const CheckeredBox = styled.div`
 `;
 
 const OpacityShowcase = ({ theme }) => {
-  const { colors, opacity } = theme.sawmill;
+  const { color, opacity } = theme;
 
   return Object.keys(opacity).map((alpha) => {
     return (
@@ -23,17 +23,18 @@ const OpacityShowcase = ({ theme }) => {
         <CheckeredBox>
           <div
             style={{
-              backgroundColor: colors.teint.brand.primary,
-              width: "100px",
-              height: "100px",
-              position: "relative",
+              backgroundColor: color.brand.primary,
+              width: '100px',
+              height: '100px',
+              position: 'relative',
               opacity: opacity[alpha],
             }}
           />
         </CheckeredBox>
 
-        <caption>theme.sawmill.opacity.{alpha}</caption>
-        <caption>--sawmill-opacity-{alpha}</caption>
+        <caption style={{ whiteSpace: 'nowrap' }}>
+          --sawmill-opacity-{alpha}
+        </caption>
       </React.Fragment>
     );
   });

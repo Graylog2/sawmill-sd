@@ -1,5 +1,5 @@
 {
-  "name": "@graylog/sawmill",
+  "name": "@graylog/sawmill-sd",
   "version": "0.0.1",
   "scripts": {
     "serve": "npx backlight@latest serve f8bLRusG6EujzpCzDM6X --open",
