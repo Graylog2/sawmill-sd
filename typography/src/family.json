@@ -1,6 +1,6 @@
 {
   "typography": {
-    "family": {
+    "fontFamily": {
       "sans": {
         "value": "\"Open Sans\", Frutiger, \"Frutiger Linotype\", Univers, Calibri, \"Gill Sans\", \"Gill Sans MT\", \"Myriad Pro\", Myriad, \"DejaVu Sans Condensed\", \"Liberation Sans\", \"Nimbus Sans L\", Tahoma, Geneva, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
         "comment": "required module [`opensans-npm-webfont/open_sans.css`, `opensans-npm-webfont/open_sans_italic.css`, `opensans-npm-webfont/open_sans_bold.css`]"

@@ -1,27 +1,27 @@
 /**
  * Do not edit directly
- * Generated on Fri, 03 Dec 2021 12:39:12 GMT
+ * Generated on Fri, 03 Dec 2021 15:42:55 GMT
  */
 
 :root {
-  --sawmill-typography-weight-black: 900;
-  --sawmill-typography-weight-bold: 700;
-  --sawmill-typography-weight-semibold: 600;
-  --sawmill-typography-weight-medium: 500;
-  --sawmill-typography-weight-regular: 400;
-  --sawmill-typography-weight-light: 300;
-  --sawmill-typography-weight-thin: 100;
-  --sawmill-typography-size-base: 1rem; /* 14px */
-  --sawmill-typography-size-root: 87.5%; /* Set as default `html` font-size in your CSS */
-  --sawmill-typography-size-ratio: 1.125; /* Typography scale ratio - https://type-scale.com/ */
-  --sawmill-typography-leading-relaxed: 1.5;
-  --sawmill-typography-leading-loose: 1.2;
-  --sawmill-typography-leading-base: normal;
-  --sawmill-typography-leading-tight: 1;
-  --sawmill-typography-leading-compact: 0.8;
-  --sawmill-typography-family-monospace: "Roboto Mono", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Menlo, Monaco, "Courier New", Courier, monospace; /* required module [`@openfonts/roboto-mono_latin/index.css`] */
-  --sawmill-typography-family-serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-  --sawmill-typography-family-sans: "Open Sans", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; /* required module [`opensans-npm-webfont/open_sans.css`, `opensans-npm-webfont/open_sans_italic.css`, `opensans-npm-webfont/open_sans_bold.css`] */
+  --sawmill-typography-font-weight-black: 900;
+  --sawmill-typography-font-weight-bold: 700;
+  --sawmill-typography-font-weight-semibold: 600;
+  --sawmill-typography-font-weight-medium: 500;
+  --sawmill-typography-font-weight-regular: 400;
+  --sawmill-typography-font-weight-light: 300;
+  --sawmill-typography-font-weight-thin: 100;
+  --sawmill-typography-font-size-base: 1rem; /* 14px */
+  --sawmill-typography-font-size-root: 87.5%; /* Set as default `html` font-size in your CSS */
+  --sawmill-typography-font-size-ratio: 1.125; /* Typography scale ratio - https://type-scale.com/ */
+  --sawmill-typography-line-height-relaxed: 1.5;
+  --sawmill-typography-line-height-loose: 1.2;
+  --sawmill-typography-line-height-base: normal;
+  --sawmill-typography-line-height-tight: 1;
+  --sawmill-typography-line-height-compact: 0.8;
+  --sawmill-typography-font-family-monospace: "Roboto Mono", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Menlo, Monaco, "Courier New", Courier, monospace; /* required module [`@openfonts/roboto-mono_latin/index.css`] */
+  --sawmill-typography-font-family-serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  --sawmill-typography-font-family-sans: "Open Sans", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; /* required module [`opensans-npm-webfont/open_sans.css`, `opensans-npm-webfont/open_sans_italic.css`, `opensans-npm-webfont/open_sans_bold.css`] */
   --sawmill-spacing-px-xxs: 4;
   --sawmill-spacing-px-xs: 6;
   --sawmill-spacing-px-sm: 11;
@@ -109,7 +109,7 @@
   --sawmill-color-brand-tertiary: #1f1f1f;
   --sawmill-color-brand-secondary: #ffffff;
   --sawmill-color-brand-primary: #ff3633;
-  --sawmill-typography-size-sm: calc(var(var(--sawmill-typography-size-base)) * var(var(--sawmill-typography-size-ratio)));
+  --sawmill-typography-font-size-sm: calc(var(var(--sawmill-typography-font-size-base)) * var(var(--sawmill-typography-font-size-ratio)));
   --sawmill-color-text-input-placeholder: var(--sawmill-color-gray-60);
   --sawmill-color-text-input-error: var(--sawmill-color-variant-danger-dark);
   --sawmill-color-text-input-disabled: var(--sawmill-color-gray-60);
@@ -145,11 +145,11 @@
   --sawmill-color-background-input: var(--sawmill-color-gray-0);
   --sawmill-color-background-global: var(--sawmill-color-gray-10);
   --sawmill-color-background-content: var(--sawmill-color-brand-tertiary);
-  --sawmill-typography-size-md: calc(var(var(--sawmill-typography-size-sm)) * var(var(--sawmill-typography-size-ratio)));
-  --sawmill-typography-size-xs: calc(var(var(--sawmill-typography-size-sm)) / var(var(--sawmill-typography-size-ratio)));
-  --sawmill-typography-size-lg: calc(var(var(--sawmill-typography-size-md)) * var(var(--sawmill-typography-size-ratio)));
-  --sawmill-typography-size-xxs: calc(var(var(--sawmill-typography-size-xs)) / var(var(--sawmill-typography-size-ratio)));
-  --sawmill-typography-size-xl: calc(var(var(--sawmill-typography-size-lg)) * var(var(--sawmill-typography-size-ratio)));
-  --sawmill-typography-size-xxl: calc(var(var(--sawmill-typography-size-xl)) * var(var(--sawmill-typography-size-ratio)));
-  --sawmill-typography-size-huge: calc(var(var(--sawmill-typography-size-xxl)) * 2 * var(var(--sawmill-typography-size-ratio)));
+  --sawmill-typography-font-size-md: calc(var(var(--sawmill-typography-font-size-sm)) * var(var(--sawmill-typography-font-size-ratio)));
+  --sawmill-typography-font-size-xs: calc(var(var(--sawmill-typography-font-size-sm)) / var(var(--sawmill-typography-font-size-ratio)));
+  --sawmill-typography-font-size-lg: calc(var(var(--sawmill-typography-font-size-md)) * var(var(--sawmill-typography-font-size-ratio)));
+  --sawmill-typography-font-size-xxs: calc(var(var(--sawmill-typography-font-size-xs)) / var(var(--sawmill-typography-font-size-ratio)));
+  --sawmill-typography-font-size-xl: calc(var(var(--sawmill-typography-font-size-lg)) * var(var(--sawmill-typography-font-size-ratio)));
+  --sawmill-typography-font-size-xxl: calc(var(var(--sawmill-typography-font-size-xl)) * var(var(--sawmill-typography-font-size-ratio)));
+  --sawmill-typography-font-size-huge: calc(var(var(--sawmill-typography-font-size-xxl)) * 2 * var(var(--sawmill-typography-font-size-ratio)));
 }
