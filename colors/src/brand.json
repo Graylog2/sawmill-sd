@@ -1,0 +1,18 @@
+{
+  "colors": {
+    "brand": {
+      "primary": {
+        "value": "#ff3633",
+        "noirValue": "#ff3633"
+      },
+      "secondary": {
+        "value": "#fff",
+        "noirValue": "#888"
+      },
+      "tertiary": {
+        "value": "#1f1f1f",
+        "noirValue": "#fff"
+      }
+    }
+  }
+}

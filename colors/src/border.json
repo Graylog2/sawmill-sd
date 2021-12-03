@@ -1,0 +1,29 @@
+{
+  "colors": {
+    "border": {
+      "input": {
+        "@": {
+          "value": "{colors.gray.30.value}",
+          "noirValue": "{colors.gray.30.noirValue}"
+        },
+        "disabled": {
+          "value": "{colors.gray.20.value}",
+          "noirValue": "{colors.gray.20.noirValue}"
+        },
+        "error": {
+          "value": "{colors.variant.danger.light.value}",
+          "noirValue": "{colors.variant.danger.light.noirValue}"
+        },
+        "focus": {
+          "value": "{colors.variant.info.lighter.value}",
+          "noirValue": "{colors.variant.info.lighter.noirValue}"
+        }
+      },
+      "panel": {
+        "value": "{colors.gray.20.value}",
+        "noirValue": "{colors.gray.20.noirValue}"
+      }
+    }
+  }
+}
+

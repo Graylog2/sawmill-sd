@@ -1,5 +1,5 @@
-import * as React from "react";
-import styled from "styled-components";
+import * as React from 'react';
+import styled from 'styled-components';
 
 const Box = styled.div`
   position: relative;
@@ -9,7 +9,7 @@ const Box = styled.div`
 `;
 
 const OpacityCard = ({ theme }) => {
-  const { colors, radii } = theme.sawmill;
+  const { colors, radii } = theme;
 
   return Object.keys(radii).map((radius) => {
     return (
@@ -17,11 +17,13 @@ const OpacityCard = ({ theme }) => {
         <Box
           key={radius}
           style={{
-            backgroundColor: colors.teint.brand.primary,
+            backgroundColor: colors.brand.primary,
             borderRadius: radii[radius],
           }}
         />
-        <caption>theme.sawmill.radii.{radius}</caption>
+        <caption style={{ whiteSpace: 'nowrap' }}>
+          --sawmill-radius-{radius}
+        </caption>
       </>
     );
   });
