@@ -5,8 +5,8 @@ const CheckeredBox = styled.div`
   background-color: #000000;
   background-image: linear-gradient(45deg, #999 25%, transparent 25%),
     linear-gradient(45deg, transparent 75%, #999 75%),
-      linear-gradient(45deg, transparent 75%, #999 75%),
-        linear-gradient(45deg, #999 25%, #fff 25%);
+    linear-gradient(45deg, transparent 75%, #999 75%),
+    linear-gradient(45deg, #999 25%, #fff 25%);
   background-size: 1.2rem 1.2rem;
   background-position: 0 0, 0 0, -0.6rem -0.6rem, 0.6rem 0.6rem;
   box-shadow: none;
@@ -15,25 +15,25 @@ const CheckeredBox = styled.div`
 `;
 
 const OpacityShowcase = ({ theme }) => {
-  const { color, opacity } = theme;
+  const { colors, opacities } = theme;
 
-  return Object.keys(opacity).map((alpha) => {
+  return Object.keys(opacities).map((opacity) => {
     return (
-      <React.Fragment key={alpha}>
+      <React.Fragment key={opacity}>
         <CheckeredBox>
           <div
             style={{
-              backgroundColor: color.brand.primary,
+              backgroundColor: colors.brand.primary,
               width: '100px',
               height: '100px',
               position: 'relative',
-              opacity: opacity[alpha],
+              opacity: opacities[opacity],
             }}
           />
         </CheckeredBox>
 
         <caption style={{ whiteSpace: 'nowrap' }}>
-          --sawmill-opacity-{alpha}
+          --sawmill-opacity-{opacity}
         </caption>
       </React.Fragment>
     );

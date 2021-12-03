@@ -8,8 +8,8 @@ export default Layout;
 export const square = {
   width: '4rem',
   height: '4rem',
-  boxShadow: theme.color.shadows.panel,
-  borderRadius: theme.radius.md,
+  boxShadow: theme.shadows.panel,
+  borderRadius: theme.radii.md,
   checkeredBackground: true,
 };
 
@@ -18,7 +18,7 @@ export const square = {
 These colors come from marketing's branding guideline and should not be altered without consent from their team.
 
 <SystemUIShowcases
-  theme={{ colors: theme.color.brand }}
+  theme={{ colors: theme.colors.brand }}
   showcaseKey="bg"
   componentProps={square}
 />
@@ -28,7 +28,7 @@ These colors come from marketing's branding guideline and should not be altered 
 There has been [research](https://uxmovement.com/content/why-you-should-never-use-pure-black-for-text-or-backgrounds/) [done](https://uxplanet.org/basicdesign-never-use-pure-black-in-typography-36138a3327a6) showing that pure black can cause eye-strain. This is why we've chosen not to include a `100` value.
 
 <SystemUIShowcases
-  theme={{ colors: theme.color.gray }}
+  theme={{ colors: theme.colors.gray }}
   showcaseKey="bg"
   componentProps={square}
 />
@@ -38,11 +38,11 @@ There has been [research](https://uxmovement.com/content/why-you-should-never-us
 Variant colors are generated using [`coloralgorithim`](https://github.com/k-vyn/coloralgorithm) and helps produce much cleaner color pallettes.
 
 <React.Fragment>
-  {Object.keys(theme.color.variant).map((vars)=>{
+  {Object.keys(theme.colors.variant).map((vars)=>{
     return (<React.Fragment>
     <h3>{vars}</h3>
 <SystemUIShowcases
-  theme={{ colors: theme.color.variant[vars] }}
+  theme={{ colors: theme.colors.variant[vars] }}
   showcaseKey="bg"
   componentProps={square}
 />

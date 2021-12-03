@@ -9,20 +9,20 @@ const Box = styled.div`
 `;
 
 const OpacityCard = ({ theme }) => {
-  const { color, radius } = theme;
+  const { colors, radii } = theme;
 
-  return Object.keys(radius).map((rad) => {
+  return Object.keys(radii).map((radius) => {
     return (
       <>
         <Box
-          key={rad}
+          key={radius}
           style={{
-            backgroundColor: color.brand.primary,
-            borderRadius: radius[rad],
+            backgroundColor: colors.brand.primary,
+            borderRadius: radii[radius],
           }}
         />
         <caption style={{ whiteSpace: 'nowrap' }}>
-          --sawmill-radius-{rad}
+          --sawmill-radius-{radius}
         </caption>
       </>
     );

@@ -1,6 +1,6 @@
 {
   "typography": {
-    "fontWeight": {
+    "fontWeights": {
       "thin": {
         "value": "100"
       },

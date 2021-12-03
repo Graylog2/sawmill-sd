@@ -1,22 +1,22 @@
 {
-  "color": {
+  "colors": {
     "background": {
       "content": "#1f1f1f",
-      "global": "#2f2f2f",
+      "global": "hsla(240, 0.00%, 18.29%, 1)",
       "input": {
-        "@": "#1f1f1f",
-        "disabled": "#3f3f3f",
+        "@": "hsla(240, 0.00%, 12.00%, 1)",
+        "disabled": "hsla(240, 0.00%, 24.57%, 1)",
         "error": "#e38888",
-        "focus": "#1f1f1f"
+        "focus": "hsla(240, 0.00%, 12.00%, 1)"
       },
-      "navigation": "#2f2f2f",
+      "navigation": "hsla(240, 0.00%, 18.29%, 1)",
       "table": {
-        "alt": "#2f2f2f",
-        "@": "#1f1f1f",
-        "hover": "#3f3f3f",
+        "alt": "hsla(240, 0.00%, 18.29%, 1)",
+        "@": "hsla(240, 0.00%, 12.00%, 1)",
+        "hover": "hsla(240, 0.00%, 24.57%, 1)",
         "active": {
-          "@": "#2f2f2f",
-          "hover": "#3f3f3f"
+          "@": "hsla(240, 0.00%, 18.29%, 1)",
+          "hover": "hsla(240, 0.00%, 24.57%, 1)"
         },
         "danger": {
           "@": "#ffd4d4",
@@ -42,51 +42,46 @@
     },
     "border": {
       "input": {
-        "@": "#4f4f4f",
-        "disabled": "#3f3f3f",
+        "@": "hsla(240, 0.00%, 30.86%, 1)",
+        "disabled": "hsla(240, 0.00%, 24.57%, 1)",
         "error": "#c84f4f",
         "focus": "#97b8e9"
       },
-      "panel": "#3f3f3f"
+      "panel": "hsla(240, 0.00%, 24.57%, 1)"
     },
     "brand": {
       "primary": "#ff3633",
-      "secondary": "#ffffff",
+      "secondary": "#fff",
       "tertiary": "#1f1f1f"
     },
     "gray": {
-      "0": "#1f1f1f",
-      "10": "#2f2f2f",
-      "20": "#3f3f3f",
-      "30": "#4f4f4f",
-      "40": "#5f5f5f",
-      "50": "#7f7f7f",
-      "60": "#9f9f9f",
-      "70": "#bfbfbf",
-      "80": "#dfdfdf",
-      "90": "#ffffff"
-    },
-    "shadows": {
-      "input": "rgba(0, 0, 0, 0.08)",
-      "navigation": "rgba(47, 47, 47, 0.5)",
-      "panel": "rgba(95, 95, 95, 0.4)"
+      "0": "hsla(240, 0.00%, 12.00%, 1)",
+      "10": "hsla(240, 0.00%, 18.29%, 1)",
+      "20": "hsla(240, 0.00%, 24.57%, 1)",
+      "30": "hsla(240, 0.00%, 30.86%, 1)",
+      "40": "hsla(240, 0.00%, 37.14%, 1)",
+      "50": "hsla(240, 0.00%, 49.71%, 1)",
+      "60": "hsla(240, 0.00%, 62.29%, 1)",
+      "70": "hsla(240, 0.00%, 74.86%, 1)",
+      "80": "hsla(240, 0.00%, 87.43%, 1)",
+      "90": "hsla(240, 0.00%, 100.00%, 1)"
     },
     "text": {
       "primary": "#1f1f1f",
-      "secondary": "#ffffff",
+      "secondary": "#fff",
       "link": {
         "@": "#6d3581",
         "hover": "#9a69b3"
       },
       "input": {
-        "@": "#dfdfdf",
-        "disabled": "#9f9f9f",
+        "@": "hsla(240, 0.00%, 87.43%, 1)",
+        "disabled": "hsla(240, 0.00%, 62.29%, 1)",
         "error": "#911717",
-        "placeholder": "#9f9f9f"
+        "placeholder": "hsla(240, 0.00%, 62.29%, 1)"
       }
     },
     "variant": {
-      "transparent": "#000000",
+      "transparent": "rgba(0, 0, 0, 0)",
       "danger": {
         "darkest": "#590707",
         "darker": "#750c0c",
@@ -134,28 +129,33 @@
       }
     }
   },
-  "elevation": {
+  "shadows": {
+    "input": "inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4)",
+    "navigation": "hsla(240, 0.00%, 18.29%, 0.5)",
+    "panel": "0 2px 6px 0 hsla(240, 0.00%, 37.14%, 0.4)"
+  },
+  "elevations": {
     "underneath": "-100",
     "base": "auto",
     "overlay": "100",
     "toast": "200",
     "popup": "300"
   },
-  "opacity": {
+  "opacities": {
     "0": 0,
     "35": 0.35,
     "65": 0.65,
     "80": 0.8,
     "100": 1
   },
-  "radius": {
+  "radii": {
     "none": "0",
     "sm": "2px",
     "md": "4px",
     "lg": "6px",
     "round": "50%"
   },
-  "spacing": {
+  "spacings": {
     "0": "0px",
     "1": "1px",
     "huge": "8.25rem",
@@ -180,32 +180,32 @@
     }
   },
   "typography": {
-    "fontFamily": {
+    "fonts": {
       "sans": "\"Open Sans\", Frutiger, \"Frutiger Linotype\", Univers, Calibri, \"Gill Sans\", \"Gill Sans MT\", \"Myriad Pro\", Myriad, \"DejaVu Sans Condensed\", \"Liberation Sans\", \"Nimbus Sans L\", Tahoma, Geneva, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
       "serif": "Constantia, \"Lucida Bright\", Lucidabright, \"Lucida Serif\", Lucida, \"DejaVu Serif\", \"Bitstream Vera Serif\", \"Liberation Serif\", Georgia, serif",
       "monospace": "\"Roboto Mono\", \"Andale Mono WT\", \"Andale Mono\", \"Lucida Console\", \"Lucida Sans Typewriter\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Liberation Mono\", \"Nimbus Mono L\", Menlo, Monaco, \"Courier New\", Courier, monospace"
     },
-    "lineHeight": {
+    "lineHeights": {
       "compact": "0.8",
       "tight": "1",
       "base": "normal",
       "loose": "1.2",
       "relaxed": "1.5"
     },
-    "fontSize": {
-      "ratio": "1.125",
+    "fontRatio": "1.125",
+    "fontSizes": {
       "root": "87.5%",
       "base": "1rem",
-      "xxs": "calc(var(calc(var(calc(var(1rem) * var(1.125))) / var(1.125))) / var(1.125))",
-      "xs": "calc(var(calc(var(1rem) * var(1.125))) / var(1.125))",
-      "sm": "calc(var(1rem) * var(1.125))",
-      "md": "calc(var(calc(var(1rem) * var(1.125))) * var(1.125))",
-      "lg": "calc(var(calc(var(calc(var(1rem) * var(1.125))) * var(1.125))) * var(1.125))",
-      "xl": "calc(var(calc(var(calc(var(calc(var(1rem) * var(1.125))) * var(1.125))) * var(1.125))) * var(1.125))",
-      "xxl": "calc(var(calc(var(calc(var(calc(var(calc(var(1rem) * var(1.125))) * var(1.125))) * var(1.125))) * var(1.125))) * var(1.125))",
-      "huge": "calc(var(calc(var(calc(var(calc(var(calc(var(calc(var(1rem) * var(1.125))) * var(1.125))) * var(1.125))) * var(1.125))) * var(1.125))) * 2 * var(1.125))"
+      "xxs": "calc(calc(calc(1rem * 1.125) / 1.125) / 1.125)",
+      "xs": "calc(calc(1rem * 1.125) / 1.125)",
+      "sm": "calc(1rem * 1.125)",
+      "md": "calc(calc(1rem * 1.125) * 1.125)",
+      "lg": "calc(calc(calc(1rem * 1.125) * 1.125) * 1.125)",
+      "xl": "calc(calc(calc(calc(1rem * 1.125) * 1.125) * 1.125) * 1.125)",
+      "xxl": "calc(calc(calc(calc(calc(1rem * 1.125) * 1.125) * 1.125) * 1.125) * 1.125)",
+      "huge": "calc((calc(calc(calc(calc(calc(1rem * 1.125) * 1.125) * 1.125) * 1.125) * 1.125) * 1.5) * 1.125)"
     },
-    "fontWeight": {
+    "fontWeights": {
       "thin": "100",
       "light": "300",
       "regular": "400",

@@ -1,5 +1,5 @@
 {
-  "elevation": {
+  "elevations": {
     "underneath": { "value": "-100" },
     "base": { "value": "auto" },
     "overlay": { "value": "100" },

@@ -1,18 +1,16 @@
 {
-  "color": {
-    "shadows": {
-      "input": {
-        "value": "inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4)",
-        "noirValue": "inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(25, 92, 161, 0.4)"
-      },
-      "navigation": {
-        "value": "hsla(240, 0.00%, 18.29%, 0.5)",
-        "noirValue": "hsla(240, 0.00%, 87.43%, 0.5)"
-      },
-      "panel": {
-        "value": "0 2px 6px 0 hsla(240, 0.00%, 37.14%, 0.4)",
-        "noirValue": "0 2px 6px 0 hsla(240, 0.00%, 49.71%, 0.4)"
-      }
+  "shadows": {
+    "input": {
+      "value": "inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4)",
+      "noirValue": "inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(25, 92, 161, 0.4)"
+    },
+    "navigation": {
+      "value": "hsla(240, 0.00%, 18.29%, 0.5)",
+      "noirValue": "hsla(240, 0.00%, 87.43%, 0.5)"
+    },
+    "panel": {
+      "value": "0 2px 6px 0 hsla(240, 0.00%, 37.14%, 0.4)",
+      "noirValue": "0 2px 6px 0 hsla(240, 0.00%, 49.71%, 0.4)"
     }
   }
 }

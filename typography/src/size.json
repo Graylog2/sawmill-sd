@@ -1,10 +1,10 @@
 {
   "typography": {
-    "fontSize": {
-      "ratio": {
-        "value": "1.125",
-        "comment": "Typography scale ratio - https://type-scale.com/"
-      },
+    "fontRatio": {
+      "value": "1.125",
+      "comment": "Typography scale ratio - https://type-scale.com/"
+    },
+    "fontSizes": {
       "root": {
         "value": "87.5%",
         "comment": "Set as default `html` font-size in your CSS"
@@ -14,28 +14,28 @@
         "comment": "14px"
       },
       "xxs": {
-        "value": "calc(var({typography.fontSize.xs.value}) / var({typography.fontSize.ratio.value}))"
+        "value": "calc({typography.fontSizes.xs.value} / {typography.fontRatio.value})"
       },
       "xs": {
-        "value": "calc(var({typography.fontSize.sm.value}) / var({typography.fontSize.ratio.value}))"
+        "value": "calc({typography.fontSizes.sm.value} / {typography.fontRatio.value})"
       },
       "sm": {
-        "value": "calc(var({typography.fontSize.base.value}) * var({typography.fontSize.ratio.value}))"
+        "value": "calc({typography.fontSizes.base.value} * {typography.fontRatio.value})"
       },
       "md": {
-        "value": "calc(var({typography.fontSize.sm.value}) * var({typography.fontSize.ratio.value}))"
+        "value": "calc({typography.fontSizes.sm.value} * {typography.fontRatio.value})"
       },
       "lg": {
-        "value": "calc(var({typography.fontSize.md.value}) * var({typography.fontSize.ratio.value}))"
+        "value": "calc({typography.fontSizes.md.value} * {typography.fontRatio.value})"
       },
       "xl": {
-        "value": "calc(var({typography.fontSize.lg.value}) * var({typography.fontSize.ratio.value}))"
+        "value": "calc({typography.fontSizes.lg.value} * {typography.fontRatio.value})"
       },
       "xxl": {
-        "value": "calc(var({typography.fontSize.xl.value}) * var({typography.fontSize.ratio.value}))"
+        "value": "calc({typography.fontSizes.xl.value} * {typography.fontRatio.value})"
       },
       "huge": {
-        "value": "calc(var({typography.fontSize.xxl.value}) * 2 * var({typography.fontSize.ratio.value}))"
+        "value": "calc(({typography.fontSizes.xxl.value} * 1.5) * {typography.fontRatio.value})"
       }
     }
   }

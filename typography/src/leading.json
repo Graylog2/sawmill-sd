@@ -1,6 +1,6 @@
 {
   "typography": {
-    "lineHeight": {
+    "lineHeights": {
       "compact": {
         "value": "0.8"
       },

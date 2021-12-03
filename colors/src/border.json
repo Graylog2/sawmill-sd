@@ -1,27 +1,27 @@
 {
-  "color": {
+  "colors": {
     "border": {
       "input": {
         "@": {
-          "value": "{color.gray.30.value}",
-          "noirValue": "{color.gray.30.noirValue}"
+          "value": "{colors.gray.30.value}",
+          "noirValue": "{colors.gray.30.noirValue}"
         },
         "disabled": {
-          "value": "{color.gray.20.value}",
-          "noirValue": "{color.gray.20.noirValue}"
+          "value": "{colors.gray.20.value}",
+          "noirValue": "{colors.gray.20.noirValue}"
         },
         "error": {
-          "value": "{color.variant.danger.light.value}",
-          "noirValue": "{color.variant.danger.light.noirValue}"
+          "value": "{colors.variant.danger.light.value}",
+          "noirValue": "{colors.variant.danger.light.noirValue}"
         },
         "focus": {
-          "value": "{color.variant.info.lighter.value}",
-          "noirValue": "{color.variant.info.lighter.noirValue}"
+          "value": "{colors.variant.info.lighter.value}",
+          "noirValue": "{colors.variant.info.lighter.noirValue}"
         }
       },
       "panel": {
-        "value": "{color.gray.20.value}",
-        "noirValue": "{color.gray.20.noirValue}"
+        "value": "{colors.gray.20.value}",
+        "noirValue": "{colors.gray.20.noirValue}"
       }
     }
   }
