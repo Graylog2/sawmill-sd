@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { MDXProvider } from '@mdx-js/react';
 import { CssLayout } from '@divriots/dockit-react/mdx-layout-css';
 import { Logo } from './Logo';
 import * as theme from '~/theme/src/theme.json';
@@ -34,17 +33,16 @@ const GlobalStyle = createGlobalStyle`
 export const Layout = (props: unknown) => {
   return (
     <ThemeProvider theme={theme}>
-      <MDXProvider components={{ SawmillPlayground }}>
-        <GlobalStyle />
-        <CssLayout
-          logo={
-            <div style={{ width: '250px' }}>
-              <Logo />
-            </div>
-          }
-          {...props}
-        />
-      </MDXProvider>
+      <GlobalStyle />
+      <CssLayout
+        logo={
+          <div style={{ width: '250px' }}>
+            <Logo />
+          </div>
+        }
+        components={{ SawmillPlayground }}
+        {...props}
+      />
     </ThemeProvider>
   );
 };
