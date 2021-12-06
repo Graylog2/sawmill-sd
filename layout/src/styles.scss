@@ -1,8 +1,0 @@
-@import '../../theme/src/variables.css';
-@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    @import '../../theme/src/variables-noir.css';
-  }
-}

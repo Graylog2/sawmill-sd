@@ -2,8 +2,7 @@ import { mdx } from '@mdx-js/react';
 import { Props, Description } from '@divriots/dockit-react/props';
 import { ShadowPlayground } from '@divriots/dockit-react/playground';
 import { Layout } from '~/layout';
-import { Button, Log } from '../src';
-import styles from '../../layout/src/styles.scss';
+import { Button } from '../src';
 export default Layout;
 
 # Button
@@ -21,10 +20,8 @@ import { Button } from '';
 ## Examples
 
 <ShadowPlayground
-  styles={styles}
   scope={{ Button }}
   code={`
-<Log it={styles} />
 <Button bsStyle="primary">Primary</Button>
 <Button disabled>Disabled</Button>
 <Button bsStyle="success" active>Success Active</Button>
@@ -32,7 +29,6 @@ import { Button } from '';
 />
 
 <ShadowPlayground
-  styles={styles}
   scope={{ Button }}
   code={`
 <Button bsSize="lg">Large</Button>

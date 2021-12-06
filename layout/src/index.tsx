@@ -15,6 +15,15 @@ import 'https://unpkg.com/prismjs@1.25.0/themes/prism-tomorrow.css';
 const noirVars = async () => await import('~/theme/src/variables-noir.css');
 
 const GlobalStyle = createGlobalStyle`
+  @import '../../theme/src/variables.css';
+  @import 'bootstrap/dist/css/bootstrap.css';
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      @import '../../theme/src/variables-noir.css';
+    }
+  }
+
   :root {
     --text-main: --sawmill-color-text-primary;
   }
