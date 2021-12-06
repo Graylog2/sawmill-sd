@@ -6,12 +6,11 @@ import * as theme from '~/theme/src/theme.json';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import { SawmillPlayground } from './SawmillPlayground';
-import '~/theme/src/variables.css';
-import 'bootstrap/dist/css/bootstrap.css';
 import 'https://unpkg.com/prismjs@1.25.0/themes/prism-tomorrow.css';
 
 const GlobalStyle = createGlobalStyle`
   @import '../../theme/src/variables.css';
+  @import 'bootstrap/dist/css/bootstrap.css';
 
   @media (prefers-color-scheme: dark) {
     :root {
