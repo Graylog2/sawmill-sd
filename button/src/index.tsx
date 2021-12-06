@@ -5,6 +5,12 @@ import styled from 'styled-components';
 import { TButtonProps, TButtonVariantStates } from './types';
 import { generateColors, generateSizes } from './styles';
 
+export const Log = ({ it }) => {
+  console.log('LOG : ', it);
+
+  return <></>;
+};
+
 const variantColors: TButtonVariantStates = {
   base: {
     background: {
