@@ -5,7 +5,7 @@ import { Logo } from './Logo';
 import * as theme from '~/theme/src/theme.json';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
-import { SawmillPlayground } from './SawmillPlayground';
+import SawmillPlayground from './SawmillPlayground';
 import 'https://unpkg.com/prismjs@1.25.0/themes/prism-tomorrow.css';
 
 const GlobalStyle = createGlobalStyle`
