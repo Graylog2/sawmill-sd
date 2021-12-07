@@ -1,0 +1,41 @@
+import { mdx } from '@mdx-js/react';
+import { Props, Description } from '@divriots/dockit-react/props';
+import { Layout } from '~/layout';
+import { Alert } from '../src';
+export default Layout;
+
+# Button
+
+<Description of={Alert} />
+
+## Usage
+
+```jsx
+import { Alert } from '';
+
+<Alert>Click default</Alert>;
+```
+
+## Examples
+
+<SawmillPlayground
+  scope={{ Alert }}
+  code={`
+<Alert bsStyle="primary">Primary</Alert>
+<Alert disabled>Disabled</Alert>
+<Alert bsStyle="success" active>Success Active</Alert>
+`}
+/>
+
+<SawmillPlayground
+  scope={{ Alert }}
+  code={`
+<Alert bsSize="lg">Large</Alert>
+<Alert bsSize="sm">Small</Alert>
+<Alert bsSize="xs">Extra Small</Alert>
+`}
+/>
+
+## Props
+
+<Props of={Alert} />
