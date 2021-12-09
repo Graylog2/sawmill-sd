@@ -1,0 +1,6 @@
+.box {
+  width: 6rem;
+  height: 6rem;
+  box-shadow: var(--sawmill-shadows-panel);
+  background-color: var(--sawmill-colors-brand-primary);
+}

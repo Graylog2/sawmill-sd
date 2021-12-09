@@ -6,10 +6,10 @@
         [
           "colors",
           "elevations",
-          "typography",
           "opacity",
           "radii",
-          "spacings"
+          "spacings",
+          "typography"
         ]
       ],
       [
