@@ -1,17 +1,19 @@
-import * as React from "react";
+import * as React from 'react';
+import { Caption } from '@divriots/dockit-react/caption';
 
 const styles = {
   box: {
-    height: "1rem",
-    backgroundColor: "#718096",
+    height: '1rem',
+    backgroundColor: '#718096',
   },
 };
 
 interface SpaceProps {
   scale: (string | number)[] | Record<string, string | number>;
+  prefix: string;
 }
 
-const SpacingsShowcase = ({ scale }: SpaceProps) => {
+const SpacingsShowcase = ({ scale, prefix }: SpaceProps) => {
   const values = Array.isArray(scale)
     ? (scale as any[]).map((s, i) => [i, s])
     : Object.entries(scale);
@@ -20,8 +22,8 @@ const SpacingsShowcase = ({ scale }: SpaceProps) => {
     .map(([k, v]) =>
       v || v === 0
         ? [
-            `${k}`.trim().replace(/var\(|\)/gi, ""),
-            typeof v === "number" ? `${v}px` : v,
+            `${k}`.trim().replace(/var\(|\)/gi, ''),
+            typeof v === 'number' ? `${v}px` : v,
           ]
         : null
     )
@@ -33,14 +35,14 @@ const SpacingsShowcase = ({ scale }: SpaceProps) => {
         <tr>
           <th>Name</th>
           <th>Size</th>
-          <th></th>
+          <th />
         </tr>
       </thead>
       <tbody>
         {scaleValues.map(([name, value]) => (
           <tr key={`${name}-${value}`}>
             <td>
-              <pre>{name}</pre>
+              <Caption text={`${prefix}-${name}`} />
             </td>
             <td>
               <pre>{value}</pre>
