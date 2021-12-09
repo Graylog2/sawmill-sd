@@ -1,15 +1,16 @@
 import { mdx } from '@mdx-js/react';
-import theme from '~/theme/src/theme.json';
 import { ZIndexShowcases } from '@divriots/dockit-react/z-index';
+import { getCssCustomProps } from '@divriots/dockit-react/style-showcases';
 import { Layout } from '~/layout';
+export const getCssValue = name => `var(${name})`;
+export const props = getCssCustomProps("--sawmill-elevations")
+export const values = props.map(([name]) => getCssValue(name));
 export default Layout;
-
-export const keys = Object.keys(theme.elevations).map(
-  (zIdx) => theme.elevations[zIdx]
-);
 
 ## Z-Index values
 
 Need to get this to output the name of each elevation and allow for Click to Copy
 
-<ZIndexShowcases values={keys} />
+<ZIndexShowcases values={values} />
+
+
