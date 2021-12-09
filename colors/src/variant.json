@@ -7,151 +7,151 @@
       "danger": {
         "darkest": {
           "value": "#590707",
-          "noirValue": "#ffd4d4"
+          "noirValue": "#e6b8b8"
         },
         "darker": {
           "value": "#750c0c",
-          "noirValue":  "#e39292"
+          "noirValue":  "#d07171"
         },
         "dark": {
           "value": "#911717",
-          "noirValue":  "#c84e4e"
+          "noirValue":  "#ba3b3b"
         },
         "base": {
           "value": "#9e2020",
-          "noirValue":  "#ba3b3b"
+          "noirValue":  "#922222"
         },
         "light": {
           "value": "#c84f4f",
-          "noirValue":  "#911d1d"
+          "noirValue":  "#6a1515"
         },
         "lighter": {
           "value": "#e38888",
-          "noirValue":  "#751010"
+          "noirValue":  "#420c0c"
         },
         "lightest": {
           "value": "#ffd4d4",
-          "noirValue":  "#590707"
+          "noirValue":  "#190505"
         }
       },
       "info": {
         "darkest": {
           "value": "#002242",
-          "noirValue":  "#e1e6f0"
+          "noirValue":  "#b8d3e6"
         },
         "darker": {
           "value": "#043b70",
-          "noirValue":  "#9eb9e1"
+          "noirValue":  "#72b4e0"
         },
         "dark": {
           "value": "#10579f",
-          "noirValue":  "#528bd2"
+          "noirValue":  "#3498db"
         },
         "base": {
           "value": "#1b65b3",
-          "noirValue":  "#3b7eca"
+          "noirValue":  "#1f75af"
         },
         "light": {
           "value": "#5792db",
-          "noirValue":  "#195ca1"
+          "noirValue":  "#145783"
         },
         "lighter": {
           "value": "#97b8e9",
-          "noirValue":  "#083a6b"
+          "noirValue":  "#0f3a57"
         },
         "lightest": {
           "value": "#e1e6f0",
-          "noirValue":  "#002242"
+          "noirValue":  "#091d2b"
         }
       },
       "primary": {
         "darkest": {
           "value": "#270e2e",
-          "noirValue":  "#f2f0f5"
+          "noirValue":  "#bad0e8"
         },
         "darker": {
           "value": "#431a4f",
-          "noirValue":  "#c2abd4"
+          "noirValue":  "#7fa1c5"
         },
         "dark": {
           "value": "#5f2a70",
-          "noirValue":  "#9a68b3"
+          "noirValue":  "#547aa2"
         },
         "base": {
           "value": "#6d3581",
-          "noirValue":  "#8a53a2"
+          "noirValue":  "#375a7f"
         },
         "light": {
           "value": "#9a69b3",
-          "noirValue":  "#5f2e70"
+          "noirValue":  "#1e3d5d"
         },
         "lighter": {
           "value": "#bfa3d4",
-          "noirValue":  "#431c4f"
+          "noirValue":  "#0f243b"
         },
         "lightest": {
           "value": "#f2f0f5",
-          "noirValue":  "#270e2e"
+          "noirValue":  "#050f19"
         }
       },
       "success": {
         "darkest": {
           "value": "#003d17",
-          "noirValue":  "#f0f7f1"
+          "noirValue":  "#c5d9d4"
         },
         "darker": {
           "value": "#035c24",
-          "noirValue":  "#9dd8a8"
+          "noirValue":  "#58caae"
         },
         "dark": {
           "value": "#0d7b34",
-          "noirValue":  "#4bb969"
+          "noirValue":  "#00bc8c"
         },
         "base": {
           "value": "#158b3e",
-          "noirValue":  "#34aa57"
+          "noirValue":  "#00936e"
         },
         "light": {
           "value": "#4cb96a",
-          "noirValue":  "#137b37"
+          "noirValue":  "#006b50"
         },
         "lighter": {
           "value": "#91d89f",
-          "noirValue":  "#075c26"
+          "noirValue":  "#004232"
         },
         "lightest": {
           "value": "#f0f7f1",
-          "noirValue":  "#003d17"
+          "noirValue":  "#011913"
         }
       },
       "warning": {
         "darkest": {
           "value": "#b37e00",
-          "noirValue":  "#f7f3e9"
+          "noirValue":  "#ccad7a"
         },
         "darker": {
           "value": "#be8806",
-          "noirValue":  "#ecd6a6"
+          "noirValue":  "#e0b36b"
         },
         "dark": {
           "value": "#c99414",
-          "noirValue":  "#e0b758"
+          "noirValue":  "#eeaf4a"
         },
         "base": {
           "value": "#cf9b1f",
-          "noirValue":  "#dbad40"
+          "noirValue":  "#f39c12"
         },
         "light": {
           "value": "#e0b859",
-          "noirValue":  "#c9971f"
+          "noirValue":  "#b97100"
         },
         "lighter": {
           "value": "#ecd299",
-          "noirValue":  "#be8a0e"
+          "noirValue":  "#754800"
         },
         "lightest": {
           "value": "#f7f3e9",
-          "noirValue":  "#b37e00"
+          "noirValue":  "#331f00"
         }
       }
     }
