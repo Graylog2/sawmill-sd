@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { mdx } from '@mdx-js/react';
 import theme from '~/theme/src/theme.json';
-import { SystemUIShowcases } from '@divriots/dockit-react/systemui-showcases';
+import { StyleShowcases } from '@divriots/dockit-react/style-showcases';
+import './styles.css';
 import { Layout } from '~/layout';
 export default Layout;
 
@@ -17,36 +18,31 @@ export const square = {
 
 These colors come from marketing's branding guideline and should not be altered without consent from their team.
 
-<SystemUIShowcases
-  theme={{ colors: theme.colors.brand }}
-  showcaseKey="bg"
-  componentProps={square}
+<StyleShowcases
+  prefix="--sawmill-colors-brand"
+  styleKey="background"
+  componentProps={{ className: 'box' }}
+  showcaseComponent="box"
 />
 
 ## Gray Colors
 
 There has been [research](https://uxmovement.com/content/why-you-should-never-use-pure-black-for-text-or-backgrounds/) [done](https://uxplanet.org/basicdesign-never-use-pure-black-in-typography-36138a3327a6) showing that pure black can cause eye-strain. This is why we've chosen not to include a `100` value.
 
-<SystemUIShowcases
-  theme={{ colors: theme.colors.gray }}
-  showcaseKey="bg"
-  componentProps={square}
+<StyleShowcases
+  prefix="--sawmill-colors-gray"
+  styleKey="background"
+  componentProps={{ className: 'box' }}
+  showcaseComponent="box"
 />
 
 ## Variant Colors
 
 Variant colors are generated using [`coloralgorithim`](https://github.com/k-vyn/coloralgorithm) and helps produce much cleaner color pallettes.
 
-<React.Fragment>
-  {Object.keys(theme.colors.variant).map((vars)=>{
-    return (<React.Fragment>
-    <h3>{vars}</h3>
-<SystemUIShowcases
-  theme={{ colors: theme.colors.variant[vars] }}
-  showcaseKey="bg"
-  componentProps={square}
+<StyleShowcases
+  prefix="--sawmill-colors-variant"
+  styleKey="background"
+  componentProps={{ className: 'box' }}
+  showcaseComponent="box"
 />
-</React.Fragment>)
-  })}
-
-</React.Fragment>
