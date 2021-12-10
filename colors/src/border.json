@@ -3,12 +3,10 @@
     "border": {
       "input": {
         "@": {
-          "value": "{colors.gray.30.value}",
-          "noirValue": "{colors.gray.30.noirValue}"
+          "value": "{colors.gray.30.value}"
         },
         "disabled": {
-          "value": "{colors.gray.20.value}",
-          "noirValue": "{colors.gray.20.noirValue}"
+          "value": "{colors.gray.20.value}"
         },
         "error": {
           "value": "{colors.variant.danger.light.value}",
@@ -20,8 +18,7 @@
         }
       },
       "panel": {
-        "value": "{colors.gray.20.value}",
-        "noirValue": "{colors.gray.20.noirValue}"
+        "value": "{colors.gray.20.value}"
       }
     }
   }

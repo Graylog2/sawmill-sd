@@ -6,52 +6,42 @@
         "noirValue": "{colors.brand.tertiary.noirValue}"
       },
       "global": {
-        "value": "{colors.gray.10.value}",
-        "noirValue": "{colors.gray.10.noirValue}"
+        "value": "{colors.gray.10.value}"
       },
       "input": {
         "@": {
-          "value": "{colors.gray.0.value}",
-          "noirValue": "{colors.gray.0.value}"
+          "value": "{colors.gray.0.value}"
         },
         "disabled": {
-          "value": "{colors.gray.20.value}",
-          "noirValue": "{colors.gray.20.noirValue}"
+          "value": "{colors.gray.20.value}"
         },
         "error": {
           "value": "{colors.variant.danger.lighter.value}",
           "noirValue": "{colors.variant.danger.lighter.noirValue}"
         },
         "focus": {
-          "value": "{colors.gray.0.value}",
-          "noirValue": "{colors.gray.0.noirValue}"
+          "value": "{colors.gray.0.value}"
         }
       },
       "navigation": {
-        "value": "{colors.gray.10.value}",
-        "noirValue": "{colors.gray.10.noirValue}"
+        "value": "{colors.gray.10.value}"
       },
       "table": {
         "alt": {
-          "value": "{colors.gray.10.value}",
-          "noirValue": "{colors.gray.10.noirValue}"
+          "value": "{colors.gray.10.value}"
         },
         "@": {
-          "value": "{colors.gray.0.value}",
-          "noirValue": "{colors.gray.0.noirValue}"
+          "value": "{colors.gray.0.value}"
         },
         "hover": {
-          "value": "{colors.gray.20.value}",
-          "noirValue": "{colors.gray.0.noirValue}"
+          "value": "{colors.gray.20.value}"
         },
         "active": {
           "@": {
-            "value": "{colors.gray.10.value}",
-            "noirValue": "{colors.gray.0.noirValue}"
+            "value": "{colors.gray.10.value}"
           },
           "hover": {
-            "value": "{colors.gray.20.value}",
-            "noirValue": "{colors.gray.0.noirValue}"
+            "value": "{colors.gray.20.value}"
           }
         },
         "danger": {

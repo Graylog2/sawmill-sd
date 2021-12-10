@@ -21,20 +21,17 @@
       },
       "input": {
         "@": {
-          "value": "{colors.gray.80.value}",
-          "noirValue": "{colors.gray.80.noirValue}"
+          "value": "{colors.gray.80.value}"
         },
         "disabled": {
-          "value": "{colors.gray.60.value}",
-          "noirValue": "{colors.gray.60.noirValue}"
+          "value": "{colors.gray.60.value}"
         },
         "error": {
           "value": "{colors.variant.danger.dark.value}",
           "noirValue": "{colors.variant.danger.dark.noirValue}"
         },
         "placeholder": {
-          "value": "{colors.gray.60.value}",
-          "noirValue": "{colors.gray.60.noirValue}"
+          "value": "{colors.gray.60.value}"
         }
       }
     }
