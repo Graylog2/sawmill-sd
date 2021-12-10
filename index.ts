@@ -1,25 +1,18 @@
-import { Alert } from './alert';
-import { Button } from './button';
-
 import themeJson from './theme/src/theme.json';
-import bootstrapStyles from 'bootstrap/dist/css/bootstrap.css';
 import themeRootCss from './theme/src/variables.css';
 import themeNoirCss from './theme/src/variables-noir.css';
 
-export const components = {
-  Alert,
-  Button,
-};
-
-export const theme = {
+export const tokens = {
   json: themeJson,
   css: {
     root: themeRootCss,
     noir: themeNoirCss,
   },
   styles: `
-${bootstrapStyles}
 ${themeRootCss}
 ${themeNoirCss}
   `,
 };
+
+export { Alert } from './alert';
+export { Button } from './button';
