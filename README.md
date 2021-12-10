@@ -21,7 +21,7 @@ function renderAppContainer(appContainer) {
   ReactDOM.render(
     <React.Fragment>
       <SawmillStyles />
-      <AppFacade />
+      <App />
     </React.Fragment>,
     appContainer,
   );
