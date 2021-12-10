@@ -1,21 +1,43 @@
 import { mdx } from '@mdx-js/react';
 import theme from '~/theme/src/theme.json';
 import { SystemUIShowcases } from '@divriots/dockit-react/systemui-showcases';
+import { StyleShowcases, getCssCustomProps } from '@divriots/dockit-react/style-showcases';
 import { Layout } from '~/layout';
+export const getCssValue = name => `var(${name})`;
+export const fontSizeProps = getCssCustomProps("--sawmill-typography-font-sizes")
+export const fontSizeValues = fontSizeProps.map(([name]) => getCssValue(name));
 export default Layout;
 
 # Font Size
 
-<SystemUIShowcases theme={theme.typography} showcaseKey="fontSize" />
+<StyleShowcases
+  prefix="--sawmill-typography-font-sizes"
+  showcaseComponent="text"
+  styleKey="fontSize"
+/>
 
 # Font Family
 
-<SystemUIShowcases theme={theme.typography} showcaseKey="fontFamily" />
+<StyleShowcases
+  prefix="--sawmill-typography-fonts"
+  showcaseComponent="text"
+  styleKey="fontFamily"
+/>
 
 # Font Weight
 
-<SystemUIShowcases theme={theme.typography} showcaseKey="fontWeight" />
+<StyleShowcases
+  prefix="--sawmill-typography-font-weights"
+  showcaseComponent="text"
+  styleKey="fontWeight"
+/>
 
 # Line Height
+
+<StyleShowcases
+  prefix="--sawmill-typography-line-heights"
+  showcaseComponent="text"
+  styleKey="lineHeight"
+/>
 
 <SystemUIShowcases theme={theme.typography} showcaseKey="lineHeight" />
