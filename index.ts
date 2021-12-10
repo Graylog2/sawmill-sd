@@ -2,6 +2,7 @@ import { Alert } from './alert';
 import { Button } from './button';
 
 import themeJson from './theme/src/theme.json';
+import bootstrapStyles from 'bootstrap/dist/css/bootstrap.css';
 import themeRootCss from './theme/src/variables.css';
 import themeNoirCss from './theme/src/variables-noir.css';
 
@@ -16,4 +17,9 @@ export const theme = {
     root: themeRootCss,
     noir: themeNoirCss,
   },
+  styles: `
+${bootstrapStyles}
+${themeRootCss}
+${themeNoirCss}
+  `,
 };

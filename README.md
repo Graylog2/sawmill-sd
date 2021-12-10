@@ -1,5 +1,7 @@
 # Sawmill
-## Design System by Graylog
+### a Design System by Graylog
+
+----
 
 ![Shield.io Badge](https://shields.io/npm/v/@graylog/sawmill-sd)
 
