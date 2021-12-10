@@ -1,16 +1,17 @@
 import StyleDictionary from "style-dictionary";
 
 const buildPath = "theme/src/";
+const DEFAULT_MODE = "teint";
 
 StyleDictionary.registerFormat({
   name: "css/variables",
   formatter: function({ dictionary, options }) {
-    const selector = options.selector ? `.${options.selector}` : `:root`;
+    const selector = `[data-sawmill-mode="${options.mode}"]`;
 
     return `${selector} {
       ${dictionary.allProperties
       .map((prop) => {
-        let value = options.selector ? prop[`${options.selector}Value`] : prop.value;
+        let value = options.mode !== DEFAULT_MODE ? prop[`${options.mode}Value`] : prop.value;
 
         if (options.outputReferences) {
           if (dictionary.usesReference(prop.original.value)) {
@@ -19,7 +20,7 @@ StyleDictionary.registerFormat({
             references.forEach(ref => {
               if (ref.value && ref.name) {
                 value = value.replace(ref.value, function() {
-                  return `var(--${ref.name})`
+                  return `var(--${ref.name})`;
                 });
               }
             });
@@ -45,6 +46,7 @@ StyleDictionary.extend({
           destination: "variables.css",
           format: "css/variables",
           options: {
+            mode: DEFAULT_MODE,
             outputReferences: true
           }
         },
@@ -53,7 +55,7 @@ StyleDictionary.extend({
           format: "css/variables",
           filter: ({ noirValue }) => noirValue,
           options: {
-            selector: "noir",
+            mode: "noir",
             outputReferences: true
           }
         }

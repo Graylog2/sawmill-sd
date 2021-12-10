@@ -37,3 +37,9 @@ window.onload = () => {
   renderAppContainer(appContainer);
 };
 ```
+
+```ts
+document.body.dataset.sawmillMode = "teint";
+// or
+document.body.dataset.sawmillMode = "noir";
+```
