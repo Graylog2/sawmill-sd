@@ -11,7 +11,7 @@ export default Layout;
 ## Usage
 
 ```jsx
-import { Button } from '';
+import { Button } from '@graylog/sawmill-sd';
 
 <Button>Click default</Button>;
 ```
@@ -67,6 +67,14 @@ import { Button } from '';
 <Button bsSize="sm">Small</Button>
 <Button bsSize="xs">Extra Small</Button>
 `}
+/>
+
+### Inline
+<SawmillPlayground
+  scope={{ Button }}
+  code={`<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae <Button inline>Inline Button</Button> consequuntur deleniti
+  dignissimos, et harum illum ipsam iusto necessitatibus nobis officiis perspiciatis possimus, provident quisquam
+  quod rerum sapiente, sit.</p>`}
 />
 
 ## Props

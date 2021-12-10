@@ -55,6 +55,10 @@ export type TButtonProps = {
    */
   href?: string;
   /**
+   * Removes all padding to render even with text
+   */
+  inline?: boolean;
+  /**
    * Defines HTML button type attribute
    */
   type?: 'button' | 'reset' | 'submit';

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Button as BootstrapButton } from 'react-bootstrap';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { TButtonProps, TButtonVariantStates } from './types';
 import { generateColors, generateSizes } from './styles';
@@ -97,9 +97,19 @@ const variantColors: TButtonVariantStates = {
 
 const buttonStyles = [...generateColors(variantColors), ...generateSizes()];
 
-const StyledButton = styled(BootstrapButton)`
-  ${buttonStyles}
-`;
+const StyledButton = styled(BootstrapButton)(
+  ({ inline }) => css`
+    ${buttonStyles}
+    ${inline
+      ? `
+    padding: var(--sawmill-spacings-1) var(--sawmill-spacings-xxs);
+    font-size: var(--sawmill-typography-font-sizes-base);
+    line-height: var(--sawmill-typography-font-sizes-base);
+    margin: var(--sawmill-spacings-0);
+    `
+      : null}
+  `
+);
 
 /**
 	Button component that the user can press to trigger an action.
@@ -111,6 +121,7 @@ export const Button = ({
   bsStyle = 'default',
   disabled = false,
   type = 'button',
+  inline = false,
   ...props
 }: TButtonProps) => {
   return (
@@ -121,6 +132,7 @@ export const Button = ({
       bsStyle={bsStyle}
       disabled={disabled}
       type={type}
+      inline={inline}
       {...props}
     />
   );
