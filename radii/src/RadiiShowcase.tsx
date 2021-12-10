@@ -1,32 +1,36 @@
 import * as React from 'react';
-import styled from 'styled-components';
+import { Showcases } from '@divriots/dockit-react/showcases';
+import '../../opacity/src/styles.css';
+import { createGlobalStyle } from 'styled-components';
 
-const Box = styled.div`
-  position: relative;
-  height: 100px;
-  width: 100px;
-  border: 1px solid #000;
-`;
+export const RadiiShowcase = ({ values }) => {
+  const radiusClassNames = React.useMemo(
+    () =>
+      values
+        .map((value) => {
+          return `.${value} { border-radius: var(${value}); }`;
+        })
+        .join('\n'),
+    [values]
+  );
 
-const OpacityCard = ({ theme }) => {
-  const { colors, radii } = theme;
+  const GlobalStyle = React.useMemo(
+    () => createGlobalStyle`
+  ${radiusClassNames}
+`,
+    [radiusClassNames]
+  );
 
-  return Object.keys(radii).map((radius) => {
-    return (
-      <>
-        <Box
-          key={radius}
-          style={{
-            backgroundColor: colors.brand.primary,
-            borderRadius: radii[radius],
-          }}
-        />
-        <caption style={{ whiteSpace: 'nowrap' }}>
-          --sawmill-radius-{radius}
-        </caption>
-      </>
-    );
-  });
+  return (
+    <>
+      <GlobalStyle />
+      <Showcases
+        showcaseClasses={values}
+        showcaseComponent="box"
+        componentProps={{
+          className: 'box',
+        }}
+      />
+    </>
+  );
 };
-
-export default OpacityCard;
