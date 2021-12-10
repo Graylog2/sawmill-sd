@@ -17,16 +17,49 @@ import { Button } from '';
 ```
 
 ## Examples
-
+### Default
 <SawmillPlayground
   scope={{ Button }}
   code={`
+<Button>Default</Button>
+<Button bsStyle="danger">Danger</Button>
+<Button bsStyle="info">Info</Button>
+<Button bsStyle="link">Link</Button>
 <Button bsStyle="primary">Primary</Button>
-<Button disabled>Disabled</Button>
-<Button bsStyle="success" active>Success Active</Button>
+<Button bsStyle="success">Success</Button>
+<Button bsStyle="warning">Warning</Button>
 `}
 />
 
+### Active
+<SawmillPlayground
+  scope={{ Button }}
+  code={`
+<Button active>Default</Button>
+<Button active bsStyle="danger">Danger</Button>
+<Button active bsStyle="info">Info</Button>
+<Button active bsStyle="link">Link</Button>
+<Button active bsStyle="primary">Primary</Button>
+<Button active bsStyle="success">Success</Button>
+<Button active bsStyle="warning">Warning</Button>
+`}
+/>
+
+### Disabled
+<SawmillPlayground
+  scope={{ Button }}
+  code={`
+<Button disabled>Default</Button>
+<Button disabled bsStyle="danger">Danger</Button>
+<Button disabled bsStyle="info">Info</Button>
+<Button disabled bsStyle="link">Link</Button>
+<Button disabled bsStyle="primary">Primary</Button>
+<Button disabled bsStyle="success">Success</Button>
+<Button disabled bsStyle="warning">Warning</Button>
+`}
+/>
+
+### Size
 <SawmillPlayground
   scope={{ Button }}
   code={`

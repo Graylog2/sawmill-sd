@@ -1,6 +1,6 @@
 import { ReactNode, ReactElement } from 'react';
 
-type TButtonSizes = 'lg'|'sm'|'xs';
+type TButtonSizes = 'lg' | 'sm' | 'xs';
 
 export type TButtonVariantKeys =
   | 'danger'
@@ -22,7 +22,6 @@ type TButtonVariantAttributes = {
 export type TButtonVariantStates = {
   base: TButtonVariantAttributes;
   active: TButtonVariantAttributes;
-  disabled: TButtonVariantAttributes;
   hover: TButtonVariantAttributes;
 };
 
