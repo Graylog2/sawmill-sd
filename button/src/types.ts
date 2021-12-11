@@ -74,4 +74,8 @@ export type TButtonProps = {
    * Change the default prefix
    */
   bsClass?: string;
+  /**
+   * Adds class to button
+   */
+  className?: string;
 };
