@@ -2,7 +2,7 @@ import themeJson from './theme/src/theme.json';
 import themeRootCss from './theme/src/variables.css';
 import themeNoirCss from './theme/src/variables-noir.css';
 
-export * from './button/src/types';
+export type { TButtonVariantKeys } from './button/src/types';
 
 export const tokens = {
   json: themeJson,
