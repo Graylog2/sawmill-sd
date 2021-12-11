@@ -1,6 +1,6 @@
 {
   "name": "@graylog/sawmill-sd",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "homepage": "https://www.npmjs.com/package/@graylog/sawmill-sd",
   "repository": {
     "type": "git",
