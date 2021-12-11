@@ -1,4 +1,9 @@
-import { ReactNode, ReactElement } from 'react';
+import {
+  ButtonHTMLAttributes,
+  DetailedHTMLProps,
+  ReactNode,
+  ReactElement,
+} from 'react';
 
 type TButtonSizes = 'lg' | 'sm' | 'xs';
 
@@ -25,7 +30,10 @@ export type TButtonVariantStates = {
   hover: TButtonVariantAttributes;
 };
 
-export type TButtonProps = {
+export type TButtonProps = DetailedHTMLProps<
+  ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
+> & {
   /**
    * Content to be wrapped by button element
    */
