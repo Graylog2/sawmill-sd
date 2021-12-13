@@ -2,7 +2,11 @@ import * as React from 'react';
 import { Button as BootstrapButton } from 'react-bootstrap';
 import styled, { css } from 'styled-components';
 
-import { TButtonProps, TButtonVariantStates } from './types';
+import {
+  TButtonProps,
+  TButtonVariantStates,
+  TSawmillButtonProps,
+} from './types';
 import { generateColors, generateSizes } from './styles';
 
 const variantColors: TButtonVariantStates = {
@@ -123,7 +127,7 @@ export const Button = ({
   type = 'button',
   inline = false,
   ...props
-}: TButtonProps) => {
+}: TSawmillButtonProps): React.FC<TButtonProps> => {
   return (
     <StyledButton
       active={active}

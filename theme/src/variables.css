@@ -1,4 +1,4 @@
-[data-sawmill-mode="teint"] {
+:root {
         --sawmill-colors-background-content: var(--sawmill-colors-brand-tertiary);
   --sawmill-colors-background-global: var(--sawmill-colors-gray-10);
   --sawmill-colors-background-input: var(--sawmill-colors-gray-0);

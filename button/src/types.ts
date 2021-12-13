@@ -30,14 +30,7 @@ export type TButtonVariantStates = {
   hover: TButtonVariantAttributes;
 };
 
-export type TButtonProps = DetailedHTMLProps<
-  ButtonHTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement
-> & {
-  /**
-   * Content to be wrapped by button element
-   */
-  children: ReactNode;
+export type TSawmillButtonProps = {
   /**
    * Defines HTML button active attribute
    */
@@ -82,8 +75,10 @@ export type TButtonProps = DetailedHTMLProps<
    * Change the default prefix
    */
   bsClass?: string;
-  /**
-   * Adds class to button
-   */
-  className?: string;
 };
+
+export type TButtonProps = DetailedHTMLProps<
+  ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
+> &
+  TSawmillButtonProps;

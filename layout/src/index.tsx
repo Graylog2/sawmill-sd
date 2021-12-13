@@ -14,6 +14,7 @@ import * as theme from '~/theme/src/theme.json';
 import sawmillVariables from '~/theme/src/variables.css';
 import noirVariables from '~/theme/src/variables-noir.css';
 import { Logo } from './Logo';
+import { translateModeName, updateThemeMode } from '~/layout/src/utility';
 
 const GlobalStyle = createGlobalStyle`
   ${sawmillVariables}
@@ -34,18 +35,11 @@ const GlobalStyle = createGlobalStyle`
 
 export const Layout = (props: unknown) => {
   React.useEffect(() => {
-    document.body.classList.add(
-      getInitialColorScheme() === 'dark' ? 'noir' : 'teint'
-    );
-
-    return () => {
-      document.body.classList.remove('noir', 'teint');
-    };
+    updateThemeMode(translateModeName(getInitialColorScheme()));
   }, []);
 
   const handleThemeModeSwitch = (newMode) => {
-    document.body.classList[newMode === 'dark' ? 'add' : 'remove']('noir');
-    document.body.classList[newMode === 'light' ? 'add' : 'remove']('teint');
+    updateThemeMode(translateModeName(newMode));
   };
 
   return (
