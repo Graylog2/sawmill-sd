@@ -127,7 +127,7 @@ export const Button = ({
   type = 'button',
   inline = false,
   ...props
-}: TSawmillButtonProps): React.FC<TButtonProps> => {
+}: Exclude<TButtonProps, HTMLButtonElement>) => {
   return (
     <StyledButton
       active={active}
