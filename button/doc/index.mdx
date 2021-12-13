@@ -79,4 +79,8 @@ import { Button } from '@graylog/sawmill-sd';
 
 ## Props
 
-<Props of={Button} />
+<Props of={Button}
+       filter={({ declarations }) =>
+         !declarations[0].fileName.includes('node_modules')
+       }
+/>

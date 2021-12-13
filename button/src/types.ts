@@ -1,9 +1,4 @@
-import {
-  ButtonHTMLAttributes,
-  DetailedHTMLProps,
-  ReactNode,
-  ReactElement,
-} from 'react';
+import { ButtonHTMLAttributes, DetailedHTMLProps, ReactElement } from 'react';
 
 type TButtonSizes = 'lg' | 'sm' | 'xs';
 

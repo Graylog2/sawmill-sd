@@ -11,7 +11,7 @@
     "build": "node ./sd.build.js"
   },
   "dependencies": {
-    "@divriots/dockit-react": "0.0.80",
+    "@divriots/dockit-react": "0.0.81",
     "@divriots/studio-doc-compiler": "^0.0.28",
     "@k-vyn/coloralgorithm": "^1.0.0",
     "@mdx-js/react": "^1.6.22",
