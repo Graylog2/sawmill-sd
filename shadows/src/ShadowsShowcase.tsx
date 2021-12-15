@@ -7,14 +7,12 @@ import { createGlobalStyle } from 'styled-components';
 const props = getCssCustomProps('--sawmill-shadows');
 const values = props.map(([name]) => name);
 
-const opacityClassNames = values
-  .map((value) => {
-    return `.${value} { box-shadow: var(${value}) !important; }`;
-  })
+const shadowsClassNames = values
+  .map((value) => `.${value} { box-shadow: var(${value}) !important; }`)
   .join('\n');
 
 const GlobalStyle = createGlobalStyle`
-  ${opacityClassNames}
+  ${shadowsClassNames}
 `;
 
 export const ShadowsShowcase = () => {
