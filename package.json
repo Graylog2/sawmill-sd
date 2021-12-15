@@ -13,16 +13,12 @@
   "dependencies": {
     "@divriots/dockit-react": "0.0.81",
     "@divriots/studio-doc-compiler": "^0.0.28",
-    "@k-vyn/coloralgorithm": "^1.0.0",
     "@mdx-js/react": "^1.6.22",
     "bootstrap": "3.4.1",
     "copy-to-clipboard": "^3.3.1",
     "dependency-graph": "^0.11.0",
-    "esm": "^3.2.25",
-    "path": "^0.12.7",
     "react": "^17.0.2",
     "react-bootstrap": "^0.33.1",
-    "style-dictionary": "^3.0.3",
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
@@ -30,6 +26,9 @@
     "@types/mdx-js__react": "^1.5.5",
     "@types/react": "^17.0.35",
     "@types/styled-components": "^5.1.15",
-    "prettier": "^2.5.0"
+    "prettier": "^2.5.0",
+    "style-dictionary": "^3.0.3",
+    "esm": "^3.2.25",
+    "path": "^0.12.7"
   }
 }

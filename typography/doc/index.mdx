@@ -1,10 +1,15 @@
 import { mdx } from '@mdx-js/react';
-import theme from '~/theme/src/theme.json';
+import theme from '~/theme/src/styled-components.json';
 import { SystemUIShowcases } from '@divriots/dockit-react/systemui-showcases';
-import { StyleShowcases, getCssCustomProps } from '@divriots/dockit-react/style-showcases';
+import {
+  StyleShowcases,
+  getCssCustomProps,
+} from '@divriots/dockit-react/style-showcases';
 import { Layout } from '~/layout';
-export const getCssValue = name => `var(${name})`;
-export const fontSizeProps = getCssCustomProps("--sawmill-typography-font-sizes")
+export const getCssValue = (name) => `var(${name})`;
+export const fontSizeProps = getCssCustomProps(
+  '--sawmill-typography-font-sizes'
+);
 export const fontSizeValues = fontSizeProps.map(([name]) => getCssValue(name));
 export default Layout;
 

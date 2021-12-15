@@ -10,8 +10,8 @@ const styles = `
   ${bootstrapStyles}
 `;
 
-const SawmillPlayground = ({ ...props }) => (
-  <Playground styles={styles} {...props} />
+const SawmillPlayground = ({ scope, code }) => (
+  <Playground styles={styles} scope={scope} code={code} />
 );
 
 export default SawmillPlayground;

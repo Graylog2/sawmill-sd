@@ -48,211 +48,211 @@
       },
       "danger": {
         "0": {
-          "noirValue": "#FCEAE8",
+          "noirValue": "#2D0906",
           "value": "#FEE6E6"
         },
         "1": {
-          "noirValue": "#F7C5BF",
+          "noirValue": "#5B130B",
           "value": "#FCBABA"
         },
         "2": {
-          "noirValue": "#F29F97",
+          "noirValue": "#881C11",
           "value": "#FA8E8E"
         },
         "3": {
-          "noirValue": "#ED7A6E",
+          "noirValue": "#B62516",
           "value": "#F96262"
         },
         "4": {
-          "noirValue": "#E85445",
+          "noirValue": "#E32F1C",
           "value": "#F73636"
         },
         "5": {
-          "noirValue": "#E32F1C",
+          "noirValue": "#E85445",
           "value": "#F50A0A"
         },
         "6": {
-          "noirValue": "#B62516",
+          "noirValue": "#ED7A6E",
           "value": "#C40808"
         },
         "7": {
-          "noirValue": "#881C11",
+          "noirValue": "#F29F97",
           "value": "#930606"
         },
         "8": {
-          "noirValue": "#5B130B",
+          "noirValue": "#F7C5BF",
           "value": "#620404"
         },
         "9": {
-          "noirValue": "#2D0906",
+          "noirValue": "#FCEAE8",
           "value": "#310202"
         }
       },
       "info": {
         "0": {
-          "noirValue": "#E9F4FB",
+          "noirValue": "#081D2B",
           "value": "#E5F3FF"
         },
         "1": {
-          "noirValue": "#C2E0F4",
+          "noirValue": "#0F3A57",
           "value": "#B8DDFF"
         },
         "2": {
-          "noirValue": "#9BCCED",
+          "noirValue": "#175782",
           "value": "#8AC7FF"
         },
         "3": {
-          "noirValue": "#74B9E6",
+          "noirValue": "#1F74AD",
           "value": "#5CB1FF"
         },
         "4": {
-          "noirValue": "#4DA5E0",
+          "noirValue": "#2691D9",
           "value": "#2E9BFF"
         },
         "5": {
-          "noirValue": "#2691D9",
+          "noirValue": "#4DA5E0",
           "value": "#0085FF"
         },
         "6": {
-          "noirValue": "#1F74AD",
+          "noirValue": "#74B9E6",
           "value": "#006ACC"
         },
         "7": {
-          "noirValue": "#175782",
+          "noirValue": "#9BCCED",
           "value": "#005099"
         },
         "8": {
-          "noirValue": "#0F3A57",
+          "noirValue": "#C2E0F4",
           "value": "#003566"
         },
         "9": {
-          "noirValue": "#081D2B",
+          "noirValue": "#E9F4FB",
           "value": "#001B33"
         }
       },
       "primary": {
         "0": {
-          "noirValue": "#F1EDF7",
+          "noirValue": "#170F24",
           "value": "#F6EBF9"
         },
         "1": {
-          "noirValue": "#D7CDEA",
+          "noirValue": "#2D1E48",
           "value": "#E6C8EF"
         },
         "2": {
-          "noirValue": "#BDACDC",
+          "noirValue": "#442D6C",
           "value": "#D6A4E4"
         },
         "3": {
-          "noirValue": "#A48CCF",
+          "noirValue": "#5A3C90",
           "value": "#C681DA"
         },
         "4": {
-          "noirValue": "#8A6CC1",
+          "noirValue": "#714CB3",
           "value": "#B65DD0"
         },
         "5": {
-          "noirValue": "#714CB3",
+          "noirValue": "#8A6CC1",
           "value": "#A63AC5"
         },
         "6": {
-          "noirValue": "#5A3C90",
+          "noirValue": "#A48CCF",
           "value": "#852E9E"
         },
         "7": {
-          "noirValue": "#442D6C",
+          "noirValue": "#BDACDC",
           "value": "#642376"
         },
         "8": {
-          "noirValue": "#2D1E48",
+          "noirValue": "#D7CDEA",
           "value": "#42174F"
         },
         "9": {
-          "noirValue": "#170F24",
+          "noirValue": "#F1EDF7",
           "value": "#210C27"
         }
       },
       "success": {
         "0": {
-          "noirValue": "#E5FFF8",
+          "noirValue": "#003326",
           "value": "#EAFBF5"
         },
         "1": {
-          "noirValue": "#B8FFED",
+          "noirValue": "#00664C",
           "value": "#C4F3E2"
         },
         "2": {
-          "noirValue": "#8AFFE1",
+          "noirValue": "#009972",
           "value": "#9DEBCF"
         },
         "3": {
-          "noirValue": "#5CFFD5",
+          "noirValue": "#00CC98",
           "value": "#77E4BC"
         },
         "4": {
-          "noirValue": "#2EFFCA",
+          "noirValue": "#00FFBE",
           "value": "#51DCA9"
         },
         "5": {
-          "noirValue": "#00FFBE",
+          "noirValue": "#2EFFCA",
           "value": "#2BD496"
         },
         "6": {
-          "noirValue": "#00CC98",
+          "noirValue": "#5CFFD5",
           "value": "#22AA78"
         },
         "7": {
-          "noirValue": "#009972",
+          "noirValue": "#8AFFE1",
           "value": "#1A7F5A"
         },
         "8": {
-          "noirValue": "#00664C",
+          "noirValue": "#B8FFED",
           "value": "#11553C"
         },
         "9": {
-          "noirValue": "#003326",
+          "noirValue": "#E5FFF8",
           "value": "#092A1E"
         }
       },
       "warning": {
         "0": {
-          "noirValue": "#FEF5E7",
+          "noirValue": "#311F02",
           "value": "#FFFBE5"
         },
         "1": {
-          "noirValue": "#FCE3BB",
+          "noirValue": "#613D05",
           "value": "#FFF2B8"
         },
         "2": {
-          "noirValue": "#F9D08F",
+          "noirValue": "#925C07",
           "value": "#FFEA8A"
         },
         "3": {
-          "noirValue": "#F7BE64",
+          "noirValue": "#C27B0A",
           "value": "#FFE25C"
         },
         "4": {
-          "noirValue": "#F5AC38",
+          "noirValue": "#F39A0C",
           "value": "#FFDA2E"
         },
         "5": {
-          "noirValue": "#F39A0C",
+          "noirValue": "#F5AC38",
           "value": "#FFD200"
         },
         "6": {
-          "noirValue": "#C27B0A",
+          "noirValue": "#F7BE64",
           "value": "#CCA800"
         },
         "7": {
-          "noirValue": "#925C07",
+          "noirValue": "#F9D08F",
           "value": "#997E00"
         },
         "8": {
-          "noirValue": "#613D05",
+          "noirValue": "#FCE3BB",
           "value": "#665400"
         },
         "9": {
-          "noirValue": "#311F02",
+          "noirValue": "#FEF5E7",
           "value": "#332A00"
         }
       }
