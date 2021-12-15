@@ -36,7 +36,9 @@ StyleDictionary.registerFormat({
 });
 
 export default {
-  source: ['{colors,elevations,opacity,radii,spacings,typography}/**/*.json'],
+  source: [
+    '{colors,elevations,opacity,radii,shadows,spacings,typography}/**/*.json',
+  ],
   platforms: {
     css: {
       transformGroup: 'css',
