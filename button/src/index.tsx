@@ -81,9 +81,9 @@ const variantColors: TButtonVariantStates = {
 const buttonStyles = [...generateColors(variantColors), ...generateSizes()];
 
 const StyledButton = styled(BootstrapButton)(
-  ({ inline }) => css`
+  ({ $inline }) => css`
     ${buttonStyles}
-    ${inline
+    ${$inline
       ? `
     padding: var(--sawmill-spacings-1) var(--sawmill-spacings-xxs);
     font-size: var(--sawmill-typography-font-sizes-base);
@@ -115,7 +115,7 @@ export const Button = ({
       bsStyle={bsStyle}
       disabled={disabled}
       type={type}
-      inline={inline}
+      $inline={inline}
       {...props}
     />
   );
