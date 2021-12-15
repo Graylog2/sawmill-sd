@@ -6,92 +6,92 @@
         "noirValue": "{colors.brand.tertiary.noirValue}"
       },
       "global": {
-        "value": "{colors.gray.10.value}"
+        "value": "{colors.variant.gray.1.value}"
       },
       "input": {
         "@": {
-          "value": "{colors.gray.0.value}"
+          "value": "{colors.variant.gray.0.value}"
         },
         "disabled": {
-          "value": "{colors.gray.20.value}"
+          "value": "{colors.variant.gray.2.value}"
         },
         "error": {
-          "value": "{colors.variant.danger.lighter.value}",
-          "noirValue": "{colors.variant.danger.lighter.noirValue}"
+          "value": "{colors.variant.danger.3.value}",
+          "noirValue": "{colors.variant.danger.3.noirValue}"
         },
         "focus": {
-          "value": "{colors.gray.0.value}"
+          "value": "{colors.variant.gray.0.value}"
         }
       },
       "navigation": {
-        "value": "{colors.gray.10.value}"
+        "value": "{colors.variant.gray.1.value}"
       },
       "table": {
         "alt": {
-          "value": "{colors.gray.10.value}"
+          "value": "{colors.variant.gray.1.value}"
         },
         "@": {
-          "value": "{colors.gray.0.value}"
+          "value": "{colors.variant.gray.0.value}"
         },
         "hover": {
-          "value": "{colors.gray.20.value}"
+          "value": "{colors.variant.gray.2.value}"
         },
         "active": {
           "@": {
-            "value": "{colors.gray.10.value}"
+            "value": "{colors.variant.gray.1.value}"
           },
           "hover": {
-            "value": "{colors.gray.20.value}"
+            "value": "{colors.variant.gray.2.value}"
           }
         },
         "danger": {
           "@": {
-            "value": "{colors.variant.danger.lightest.value}",
-            "noirValue": "{colors.variant.danger.lightest.noirValue}"
+            "value": "{colors.variant.danger.1.value}",
+            "noirValue": "{colors.variant.danger.1.noirValue}"
           },
           "hover": {
-            "value": "{colors.variant.danger.lighter.value}",
-            "noirValue": "{colors.variant.danger.lighter.noirValue}"
+            "value": "{colors.variant.danger.3.value}",
+            "noirValue": "{colors.variant.danger.3.noirValue}"
           }
         },
         "info": {
           "@": {
-            "value": "{colors.variant.info.lightest.value}",
-            "noirValue": "{colors.variant.info.lightest.noirValue}"
+            "value": "{colors.variant.info.1.value}",
+            "noirValue": "{colors.variant.info.1.noirValue}"
           },
           "hover": {
-            "value": "{colors.variant.info.lighter.value}",
-            "noirValue": "{colors.variant.info.lighter.noirValue}"
+            "value": "{colors.variant.info.3.value}",
+            "noirValue": "{colors.variant.info.3.noirValue}"
           }
         },
         "primary": {
           "@": {
-            "value": "{colors.variant.primary.lightest.value}",
-            "noirValue": "{colors.variant.primary.lightest.noirValue}"
+            "value": "{colors.variant.primary.1.value}",
+            "noirValue": "{colors.variant.primary.1.noirValue}"
           },
           "hover": {
-            "value": "{colors.variant.primary.lighter.value}",
-            "noirValue": "{colors.variant.primary.lighter.noirValue}"
+            "value": "{colors.variant.primary.3.value}",
+            "noirValue": "{colors.variant.primary.3.noirValue}"
           }
         },
         "success": {
           "@": {
-            "value": "{colors.variant.success.lightest.value}",
-            "noirValue": "{colors.variant.success.lightest.noirValue}"
+            "value": "{colors.variant.success.1.value}",
+            "noirValue": "{colors.variant.success.1.noirValue}"
           },
           "hover": {
-            "value": "{colors.variant.success.lighter.value}",
-            "noirValue": "{colors.variant.success.lighter.noirValue}"
+            "value": "{colors.variant.success.3.value}",
+            "noirValue": "{colors.variant.success.3.noirValue}"
           }
         },
         "warning": {
           "@": {
-            "value": "{colors.variant.warning.lightest.value}",
-            "noirValue": "{colors.variant.warning.lightest.noirValue}"
+            "value": "{colors.variant.warning.1.value}",
+            "noirValue": "{colors.variant.warning.1.noirValue}"
           },
           "hover": {
-            "value": "{colors.variant.warning.lighter.value}",
-            "noirValue": "{colors.variant.warning.lighter.noirValue}"
+            "value": "{colors.variant.warning.3.value}",
+            "noirValue": "{colors.variant.warning.3.noirValue}"
           }
         }
       }

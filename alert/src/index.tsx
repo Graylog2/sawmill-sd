@@ -22,8 +22,8 @@ const StyledAlert = styled(BootstrapAlert).attrs(
   })
 )(({ $bsStyle }: AlertProps) => {
   return css`
-    background-color: var(--sawmill-colors-variant-${$bsStyle}-lightest);
-    border-color: var(--sawmill-colors-variant-${$bsStyle}-lighter);
+    background-color: var(--sawmill-colors-variant-${$bsStyle}-0);
+    border-color: var(--sawmill-colors-variant-${$bsStyle}-2);
     color: var(--sawmill-colors-variant-${$bsStyle}-darker);
 
     a:not(.btn) {

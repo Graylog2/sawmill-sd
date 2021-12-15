@@ -64,7 +64,7 @@ StyleDictionary.extend({
       buildPath,
       files: [
         {
-          destination: "theme.json",
+          destination: "styled-components.json",
           format: "json/nested"
         }
       ]
