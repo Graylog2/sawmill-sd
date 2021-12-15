@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { mdx } from '@mdx-js/react';
-import theme from '~/theme/src/theme.json';
+import theme from '~/theme/src/styled-components.json';
 import { StyleShowcases } from '@divriots/dockit-react/style-showcases';
 import './styles.css';
 import { Layout } from '~/layout';
@@ -30,6 +30,7 @@ These colors come from marketing's branding guideline and are representative of 
 Variant colors are generated using [`Themera`](https://themera.vercel.app/) & tertiary colors from branding guideline.
 
 ### Transparent
+
 <StyleShowcases
   prefix="--sawmill-colors-variant-transparent"
   styleKey="background"
@@ -47,6 +48,7 @@ Variant colors are generated using [`Themera`](https://themera.vercel.app/) & te
 />
 
 ### Danger
+
 <StyleShowcases
   prefix="--sawmill-colors-variant-danger"
   styleKey="background"
@@ -55,6 +57,7 @@ Variant colors are generated using [`Themera`](https://themera.vercel.app/) & te
 />
 
 ### Info
+
 <StyleShowcases
   prefix="--sawmill-colors-variant-info"
   styleKey="background"
@@ -63,6 +66,7 @@ Variant colors are generated using [`Themera`](https://themera.vercel.app/) & te
 />
 
 ### Primary
+
 <StyleShowcases
   prefix="--sawmill-colors-variant-primary"
   styleKey="background"
@@ -71,6 +75,7 @@ Variant colors are generated using [`Themera`](https://themera.vercel.app/) & te
 />
 
 ### Success
+
 <StyleShowcases
   prefix="--sawmill-colors-variant-success"
   styleKey="background"
@@ -79,10 +84,10 @@ Variant colors are generated using [`Themera`](https://themera.vercel.app/) & te
 />
 
 ### Warning
+
 <StyleShowcases
   prefix="--sawmill-colors-variant-warning"
   styleKey="background"
   componentProps={{ className: 'box' }}
   showcaseComponent="box"
 />
-

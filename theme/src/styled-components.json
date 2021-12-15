@@ -123,7 +123,7 @@
   },
   "shadows": {
     "input": "inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4)",
-    "navigation": "hsla(240, 0.00%, 18.29%, 0.5)",
+    "navigation": "0px 3px 3px rgba(243, 243, 243, 0.5)",
     "panel": "0 2px 6px 0 hsla(240, 0.00%, 37.14%, 0.4)"
   },
   "elevations": {

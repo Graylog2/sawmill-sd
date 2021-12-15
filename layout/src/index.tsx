@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'https://unpkg.com/prismjs@1.25.0/themes/prism-tomorrow.css';
 
 import SawmillPlayground from '~/layout/src/SawmillPlayground';
-import * as theme from '~/theme/src/theme.json';
+import theme from '~/theme/src/styled-components.json';
 import sawmillVariables from '~/theme/src/variables.css';
 import noirVariables from '~/theme/src/variables-noir.css';
 import { Logo } from './Logo';

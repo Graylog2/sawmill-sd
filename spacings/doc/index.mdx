@@ -1,13 +1,16 @@
 import { mdx } from '@mdx-js/react';
 import { Layout } from '~/layout';
 import SpacingsShowcase from '../src/SpacingsShowcase';
-import theme from '~/theme/src/theme.json';
+import theme from '~/theme/src/styled-components.json';
 export default Layout;
 
 ## Spacings (rem)
 
-<SpacingsShowcase scale={{ ...theme.spacings, px: undefined }} prefix={"--sawmill-spacings"} />
+<SpacingsShowcase
+  scale={{ ...theme.spacings, px: undefined }}
+  prefix={'--sawmill-spacings'}
+/>
 
 ## Spacings (px)
 
-<SpacingsShowcase scale={theme.spacings.px} prefix={"--sawmill-spacings-px"} />
+<SpacingsShowcase scale={theme.spacings.px} prefix={'--sawmill-spacings-px'} />

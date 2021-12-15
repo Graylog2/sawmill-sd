@@ -1,106 +1,89 @@
 import * as React from 'react';
 import { Button as BootstrapButton } from 'react-bootstrap';
 import styled, { css } from 'styled-components';
+import merge from 'lodash/merge';
 
 import { TButtonProps, TButtonVariantStates } from './types';
 import { generateColors, generateSizes } from './styles';
 
+const baseColors = {
+  background: {
+    default: '--sawmill-colors-variant-gray-3',
+    danger: '--sawmill-colors-variant-danger-5',
+    info: '--sawmill-colors-variant-info-5',
+    link: '--sawmill-colors-variant-transparent',
+    primary: '--sawmill-colors-variant-primary-5',
+    success: '--sawmill-colors-variant-success-5',
+    warning: '--sawmill-colors-variant-warning-3',
+  },
+  border: {
+    default: '--sawmill-colors-variant-gray-3',
+    danger: '--sawmill-colors-variant-danger-5',
+    info: '--sawmill-colors-variant-info-5',
+    link: '--sawmill-colors-variant-transparent',
+    primary: '--sawmill-colors-variant-primary-5',
+    success: '--sawmill-colors-variant-success-5',
+    warning: '--sawmill-colors-variant-warning-3',
+  },
+  text: {
+    default: '--sawmill-colors-variant-gray-9',
+    danger: '--sawmill-colors-variant-gray-0',
+    info: '--sawmill-colors-variant-gray-0',
+    link: '--sawmill-colors-variant-primary-7',
+    primary: '--sawmill-colors-variant-gray-0',
+    success: '--sawmill-colors-variant-gray-9',
+    warning: '--sawmill-colors-variant-gray-9',
+  },
+};
+
+const hoverColors = merge({}, baseColors, {
+  background: {
+    default: '--sawmill-colors-variant-gray-4',
+    danger: '--sawmill-colors-variant-danger-6',
+    info: '--sawmill-colors-variant-info-6',
+    primary: '--sawmill-colors-variant-primary-6',
+    success: '--sawmill-colors-variant-success-6',
+    warning: '--sawmill-colors-variant-warning-4',
+  },
+  text: {
+    link: '--sawmill-colors-variant-primary-8',
+  },
+});
+
+const activeColors = merge({}, baseColors, {
+  background: {
+    default: '--sawmill-colors-variant-gray-4',
+    danger: '--sawmill-colors-variant-danger-6',
+    info: '--sawmill-colors-variant-info-6',
+    primary: '--sawmill-colors-variant-primary-6',
+    success: '--sawmill-colors-variant-success-6',
+    warning: '--sawmill-colors-variant-warning-4',
+  },
+  border: {
+    default: '--sawmill-colors-variant-gray-5',
+    danger: '--sawmill-colors-variant-danger-7',
+    info: '--sawmill-colors-variant-info-7',
+    primary: '--sawmill-colors-variant-primary-7',
+    success: '--sawmill-colors-variant-success-7',
+    warning: '--sawmill-colors-variant-warning-5',
+  },
+  text: {
+    link: '--sawmill-colors-variant-primary-8',
+  },
+});
+
 const variantColors: TButtonVariantStates = {
-  base: {
-    background: {
-      danger: '--sawmill-colors-variant-danger-5',
-      default: '--sawmill-colors-variant-gray-8',
-      info: '--sawmill-colors-variant-info-5',
-      link: '--sawmill-colors-variant-transparent',
-      primary: '--sawmill-colors-variant-primary-5',
-      success: '--sawmill-colors-variant-success-5',
-      warning: '--sawmill-colors-variant-warning-4',
-    },
-    border: {
-      danger: '--sawmill-colors-variant-danger-5',
-      default: '--sawmill-colors-variant-gray-8',
-      info: '--sawmill-colors-variant-info-5',
-      link: '--sawmill-colors-variant-transparent',
-      primary: '--sawmill-colors-variant-primary-5',
-      success: '--sawmill-colors-variant-success-5',
-      warning: '--sawmill-colors-variant-warning-4',
-    },
-    text: {
-      danger: '--sawmill-colors-variant-gray-8',
-      default: '--sawmill-colors-variant-gray-0',
-      info: '--sawmill-colors-variant-gray-9',
-      link: '--sawmill-colors-variant-primary-7',
-      primary: '--sawmill-colors-variant-gray-9',
-      success: '--sawmill-colors-variant-gray-9',
-      warning: '--sawmill-colors-variant-gray-1',
-    },
-  },
-  hover: {
-    background: {
-      danger: '--sawmill-colors-variant-danger-7',
-      default: '--sawmill-colors-variant-gray-7',
-      info: '--sawmill-colors-variant-info-7',
-      link: '--sawmill-colors-variant-transparent',
-      primary: '--sawmill-colors-variant-primary-7',
-      success: '--sawmill-colors-variant-success-7',
-      warning: '--sawmill-colors-variant-warning-5',
-    },
-    border: {
-      danger: '--sawmill-colors-variant-danger-7',
-      default: '--sawmill-colors-variant-gray-7',
-      info: '--sawmill-colors-variant-info-7',
-      link: '--sawmill-colors-variant-transparent',
-      primary: '--sawmill-colors-variant-primary-4',
-      success: '--sawmill-colors-variant-success-4',
-      warning: '--sawmill-colors-variant-warning-5',
-    },
-    text: {
-      danger: '--sawmill-colors-variant-gray-9',
-      default: '--sawmill-colors-variant-gray-1',
-      info: '--sawmill-colors-variant-gray-9',
-      link: '--sawmill-colors-variant-primary-8',
-      primary: '--sawmill-colors-variant-gray-8',
-      success: '--sawmill-colors-variant-gray-8',
-      warning: '--sawmill-colors-variant-gray-2',
-    },
-  },
-  active: {
-    background: {
-      danger: '--sawmill-colors-variant-danger-7',
-      default: '--sawmill-colors-variant-gray-7',
-      info: '--sawmill-colors-variant-info-7',
-      link: '--sawmill-colors-variant-transparent',
-      primary: '--sawmill-colors-variant-primary-7',
-      success: '--sawmill-colors-variant-success-7',
-      warning: '--sawmill-colors-variant-warning-5',
-    },
-    border: {
-      danger: '--sawmill-colors-variant-danger-8',
-      default: '--sawmill-colors-variant-gray-5',
-      info: '--sawmill-colors-variant-info-8',
-      link: '--sawmill-colors-variant-transparent',
-      primary: '--sawmill-colors-variant-primary-7',
-      success: '--sawmill-colors-variant-success-7',
-      warning: '--sawmill-colors-variant-warning-8',
-    },
-    text: {
-      danger: '--sawmill-colors-variant-gray-9',
-      default: '--sawmill-colors-variant-gray-1',
-      info: '--sawmill-colors-variant-gray-9',
-      link: '--sawmill-colors-variant-primary-8',
-      primary: '--sawmill-colors-variant-gray-8',
-      success: '--sawmill-colors-variant-gray-8',
-      warning: '--sawmill-colors-variant-gray-2',
-    },
-  },
+  base: baseColors,
+  hover: hoverColors,
+  active: activeColors,
 };
 
 const buttonStyles = [...generateColors(variantColors), ...generateSizes()];
 
 const StyledButton = styled(BootstrapButton)(
-  ({ inline }) => css`
+  ({ $inline }) => css`
     ${buttonStyles}
-    ${inline
+    ${$inline
       ? `
     padding: var(--sawmill-spacings-1) var(--sawmill-spacings-xxs);
     font-size: var(--sawmill-typography-font-sizes-base);
@@ -132,7 +115,7 @@ export const Button = ({
       bsStyle={bsStyle}
       disabled={disabled}
       type={type}
-      inline={inline}
+      $inline={inline}
       {...props}
     />
   );
