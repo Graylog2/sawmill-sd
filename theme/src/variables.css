@@ -24,6 +24,10 @@
   --sawmill-colors-brand-primary: #ff3633;
   --sawmill-colors-brand-secondary: #fff;
   --sawmill-colors-brand-tertiary: #1f1f1f;
+  --sawmill-colors-link: var(--sawmill-colors-variant-primary-5);
+  --sawmill-colors-link-hover: var(--sawmill-colors-variant-primary-7);
+  --sawmill-colors-text: var(--sawmill-colors-brand-tertiary);
+  --sawmill-colors-text-alt: var(--sawmill-colors-brand-secondary);
   --sawmill-colors-variant-transparent: rgba(0, 0, 0, 0);
   --sawmill-colors-variant-gray-0: #F2F2F2;
   --sawmill-colors-variant-gray-1: #DBDBDB;
@@ -85,9 +89,6 @@
   --sawmill-colors-variant-warning-7: #997E00;
   --sawmill-colors-variant-warning-8: #665400;
   --sawmill-colors-variant-warning-9: #332A00;
-  --sawmill-shadows-input: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4);
-  --sawmill-shadows-navigation: 0px 3px 3px rgba(243, 243, 243, 0.5);
-  --sawmill-shadows-panel: 0 2px 6px 0 hsla(240, 0.00%, 37.14%, 0.4);
   --sawmill-elevations-underneath: -100;
   --sawmill-elevations-base: auto;
   --sawmill-elevations-overlay: 100;
@@ -103,6 +104,9 @@
   --sawmill-radii-md: 4px;
   --sawmill-radii-lg: 6px;
   --sawmill-radii-round: 50%;
+  --sawmill-shadows-input: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4);
+  --sawmill-shadows-navigation: 0px 3px 3px rgba(243, 243, 243, 0.5);
+  --sawmill-shadows-panel: 0 2px 6px 0 hsla(240, 0.00%, 37.14%, 0.4);
   --sawmill-spacings-0: 0px;
   --sawmill-spacings-1: 1px;
   --sawmill-spacings-huge: 8.25rem;

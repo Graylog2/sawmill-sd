@@ -6,43 +6,43 @@
       },
       "gray": {
         "0": {
-          "noirValue": "#F2F2F2",
+          "noirValue": "#1A1A1A",
           "value": "#F2F2F2"
         },
         "1": {
-          "noirValue": "#DBDBDB",
+          "noirValue": "#333333",
           "value": "#DBDBDB"
         },
         "2": {
-          "noirValue": "#C4C4C4",
+          "noirValue": "#4D4D4D",
           "value": "#C4C4C4"
         },
         "3": {
-          "noirValue": "#ADADAD",
+          "noirValue": "#666666",
           "value": "#ADADAD"
         },
         "4": {
-          "noirValue": "#969696",
+          "noirValue": "#808080",
           "value": "#969696"
         },
         "5": {
-          "noirValue": "#808080",
+          "noirValue": "#969696",
           "value": "#808080"
         },
         "6": {
-          "noirValue": "#666666",
+          "noirValue": "#ADADAD",
           "value": "#666666"
         },
         "7": {
-          "noirValue": "#4D4D4D",
+          "noirValue": "#C4C4C4",
           "value": "#4D4D4D"
         },
         "8": {
-          "noirValue": "#333333",
+          "noirValue": "#DBDBDB",
           "value": "#333333"
         },
         "9": {
-          "noirValue": "#1A1A1A",
+          "noirValue": "#F2F2F2",
           "value": "#1A1A1A"
         }
       },

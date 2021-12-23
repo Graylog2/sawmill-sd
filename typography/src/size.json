@@ -11,7 +11,7 @@
       },
       "base": {
         "value": "1rem",
-        "comment": "14px"
+        "comment": "14px if you set the `fontSizes.root`"
       },
       "xxs": {
         "value": "calc({typography.fontSizes.xs.value} / {typography.fontRatio.value})"

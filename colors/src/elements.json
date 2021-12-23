@@ -1,0 +1,20 @@
+{
+  "colors": {
+    "link": {
+      "@": {
+        "value": "{colors.variant.primary.5.value}"
+      },
+      "hover": {
+        "value": "{colors.variant.primary.7.value}"
+      }
+    },
+    "text": {
+      "@": {
+        "value": "{colors.brand.tertiary.value}"
+      },
+      "alt": {
+        "value": "{colors.brand.secondary.value}"
+      }
+    }
+  }
+}

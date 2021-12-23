@@ -45,6 +45,14 @@
       "secondary": "#fff",
       "tertiary": "#1f1f1f"
     },
+    "link": {
+      "@": "#A63AC5",
+      "hover": "#642376"
+    },
+    "text": {
+      "@": "#1f1f1f",
+      "alt": "#fff"
+    },
     "variant": {
       "transparent": "rgba(0, 0, 0, 0)",
       "gray": {
@@ -121,11 +129,6 @@
       }
     }
   },
-  "shadows": {
-    "input": "inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4)",
-    "navigation": "0px 3px 3px rgba(243, 243, 243, 0.5)",
-    "panel": "0 2px 6px 0 hsla(240, 0.00%, 37.14%, 0.4)"
-  },
   "elevations": {
     "underneath": "-100",
     "base": "auto",
@@ -146,6 +149,11 @@
     "md": "4px",
     "lg": "6px",
     "round": "50%"
+  },
+  "shadows": {
+    "input": "inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(87, 146, 219, 0.4)",
+    "navigation": "0px 3px 3px rgba(243, 243, 243, 0.5)",
+    "panel": "0 2px 6px 0 hsla(240, 0.00%, 37.14%, 0.4)"
   },
   "spacings": {
     "0": "0px",

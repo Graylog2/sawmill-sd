@@ -35,9 +35,9 @@ StyleDictionary.registerFormat({
   },
 });
 
-export default {
+StyleDictionary.extend({
   source: [
-    '{colors,elevations,opacity,radii,shadows,spacings,typography}/**/*.json',
+    '{colors,elevations,opacity,radii,shadows,spacings,typography}/**/*.{tokens.ts,json}',
   ],
   platforms: {
     css: {
@@ -74,4 +74,45 @@ export default {
       ],
     },
   },
-};
+}).buildAllPlatforms();
+
+// export default {
+//   source: [
+//     '{colors,elevations,opacity,radii,shadows,spacings,typography}/**/*.json',
+//   ],
+//   platforms: {
+//     css: {
+//       transformGroup: 'css',
+//       prefix: 'sawmill',
+//       buildPath,
+//       files: [
+//         {
+//           destination: 'variables.css',
+//           format: 'css/variables',
+//           options: {
+//             outputReferences: true,
+//           },
+//         },
+//         {
+//           destination: 'variables-noir.css',
+//           format: 'css/variables',
+//           filter: ({ noirValue }) => noirValue,
+//           options: {
+//             mode: 'noir',
+//             outputReferences: true,
+//           },
+//         },
+//       ],
+//     },
+//     js: {
+//       transformGroup: 'web',
+//       buildPath,
+//       files: [
+//         {
+//           destination: 'styled-components.json',
+//           format: 'json/nested',
+//         },
+//       ],
+//     },
+//   },
+// };
