@@ -103,4 +103,36 @@ And they are in-use in a few different places of the app, such as the Header/Nav
 I didn't implement anything here yet because I wanted to see what the requirements are going to be for using a 
 system like Mantine or other UI kit
 
+---
 
+
+## Stories
+
+Stories are written in Storybook's [Component Story Format](https://backlight.dev/docs/component-story-format).
+
+You can defined multiple stories for your components to visualize their variations:
+
+```jsx
+import { Button } from '../index';
+import { layout } from '~/tui-utils';
+export default layout;
+
+export const primary = () => <Button variant="primary">Primary</Button>;
+export const secondary = () => <Button variant="secondary">Secondary</Button>;
+export const disabled = () => <Button disabled>Disabled</Button>;
+export const secondary_disabled = () => (
+  <Button variant="secondary" disabled>
+    Disabled
+  </Button>
+);
+```
+
+Stories for the components are located in their `stories/` folder.
+
+## Documentation
+
+Documentation pages are decorated by a React layout using the [@divriots/dockit-react](https://github.com/divriots/dockit-react) helpers. See the `layout` component.
+
+### Pages
+
+Each component embed its own documentation in its `doc/` folder. You can use any web format for your documentation but we recommend you to write it with the [mdx](https://backlight.dev/docs/mdx) format, allowing you to embed your components live in the documentation.
