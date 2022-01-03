@@ -7,8 +7,7 @@
     "url": "https://github.com/Graylog2/sawmill-sd.git"
   },
   "scripts": {
-    "serve": "npx backlight@latest serve f8bLRusG6EujzpCzDM6X --open",
-    "build": "node ./sd.build.js"
+    "serve": "npx backlight@latest serve f8bLRusG6EujzpCzDM6X --open"
   },
   "dependencies": {
     "@divriots/dockit-react": "0.0.81",
@@ -28,7 +27,6 @@
     "@types/styled-components": "^5.1.15",
     "prettier": "^2.5.0",
     "style-dictionary": "^3.0.3",
-    "esm": "^3.2.25",
     "path": "^0.12.7"
   }
 }
