@@ -1,4 +1,4 @@
-import themeJson from './theme/src/theme.json';
+import themeJson from './theme/src/styled-components.json';
 import themeRootCss from './theme/src/variables.css';
 import themeNoirCss from './theme/src/variables-noir.css';
 
@@ -16,5 +16,4 @@ ${themeNoirCss}
   `,
 };
 
-export { Alert } from './alert';
 export { Button } from './button';
